@@ -16,7 +16,10 @@ export class AgentRefusal extends Error {}
 // Runs one agent turn. Server tools (web search/fetch) may pause the turn after
 // their internal iteration limit; we resume up to maxContinuations times.
 // When a client tool named `submitTool` is called, its input is the agent's answer.
-export async function runAgent(client, {system, prompt, tools = [], submitTool, outputSchema, effort = 'medium', maxTokens = 16000, maxContinuations = 4}) {
+export async function runAgent(client, options) {
+  // Other providers (src/agents/gemini.js) bring their own runner with the same contract.
+  if (client.runAgent) return client.runAgent(options);
+  const {system, prompt, tools = [], submitTool, outputSchema, effort = 'medium', maxTokens = 16000, maxContinuations = 4} = options;
   const messages = [{role: 'user', content: prompt}];
   const retrieved = new Set();
   const usage = {input_tokens: 0, output_tokens: 0};

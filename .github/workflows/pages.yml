@@ -38,7 +38,10 @@ jobs:
         continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          ATLAS_MAX_STORIES_PER_RUN: ${{ vars.ATLAS_MAX_STORIES_PER_RUN || '6' }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ATLAS_AI_PROVIDER: ${{ vars.ATLAS_AI_PROVIDER }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          ATLAS_MAX_STORIES_PER_RUN: ${{ vars.ATLAS_MAX_STORIES_PER_RUN }}
         run: node tools/agents-run.js
       - name: Build public version
         run: python3 tools/build-preview.py

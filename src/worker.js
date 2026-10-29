@@ -5,7 +5,7 @@ import {readFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {openDatabase, articleRepo, pipelineStore, nowIso} from './db.js';
 import {runPipeline} from './pipeline.js';
-import {createClient} from './agents/claude.js';
+import {createAgentClient, selectedProvider} from './agents/provider.js';
 import {campaignService} from './ads.js';
 import {channelsForArticle, telegramURL, formatArticlePost, formatAdPost, sendTelegram, TelegramRejected} from '../telegram.js';
 import {Subscriptions, brevoSender, validEmail} from '../subscriptions.js';
@@ -35,12 +35,12 @@ async function runNewsroom() {
   const last = db.prepare("SELECT created_at FROM jobs WHERE kind = 'newsroom' ORDER BY id DESC LIMIT 1").get();
   const due = !last || Date.now() - Date.parse(last.created_at) >= intervalMinutes * 60000;
   if (!job && !due) return;
-  if (!process.env.ANTHROPIC_API_KEY) { if (job) db.prepare("UPDATE jobs SET status = 'failed', finished_at = ?, result = ? WHERE id = ?").run(nowIso(), JSON.stringify({error: 'ANTHROPIC_API_KEY is not set'}), job.id); return; }
+  if (!selectedProvider()) { if (job) db.prepare("UPDATE jobs SET status = 'failed', finished_at = ?, result = ? WHERE id = ?").run(nowIso(), JSON.stringify({error: 'No AI key: set GEMINI_API_KEY or ANTHROPIC_API_KEY'}), job.id); return; }
   const id = job ? job.id : Number(db.prepare("INSERT INTO jobs (kind, status, created_at) VALUES ('newsroom', 'queued', ?)").run(nowIso()).lastInsertRowid);
   db.prepare("UPDATE jobs SET status = 'running', started_at = ? WHERE id = ?").run(nowIso(), id);
   try {
     const report = await runPipeline({
-      client: createClient(), store: pipelineStore(db), topics,
+      client: createAgentClient(), store: pipelineStore(db), topics,
       perTopic: Number(process.env.ATLAS_STORIES_PER_TOPIC || 2),
       maxStories: Number(process.env.ATLAS_MAX_STORIES_PER_RUN || 6),
       autoPublish: process.env.ATLAS_AUTO_PUBLISH !== '0',

@@ -54,14 +54,29 @@ Claimed publication time: ${story.publishedAt}`;
     ],
     submitTool: 'submit_verification',
   });
+  // Providers that report only publisher domains (Gemini) get every cited link opened by our code.
+  if (client.checkLinks) result.sources = await keepReachable(result.sources || []);
   return {...assessVerification(result, retrieved, now), usage};
+}
+
+export async function linkReachable(url, fetcher = fetch) {
+  try {
+    const res = await fetcher(url, {method: 'GET', redirect: 'follow', headers: {'User-Agent': 'Mozilla/5.0 (ATLAS source check)'}, signal: AbortSignal.timeout(12000)});
+    res.body?.cancel?.().catch(() => {});
+    // 401/403/429 usually mean bot protection on a real page; 404/410 mean the URL was made up or removed.
+    return res.ok || [401, 403, 429].includes(res.status);
+  } catch { return false; }
+}
+async function keepReachable(sources, fetcher = fetch) {
+  const checks = await Promise.all(sources.map(s => /^https:\/\//.test(s.url) ? linkReachable(s.url, fetcher) : false));
+  return sources.filter((s, i) => checks[i]);
 }
 
 // Deterministic gate on top of the model's verdict.
 export function assessVerification(result, retrieved, now = new Date(), maxAgeHours = 48) {
   const problems = [];
   const sources = (result.sources || []).filter(s => /^https:\/\//.test(s.url));
-  const seen = sources.filter(s => retrieved.has(normalizeUrl(s.url)));
+  const seen = sources.filter(s => retrieved.has(normalizeUrl(s.url)) || retrieved.has('domain:' + publisherDomain(s.url)));
   if (seen.length < sources.length) problems.push('cited-unseen-source');
   const confirming = new Set(seen.filter(s => s.confirms).map(s => publisherDomain(s.url)).filter(Boolean));
   if (confirming.size < 2) problems.push('fewer-than-two-independent-sources');
