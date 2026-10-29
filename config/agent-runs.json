@@ -1,5 +1,238 @@
 [
   {
+    "mode": "feeds",
+    "startedAt": "2026-10-29T12:18:48.545Z",
+    "published": [],
+    "held": [],
+    "rejected": [],
+    "errors": [
+      {
+        "stage": "cluster",
+        "error": "The operation was aborted due to timeout"
+      }
+    ],
+    "usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "feeds": [
+      {
+        "feed": "BBC News / technology",
+        "ok": true,
+        "items": 20
+      },
+      {
+        "feed": "The Guardian / technology",
+        "ok": true,
+        "items": 36
+      },
+      {
+        "feed": "The New York Times / technology",
+        "ok": true,
+        "items": 25
+      },
+      {
+        "feed": "Ars Technica / technology",
+        "ok": true,
+        "items": 20
+      },
+      {
+        "feed": "The Verge / technology",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "NPR / technology",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "Хабр / technology",
+        "ok": true,
+        "items": 40
+      },
+      {
+        "feed": "3DNews / technology",
+        "ok": true,
+        "items": 56
+      },
+      {
+        "feed": "iXBT / technology",
+        "ok": true,
+        "items": 50
+      },
+      {
+        "feed": "BBC News / science",
+        "ok": true,
+        "items": 42
+      },
+      {
+        "feed": "The Guardian / science",
+        "ok": true,
+        "items": 27
+      },
+      {
+        "feed": "The New York Times / science",
+        "ok": true,
+        "items": 28
+      },
+      {
+        "feed": "NPR / science",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "ScienceDaily / science",
+        "ok": true,
+        "items": 60
+      },
+      {
+        "feed": "N + 1 / science",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "Naked Science / science",
+        "ok": true,
+        "items": 20
+      },
+      {
+        "feed": "BBC News / economy",
+        "ok": true,
+        "items": 40
+      },
+      {
+        "feed": "The Guardian / economy",
+        "ok": true,
+        "items": 19
+      },
+      {
+        "feed": "The New York Times / economy",
+        "ok": true,
+        "items": 50
+      },
+      {
+        "feed": "NPR / economy",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "CNBC / economy",
+        "ok": true,
+        "items": 30
+      },
+      {
+        "feed": "Коммерсантъ / economy",
+        "ok": false,
+        "error": "HTTP 406"
+      },
+      {
+        "feed": "РБК / economy",
+        "ok": true,
+        "items": 30
+      },
+      {
+        "feed": "Интерфакс / economy",
+        "ok": true,
+        "items": 25
+      },
+      {
+        "feed": "BBC News / culture",
+        "ok": true,
+        "items": 23
+      },
+      {
+        "feed": "The Guardian / culture",
+        "ok": true,
+        "items": 26
+      },
+      {
+        "feed": "The New York Times / culture",
+        "ok": true,
+        "items": 62
+      },
+      {
+        "feed": "NPR / culture",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "Коммерсантъ / culture",
+        "ok": false,
+        "error": "HTTP 406"
+      },
+      {
+        "feed": "BBC Sport / sport",
+        "ok": true,
+        "items": 63
+      },
+      {
+        "feed": "The Guardian / sport",
+        "ok": true,
+        "items": 26
+      },
+      {
+        "feed": "The New York Times / sport",
+        "ok": true,
+        "items": 0
+      },
+      {
+        "feed": "ESPN / sport",
+        "ok": true,
+        "items": 0
+      },
+      {
+        "feed": "Чемпионат / sport",
+        "ok": true,
+        "items": 31
+      },
+      {
+        "feed": "Sports.ru / sport",
+        "ok": true,
+        "items": 20
+      },
+      {
+        "feed": "Спорт-Экспресс / sport",
+        "ok": true,
+        "items": 614
+      },
+      {
+        "feed": "The Guardian / travel",
+        "ok": true,
+        "items": 35
+      },
+      {
+        "feed": "The New York Times / travel",
+        "ok": true,
+        "items": 20
+      },
+      {
+        "feed": "Skift / travel",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "АТОР / travel",
+        "ok": false,
+        "error": "HTTP 404"
+      },
+      {
+        "feed": "Туристический бизнес (Tourdom) / travel",
+        "ok": false,
+        "error": "HTTP 404"
+      }
+    ],
+    "candidates": 400,
+    "finishedAt": "2026-10-29T12:21:52.133Z",
+    "status": "failed",
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "skippedModels": [],
+    "diagnostics": {
+      "modelErrors": {}
+    }
+  },
+  {
     "startedAt": "2026-10-29T12:02:22.753Z",
     "published": [],
     "held": [],
