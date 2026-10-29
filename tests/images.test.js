@@ -42,3 +42,15 @@ test('backfill gives older agent stories a photo once', async () => {
   assert.equal(saved.length, 1);
   assert.ok(saved[0].image && saved[0].imageSearchedAt);
 });
+
+test('a headline-length query falls back to the names in it', async () => {
+  const queries = [];
+  const image = await findImage('State Duma Passes Russia 2027 Draft Federal Budget in First Reading', {fetcher: async url => {
+    const q = new URL(url).searchParams.get('gsrsearch') || new URL(url).searchParams.get('q');
+    queries.push(q);
+    return String(url).includes('commons') && q.startsWith('State Duma ') && !q.includes('Passes') ? commons({c: page('Duma.jpg', 'CC BY 4.0')}) : json(String(url).includes('commons') ? {} : {results: []});
+  }});
+  assert.ok(image);
+  assert.equal(image.query, 'State Duma');
+  assert.ok(queries.length > 2);
+});

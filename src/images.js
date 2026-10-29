@@ -46,8 +46,17 @@ export async function searchOpenverse(query, fetcher = fetch) {
 export async function findImage(query, {fetcher = fetch} = {}) {
   const q = String(query || '').replace(/[^\p{L}\p{N}\s'-]/gu, ' ').replace(/\s+/g, ' ').trim().slice(0, 80);
   if (!q) return null;
-  for (const search of [searchCommons, searchOpenverse]) {
-    try { const image = await search(q, fetcher); if (image) return {...image, query: q}; } catch {}
+  // Long queries (e.g. a whole headline) rarely match: retry with the names in it, then the first words.
+  const stop = /^(the|a|an|of|in|on|at|to|for|and|with|by|from|as|its|is|are|was|were)$/i;
+  const words = q.split(' ').filter(w => !stop.test(w));
+  const names = q.match(/\b[A-Z][\p{L}.-]+(?:\s+[A-Z][\p{L}.-]+)*/gu)?.filter(n => !stop.test(n)) || [];
+  // In Title Case headlines every word looks like a name, so only use names in sentence-case text.
+  const titleCase = words.filter(w => /^[A-Z]/.test(w)).length / Math.max(1, words.length) > 0.6;
+  const variants = [...new Set([q, titleCase ? null : names.sort((a, b) => b.length - a.length)[0], words.slice(0, 3).join(' '), words.slice(0, 2).join(' ')].filter(v => v && v.split(' ').length <= 6))];
+  for (const variant of variants) {
+    for (const search of [searchCommons, searchOpenverse]) {
+      try { const image = await search(variant, fetcher); if (image) return {...image, query: variant}; } catch {}
+    }
   }
   return null;
 }
@@ -55,9 +64,9 @@ export async function findImage(query, {fetcher = fetch} = {}) {
 // Gives already published agent stories a photo (no AI calls). Returns how many were updated.
 export async function backfillImages(articles, save, {fetcher = fetch, limit = 10} = {}) {
   let updated = 0;
-  for (const a of articles.filter(a => a.publicationMode === 'agents' && !a.image && !a.imageSearchedAt).slice(0, limit)) {
+  for (const a of articles.filter(a => a.publicationMode === 'agents' && !a.image && (a.imageAttempts || 0) < 2).slice(0, limit)) {
     const image = await findImage(a.imageQuery || a.originalTitle || a.title.en, {fetcher});
-    await save({...a, ...(image ? {image} : {}), imageSearchedAt: new Date().toISOString()});
+    await save({...a, ...(image ? {image} : {}), imageSearchedAt: new Date().toISOString(), imageAttempts: (a.imageAttempts || 0) + 1});
     if (image) updated++;
   }
   return updated;
