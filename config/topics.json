@@ -1,0 +1,75 @@
+{
+  "brand": {"ru": "ATLAS / Контекст", "en": "ATLAS / Context"},
+  "topics": [
+    {
+      "id": "main",
+      "search": false,
+      "name": {"ru": "Главное", "en": "Top Stories"},
+      "hashtag": {"ru": "#главное", "en": "#topstories"},
+      "telegram": {
+        "ru": {"username": "atlas_context_ru", "title": "ATLAS / Контекст — Главное", "description": "Самые важные проверенные новости дня из всех разделов. Каждая новость подтверждена минимум двумя независимыми источниками. Сайт: dirol982.github.io/Diroll25"},
+        "en": {"username": "atlas_context_en", "title": "ATLAS / Context — Top Stories", "description": "The day's most important verified news across all sections. Every story is confirmed by at least two independent sources. Site: dirol982.github.io/Diroll25"}
+      }
+    },
+    {
+      "id": "technology",
+      "name": {"ru": "Технологии", "en": "Technology"},
+      "hashtag": {"ru": "#технологии", "en": "#tech"},
+      "brief": "Technology industry, AI, software releases, hardware, cybersecurity incidents, telecom, platform regulation.",
+      "telegram": {
+        "ru": {"username": "atlas_context_tech_ru", "title": "ATLAS / Контекст — Технологии", "description": "ИИ, гаджеты, софт, кибербезопасность и цифровые платформы. Только проверенные новости с источниками."},
+        "en": {"username": "atlas_context_tech_en", "title": "ATLAS / Context — Technology", "description": "AI, devices, software, cybersecurity and digital platforms. Verified news with sources."}
+      }
+    },
+    {
+      "id": "science",
+      "name": {"ru": "Наука", "en": "Science"},
+      "hashtag": {"ru": "#наука", "en": "#science"},
+      "brief": "Peer-reviewed research, space missions, medicine and health research, climate science, physics, biology.",
+      "telegram": {
+        "ru": {"username": "atlas_context_science_ru", "title": "ATLAS / Контекст — Наука", "description": "Открытия, исследования, космос, медицина и климат. Проверенные новости науки со ссылками на первоисточники."},
+        "en": {"username": "atlas_context_science_en", "title": "ATLAS / Context — Science", "description": "Discoveries, research, space, medicine and climate. Verified science news linked to original sources."}
+      }
+    },
+    {
+      "id": "economy",
+      "name": {"ru": "Экономика", "en": "Economy"},
+      "hashtag": {"ru": "#экономика", "en": "#economy"},
+      "brief": "Macroeconomics, central banks, markets, major companies, trade, energy prices, labour market.",
+      "telegram": {
+        "ru": {"username": "atlas_context_economy_ru", "title": "ATLAS / Контекст — Экономика", "description": "Рынки, центробанки, компании, торговля и энергетика. Факты и цифры из проверенных источников."},
+        "en": {"username": "atlas_context_economy_en", "title": "ATLAS / Context — Economy", "description": "Markets, central banks, companies, trade and energy. Facts and figures from verified sources."}
+      }
+    },
+    {
+      "id": "culture",
+      "name": {"ru": "Культура", "en": "Culture"},
+      "hashtag": {"ru": "#культура", "en": "#culture"},
+      "brief": "Film, music, literature, art, museums, major festivals and awards, cultural heritage.",
+      "telegram": {
+        "ru": {"username": "atlas_context_culture_ru", "title": "ATLAS / Контекст — Культура", "description": "Кино, музыка, книги, искусство, фестивали и премии. Проверенные новости культуры."},
+        "en": {"username": "atlas_context_culture_en", "title": "ATLAS / Context — Culture", "description": "Film, music, books, art, festivals and awards. Verified culture news."}
+      }
+    },
+    {
+      "id": "sport",
+      "name": {"ru": "Спорт", "en": "Sport"},
+      "hashtag": {"ru": "#спорт", "en": "#sport"},
+      "brief": "Results and major events in football, hockey, tennis, Formula 1, Olympic sports; transfers and federation decisions.",
+      "telegram": {
+        "ru": {"username": "atlas_context_sport_ru", "title": "ATLAS / Контекст — Спорт", "description": "Результаты, турниры, трансферы и решения федераций. Только подтверждённые спортивные новости."},
+        "en": {"username": "atlas_context_sport_en", "title": "ATLAS / Context — Sport", "description": "Results, tournaments, transfers and federation decisions. Confirmed sports news only."}
+      }
+    },
+    {
+      "id": "travel",
+      "name": {"ru": "Путешествия", "en": "Travel"},
+      "hashtag": {"ru": "#путешествия", "en": "#travel"},
+      "brief": "Air travel, visa and border rules, tourism destinations, transport disruptions, hospitality industry.",
+      "telegram": {
+        "ru": {"username": "atlas_context_travel_ru", "title": "ATLAS / Контекст — Путешествия", "description": "Авиа, визы, правила въезда, направления и транспорт. Проверенные новости для путешественников."},
+        "en": {"username": "atlas_context_travel_en", "title": "ATLAS / Context — Travel", "description": "Flights, visas, entry rules, destinations and transport. Verified news for travellers."}
+      }
+    }
+  ]
+}

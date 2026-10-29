@@ -1,19 +1,38 @@
-# ATLAS / Контекст — channel plan
+# Telegram-каналы ATLAS / Контекст
 
-No channels or bot are connected yet. Proposed brand: **ATLAS / Контекст** (English: **ATLAS / Context**). These are candidates, not reserved or confirmed available usernames. Network requests to t.me returned proxy 403 on the setup machine; no availability claim can be made. A public page check alone would not guarantee that a username is available. Creation in Telegram is the authoritative availability check; global uniqueness of a brand across the Internet cannot be guaranteed.
+Каждый раздел на каждом языке получает отдельный канал. Главный канал получает самые важные новости всех разделов (важность ≥ 4). Названия и описания хранятся в `config/topics.json`.
 
-| Section | Russian candidate | English candidate |
+| Раздел | Русский канал | Английский канал |
 | --- | --- | --- |
-| Main | @atlas_context_ru | @atlas_context_en |
-| Technology | @atlas_context_tech_ru | @atlas_context_tech_en |
-| Science | @atlas_context_science_ru | @atlas_context_science_en |
-| Economy | @atlas_context_economy_ru | @atlas_context_economy_en |
-| Culture | @atlas_context_culture_ru | @atlas_context_culture_en |
-| Sport | @atlas_context_sport_ru | @atlas_context_sport_en |
-| Travel | @atlas_context_travel_ru | @atlas_context_travel_en |
+| Главное | @atlas_context_ru · «ATLAS / Контекст — Главное» | @atlas_context_en · «ATLAS / Context — Top Stories» |
+| Технологии | @atlas_context_tech_ru · «ATLAS / Контекст — Технологии» | @atlas_context_tech_en · «ATLAS / Context — Technology» |
+| Наука | @atlas_context_science_ru · «ATLAS / Контекст — Наука» | @atlas_context_science_en · «ATLAS / Context — Science» |
+| Экономика | @atlas_context_economy_ru · «ATLAS / Контекст — Экономика» | @atlas_context_economy_en · «ATLAS / Context — Economy» |
+| Культура | @atlas_context_culture_ru · «ATLAS / Контекст — Культура» | @atlas_context_culture_en · «ATLAS / Context — Culture» |
+| Спорт | @atlas_context_sport_ru · «ATLAS / Контекст — Спорт» | @atlas_context_sport_en · «ATLAS / Context — Sport» |
+| Путешествия | @atlas_context_travel_ru · «ATLAS / Контекст — Путешествия» | @atlas_context_travel_en · «ATLAS / Context — Travel» |
 
-The owner must create channels under their own Telegram account, select available public usernames, create a bot through the official @BotFather and grant it posting rights only in owned channels. The Bot API does not create channels. Do not share a bot token in chat or commit it.
+Доступность имён заранее не проверялась. Если имя занято, выберите другое и поменяйте `username` в `config/topics.json`.
 
-Once created, put the actual https://t.me/... links in config/connections.json under telegram.ru/en (all or category key). Only configured links appear as subscriptions. Telegram share links on articles work independently of these channels.
+## Подключение
 
-For scheduled Pages delivery, store TELEGRAM_BOT_TOKEN in repository Actions secrets. For the local server, add it securely in environment settings and explicitly set ATLAS_TELEGRAM_DELIVERY=1. Use one delivery worker, not both. Neither is enabled currently. New, non-archive verified announcements are eligible. Per-channel/per-language delivery state prevents repeated scheduled sends; uncertain outcomes are held for human inspection rather than blindly retried. Successful send requires the Telegram API acknowledgement. No Telegram messages were sent during setup.
+1. В @BotFather создайте бота (`/newbot`) и сохраните токен. Не пересылайте его в чат и не коммитьте.
+2. Создайте 14 публичных каналов с именами из таблицы. Бот API не умеет создавать каналы, это делается только вручную.
+3. В каждом канале добавьте бота администратором с правами «Публикация сообщений» и «Изменение профиля канала».
+4. Проверьте права и выставьте названия и описания:
+
+   ```sh
+   TELEGRAM_BOT_TOKEN=... node tools/telegram-setup.js                 # только отчёт
+   TELEGRAM_BOT_TOKEN=... node tools/telegram-setup.js --apply --write-config
+   ```
+
+   `--write-config` записывает проверенные каналы в `config/connections.json`. Закоммитьте этот файл: после этого ссылки «Подписаться» появятся на сайте.
+5. Включите отправку **в одном месте**:
+   - GitHub Pages: добавьте секрет репозитория `TELEGRAM_BOT_TOKEN` (Settings → Secrets and variables → Actions);
+   - VPS: `TELEGRAM_BOT_TOKEN` и `ATLAS_TELEGRAM_DELIVERY=1` в `.env`, а секрет в GitHub удалите.
+
+## Как выглядит пост
+
+Жирный заголовок, текст от агента рерайта (300–700 знаков), до трёх ссылок на источники, ссылка «Читать на сайте» и хэштег раздела. Отправляются только новости, опубликованные за последние 24 часа, поэтому новый канал не завалит архивом. Если результат отправки неизвестен (таймаут), пост не переотправляется автоматически: журнал виден в кабинете администратора.
+
+Рекламные посты (размещение «Пост в Telegram») уходят один раз при старте кампании. В конце поста стоит пометка «Реклама · рекламодатель · erid».

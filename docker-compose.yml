@@ -1,0 +1,34 @@
+# Production stack: web (site + cabinet + API), worker (agents, Telegram, campaigns), Caddy (HTTPS).
+# Usage: cp .env.example .env && edit .env && docker compose up -d --build
+services:
+  web:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      ATLAS_TRUST_PROXY: "1"
+    volumes:
+      - atlas-data:/data
+  worker:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    command: ["node", "--no-warnings=ExperimentalWarning", "src/worker.js"]
+    volumes:
+      - atlas-data:/data
+  caddy:
+    image: caddy:2.8
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      ATLAS_DOMAIN: ${ATLAS_DOMAIN}
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+    depends_on:
+      - web
+volumes:
+  atlas-data:
+  caddy-data:

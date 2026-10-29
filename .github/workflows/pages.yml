@@ -3,7 +3,8 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: '*/30 * * * *'
+    # Hourly agent newsroom run; GitHub may delay scheduled runs.
+    - cron: '17 * * * *'
   workflow_dispatch:
 permissions:
   contents: write
@@ -23,16 +24,24 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
-      - name: Test editorial and subscription workflows
+      - run: npm ci
+      - name: Test newsroom, cabinet, payments and subscriptions
         run: |
           npm test
           python3 -m unittest discover -s tests -p 'test_*.py'
-      - name: Collect, double-check and publish fresh announcements
+      - name: Official release announcements (two deterministic checks)
         if: github.event_name != 'push'
         run: python3 tools/publish.py
+      - name: Agent newsroom (search, independent verification, bilingual rewrite)
+        if: github.event_name != 'push'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ATLAS_MAX_STORIES_PER_RUN: ${{ vars.ATLAS_MAX_STORIES_PER_RUN || '6' }}
+        run: node tools/agents-run.js
       - name: Build public version
         run: python3 tools/build-preview.py
       - name: Telegram delivery when configured
+        # Remove the TELEGRAM_BOT_TOKEN secret once the VPS worker delivers, so posts are never sent twice.
         if: github.event_name != 'push'
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -42,10 +51,11 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add config/published.json docs/index.html atlas-demo.html
+          git add config/published.json config/agent-seen.json docs/index.html docs/cabinet.html atlas-demo.html
           if [ -f config/telegram-deliveries.json ]; then git add config/telegram-deliveries.json; fi
           if ! git diff --cached --quiet; then
-            git commit -m 'Refresh source-verified ATLAS publications'
+            git commit -m 'Refresh verified ATLAS publications'
+            git pull --rebase origin main
             git push
           fi
       - uses: actions/configure-pages@v5

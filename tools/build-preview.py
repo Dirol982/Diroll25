@@ -20,4 +20,14 @@ html='<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="vie
 (root/'atlas-demo.html').write_text(html)
 (root/'docs').mkdir(exist_ok=True)
 (root/'docs/index.html').write_text(html)
+# Cabinet preview: real cabinet UI on top of an in-memory demo API (nothing is sent anywhere).
+topics=json.loads((root/'config/topics.json').read_text())['topics']
+def channel(lang,topic):
+ value=(connections.get('telegram',{}).get(lang) or {}).get(topic)
+ return value if isinstance(value,str) and value.startswith('https://t.me/') else None
+demo_topics=[{'id':t['id'],'name':t['name'],'telegram':{l:channel(l,t['id']) for l in ('ru','en')},'suggested':{l:'@'+t['telegram'][l]['username'] for l in ('ru','en')}} for t in topics]
+packages=json.loads((root/'config/ad-packages.json').read_text())
+cabinet_data='window.atlasDemoTopics='+json.dumps(demo_topics,ensure_ascii=False)+';window.atlasDemoPackages='+json.dumps(packages,ensure_ascii=False)+';window.atlasDemoArticles='+json.dumps([{'id':a['id'],'title':a['title']} for a in publication['articles'][:5]],ensure_ascii=False).replace('<','\\u003c')+';'
+cabinet='<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ATLAS — личный кабинет (демо)</title><style>'+(root/'public/cabinet.css').read_text()+'</style></head><body><div id="cabinet"></div><div class="toast" id="toast" role="status"></div><script>'+cabinet_data+(root/'public/cabinet-demo.js').read_text()+'</script><script type="module">'+(root/'public/cabinet.js').read_text()+'</script></body></html>'
+(root/'docs/cabinet.html').write_text(cabinet)
 print('Generated atlas-demo.html with',len(articles),'public articles (real and labelled samples) and',len(images),'embedded photographs')

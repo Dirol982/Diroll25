@@ -1,0 +1,10 @@
+{
+  "currency": "USD",
+  "minDays": 1,
+  "maxDays": 90,
+  "placements": {
+    "feed": {"name": {"ru": "Баннер в ленте", "en": "Feed banner"}, "description": {"ru": "Карточка «Партнёрский материал» на главной и в разделах", "en": "Sponsored card on the home page and section pages"}, "unit": "day", "priceCents": 1500},
+    "article": {"name": {"ru": "Блок в статье", "en": "In-article block"}, "description": {"ru": "Рекламный блок под текстом статей выбранных разделов", "en": "Ad block below articles in chosen sections"}, "unit": "day", "priceCents": 1000},
+    "telegram": {"name": {"ru": "Пост в Telegram", "en": "Telegram post"}, "description": {"ru": "Один рекламный пост в каждом выбранном канале (раздел × язык)", "en": "One sponsored post in each selected channel (section × language)"}, "unit": "channel", "priceCents": 3000}
+  }
+}

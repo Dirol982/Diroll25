@@ -1,65 +1,69 @@
-# ATLAS / Context — test news portal
+# ATLAS / Контекст — новостной сайт с ИИ-редакцией
 
-Node.js >=22, Python >=3.10; no package installation required. Use the existing checkout, not another worktree.
+Двуязычный (RU/EN) новостной сайт. Новости находят и перепроверяют ИИ-агенты (Claude API), каждая публикация уходит в Telegram-канал своего раздела. Есть личный кабинет для читателей, рекламодателей, редакторов и администратора, а также приём оплаты за рекламу.
 
-```sh
-cd /workspace/Diroll25
-npm start          # local server, manual collection
-npm run newsroom  # collection + two-stage automatic publication on startup/every 30 min
-npm test
-python3 -m unittest discover -s tests -p 'test_*.py'
-```
-
-Server binds 127.0.0.1:3000 (PORT override). The default editor is local and has no login: never expose it publicly. `PUBLIC_DEMO=1 npm start` blocks all editorial/collector APIs. Keep the server running for local schedules. GitHub Actions provides the independent scheduled public-site pipeline; schedules can be delayed by GitHub and require Actions permissions. Do not operate two delivery workers for the same Telegram channels.
-
-## Current publication
-
-16 real first-party release announcements passed two checks and are test-published alongside six clearly labelled fictional samples. Thirteen older announcements were explicitly imported as archive for this test; ordinary automatic publication only accepts announcements <=72h old, and existing items age into archive. No AI fact-checking, trend ranking, independent news reporting, full-article reproduction or security assessment is claimed.
-
-Two deterministic stages in tools/publish.py:
-
-1. Official Atom feed: configured repository/HTTPS URL, category, version in title, valid source timestamp, no future timestamps. Only Node.js and VS Code repositories are accepted.
-2. A separate HTTPS request to the original release page: exact normalized H1 match and corroborated publication timestamp. Redirects and mismatches are held, not published. TLS verification remains enabled. Source-page hash and checked-at time are retained for traceability.
-
-Only then does a fixed bilingual template say that the official repository announced the specific release. It makes no claims about release quality, safety or undocumented changes. Original wording and source link remain visible. Both checks use the same first-party publisher and do not constitute two independent journalistic sources.
+Node.js ≥ 22 (используется встроенный `node:sqlite`), Python ≥ 3.10 для проверки официальных релизов.
 
 ```sh
-python3 tools/collect.py                         # inspect source drafts, no publication
-python3 tools/publish.py                         # verify and publish fresh announcements
-python3 tools/publish.py --include-archive        # explicit one-off test of older entries
-python3 tools/build-preview.py                   # regenerate docs/index.html and atlas-demo.html
+npm ci
+npm test && python3 -m unittest discover -s tests -p 'test_*.py'
+npm start            # сайт + кабинет + API на 127.0.0.1:3000
+npm run worker       # агенты по расписанию, Telegram, запуск рекламных кампаний
+npm run newsroom     # то же одним процессом (для локальной работы)
+npm run agents       # один прогон агентов в config/published.json (так работает GitHub Actions)
 ```
 
-config/published.json is an intentionally public, verified export; data/articles.json and all subscriber data remain ignored by Git. Rejecting a local draft stops local automatic overwrite; the static public snapshot is separate. To retract a public announcement, remove it from config/published.json and remove/disable its source or exclude it from publication before the next refresh. A full shared moderation database is not implemented.
+## Как устроена редакция
 
-The Pages workflow tests, refreshes every 30 minutes/on manual dispatch, builds, optionally delivers Telegram, saves the snapshot and deploys. It does not need an LLM key. Push deployments build the committed verified snapshot. GitHub Pages must be enabled; this workflow uses the Actions deployment mode. GitHub's scheduled jobs are not a guaranteed realtime service.
+`src/pipeline.js` для каждого раздела из `config/topics.json`:
 
-## Reading experience
+1. **Агент поиска** (`src/agents/search.js`) через веб-поиск находит до N свежих (≤ 24 ч) значимых новостей раздела. Уже опубликованные и уже проверенные истории исключаются по URL и похожести заголовка.
+2. **Агент проверки** (`src/agents/verify.js`) не доверяет первому агенту: сам ищет и открывает источники и выносит вердикт. Поверх вердикта работает жёсткая проверка в коде:
+   - нужно минимум **2 независимых издания** (разные домены), подтверждающих факты;
+   - агент может ссылаться только на страницы, которые действительно вернул поиск или загрузка в этом сеансе, так что выдуманный URL не пройдёт;
+   - дата не в будущем и не старше 48 ч.
+3. **Агент рерайта** (`src/agents/rewrite.js`) пишет оригинальный текст на русском и английском только по подтверждённым фактам: заголовок, лид, 3–5 абзацев, «почему это важно», «что дальше», текст поста для Telegram. Структуру ответа задаёт JSON-схема, затем текст проходит проверку в коде.
+4. Если всё чисто, материал публикуется. Иначе он уходит в очередь редактора (`/#review`), а неподтверждённые истории отбрасываются.
+5. Опубликованная новость уходит в Telegram-канал раздела на обоих языках. Если важность ≥ 4, она дублируется в главный канал.
 
-Larger responsive type, photograph thumbnails in the five-story briefing, source/date/archive labels, world/country scope, interests, dark mode, search, local bookmarks, article What happened / Why it matters / What next and a source-check explanation. Photos are illustrations, not documentary evidence for each story. Russian and English use fixed release templates for automatic stories; arbitrary news translation is not connected. No country is invented for global releases. Dates are shown in Europe/Moscow. No IP geolocation.
+Модель по умолчанию `claude-opus-5-5` (меняется через `ATLAS_MODEL`). Включён серверный fallback на случай отказа модели. Расход ограничивают `ATLAS_MAX_STORIES_PER_RUN` и `ATLAS_STORIES_PER_TOPIC`, а токены каждого запуска видны в кабинете (вкладка «Редакция»). ИИ-проверка снижает риск ошибок, но не гарантирует их отсутствие, о чём сказано на странице каждой статьи.
 
-The static newsroom is a read-only layout demonstration. The local editor supports comparing the source with bilingual drafts and manual approval. Manual stories still require human-confirmed facts/translation, source/date/title checks. PUBLIC_DEMO blocks access to real drafts.
+Прежний конвейер официальных релизов Node.js / VS Code (`tools/publish.py`, две детерминированные проверки) сохранён.
+
+## Где это работает
+
+| | GitHub Pages (сейчас) | VPS (`DEPLOY.md`) |
+|---|---|---|
+| Сайт | статическая сборка `docs/` | `src/server.js` |
+| Агенты | GitHub Actions каждый час, нужен секрет `ANTHROPIC_API_KEY` | `src/worker.js`, интервал `ATLAS_PIPELINE_INTERVAL_MINUTES` |
+| Telegram | Actions, секрет `TELEGRAM_BOT_TOKEN` | worker, `ATLAS_TELEGRAM_DELIVERY=1` |
+| Кабинет, реклама, оплата | демо-режим `docs/cabinet.html` (данные вымышлены, ничего не сохраняется) | полноценно, SQLite в `/data` |
+
+Telegram должен отправлять **кто-то один**: после переезда на VPS удалите секрет `TELEGRAM_BOT_TOKEN` из репозитория.
+
+## Личный кабинет (`/cabinet`)
+
+- **Читатель:** профиль, язык, выбранные разделы и ссылки на их Telegram-каналы, закладки (синхронизируются с кнопкой «Сохранить» на сайте).
+- **Рекламодатель:** создаёт кампанию (лента, блок в статье или пост в Telegram; разделы; языки; даты), видит цену сразу и предпросмотр с маркировкой. Цепочка: черновик → модерация → оплата → показы. Статистика показов, кликов и CTR.
+- **Редактор:** запуск агентов вручную, история запусков (опубликовано, отложено, отклонено, токены), очередь проверки.
+- **Администратор:** модерация объявлений, платежи (ручное подтверждение счетов), роли пользователей, журнал Telegram-отправок. Администратором становится адрес из `ATLAS_ADMIN_EMAIL` при регистрации.
+
+Реклама проходит модерацию **до** оплаты. Оплата: счёт с реквизитами из `ATLAS_MANUAL_PAYMENT_INSTRUCTIONS`, который админ подтверждает вручную, или криптовалюта через NOWPayments (подписанный webhook, сверка суммы). Цены задаются в `config/ad-packages.json`.
+
+Маркировка рекламы: на сайте и в Telegram у объявления выводятся «Реклама», рекламодатель и erid. Для рекламы на русскоязычную аудиторию нужна регистрация в ОРД. При `ATLAS_REQUIRE_ERID=1` такую кампанию нельзя отправить без erid. Передачу отчётности в ОРД система не выполняет, это остаётся за владельцем.
 
 ## Telegram
 
-Article links open Telegram's real share dialog. Subscription links appear only for actual channels configured in config/connections.json. None are configured yet. Proposed names and owner setup: TELEGRAM_SETUP.md. Username availability was not confirmed: t.me returned proxy 403. Neither channels nor a bot can be created through the available tools.
+14 каналов: главный и 6 разделов, каждый на русском и английском. Названия и описания лежат в `config/topics.json`, порядок подключения описан в `TELEGRAM_SETUP.md`.
 
-Sending requires owner-created channels, an admin bot, actual links in connections.telegram.ru/en, and TELEGRAM_BOT_TOKEN stored securely. For GitHub Actions use repository secrets; cloud-environment credentials do not automatically become repository secrets. For local delivery explicitly enable ATLAS_TELEGRAM_DELIVERY=1. Only fresh, non-demo verified announcements are delivered. The journal holds uncertain outcomes to prevent automatic retries after ambiguous delivery. Real Telegram sending has not been validated and no messages were sent; adapter behavior was tested with a simulated response.
+## Данные и безопасность
 
-## Email subscriptions
+- Пароли хранятся как scrypt-хэши. Сессии живут в HttpOnly-cookie, в базе хранится только SHA-256 токена.
+- Все изменяющие запросы проверяют Origin (защита от CSRF). Вход и регистрация ограничены по частоте.
+- `data/` (база, подписчики) не попадает в Git. `config/published.json` и `config/agent-seen.json` публичны: в журнале только заголовки и решения.
 
-The UI is present but disabled while the transport/backend is missing: no addresses are collected and no fake success is shown. Backend implementation supports explicit consent, language/topics, confirmation with a one-time 24-hour link, per-IP request limits, one-hour confirmation resend cooldown, deletion on unsubscribe, and daily digests only for confirmed readers. Delivery tracks previously sent article IDs. Tests use simulated email transport; no real emails were sent.
+## Откат
 
-To activate, create a Brevo account, verify the sender, and add BREVO_API_KEY, NEWSLETTER_FROM and NEWSLETTER_PUBLIC_URL securely. The latter is an HTTPS URL of a running Node backend, not a Pages URL. Set connections.newsletterEndpoint to that backend's `/api/newsletter/subscribe`; allowed frontend origin is derived from connections.siteUrl. Serve only public-mode APIs on that backend. Enable ATLAS_EMAIL_DELIVERY=1 on the local scheduler after testing email delivery. GitHub Pages cannot accept subscriptions, store private subscriber lists or run this backend.
+Предыдущие теги: `atlas-before-autopublish-v3`, `atlas-before-editorial-v2`. Откатывайте через `git revert` коммита и push в main, не переписывая историю.
 
-Subscribers live in private data/subscribers.json (0600, ignored by Git). Keep this directory on persistent storage, back it up securely and never publish it. Confirmation tokens are hashed; a private unsubscribe token is retained to insert an opt-out link in each digest. No subscriber-list endpoint is exposed. One backend process/storage writer is supported; production scale needs a database and a durable job queue. Daily digest delivery has in-process serialization but no transactional external-email guarantee on crashes.
-
-Environment-setting requirements are saved as metadata, not secret values. Saving a draft does not supply credentials, start a backend, publish the environment or set GitHub Actions secrets. Real integration remains blocked until the accounts and backend exist.
-
-## Rollback and data
-
-Previous release tag: atlas-before-autopublish-v3. Earlier design: atlas-before-editorial-v2. Use `git revert` on the update commit and push main; do not rewrite shared history. Code rollback is separate from local editorial/subscriber data. Backup of pre-update local articles: data/articles.before-autopublish-v3.json. ATLAS_DATA_DIR selects an alternate private store. Stop the server before deliberate data restoration. Do not delete subscriber data as part of a visual rollback.
-
-## Photography
-
-Illustrative assets: Start Bootstrap MIT-licensed Clean Blog, Grayscale and Landing Page repositories; license public/images/LICENSE.txt. All are local and embedded in the offline build. Current BBC/Guardian/Verge designs could not be inspected due to proxy restrictions; design uses established editorial patterns.
+Иллюстрации: Start Bootstrap (MIT), лицензия в `public/images/LICENSE.txt`.
