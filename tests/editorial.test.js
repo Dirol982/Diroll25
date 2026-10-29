@@ -38,6 +38,8 @@ test('HTTP workflow blocks unreviewed drafts, persists approval, and locks publi
  assert.equal((await (await request('/api/articles')).json()).length,1);
  assert.equal((await request('/api/review')).status,403);
  assert.equal((await request('/api/collect',{method:'POST'})).status,403);
+ assert.equal((await request('/api/newsletter/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:'reader@example.com',consent:true})})).status,503);
+ assert.equal((await request('/api/newsletter/subscribe',{method:'POST',headers:{Origin:'https://evil.example'}})).status,403);
  assert.equal((await request('/api/review/real-1?action=edit',{method:'POST'})).status,403);
  }finally{child?.kill();await rm(dir,{recursive:true,force:true})}
 });

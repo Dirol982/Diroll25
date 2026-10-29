@@ -1,15 +1,17 @@
-name: Publish ATLAS demo
+name: Publish ATLAS
 on:
   push:
     branches: [main]
+  schedule:
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -18,9 +20,35 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
+      - uses: actions/setup-node@v4
         with:
-          enablement: true
+          node-version: '24'
+      - name: Test editorial and subscription workflows
+        run: |
+          npm test
+          python3 -m unittest discover -s tests -p 'test_*.py'
+      - name: Collect, double-check and publish fresh announcements
+        if: github.event_name != 'push'
+        run: python3 tools/publish.py
+      - name: Build public version
+        run: python3 tools/build-preview.py
+      - name: Telegram delivery when configured
+        if: github.event_name != 'push'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: node tools/telegram-deliver.js
+      - name: Save verified public snapshot
+        if: github.event_name != 'push'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add config/published.json docs/index.html atlas-demo.html
+          if [ -f config/telegram-deliveries.json ]; then git add config/telegram-deliveries.json; fi
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh source-verified ATLAS publications'
+            git push
+          fi
+      - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
           path: docs

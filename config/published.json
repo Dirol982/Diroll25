@@ -1,0 +1,902 @@
+{
+  "schemaVersion": 1,
+  "builtAt": "2026-10-29T09:58:38.842838+00:00",
+  "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
+  "articles": [
+    {
+      "id": "feed-073bc027b25d4ba6cfbd",
+      "category": "technology",
+      "country": null,
+      "title": {
+        "ru": "Visual Studio Code: опубликован выпуск 1.144.0",
+        "en": "Visual Studio Code: release 1.144.0 published"
+      },
+      "body": {
+        "ru": "В официальном репозитории Visual Studio Code опубликовано объявление о выпуске 1.144.0. Подробности и список изменений доступны по ссылке на первоисточник.",
+        "en": "The official Visual Studio Code repository published a release announcement for 1.144.0. Details and changes are available at the original source."
+      },
+      "status": "published",
+      "demo": false,
+      "source": {
+        "name": "Visual Studio Code — official releases",
+        "url": "https://github.com/microsoft/vscode/releases/tag/1.144.0",
+        "language": "en"
+      },
+      "originalTitle": "1.144.0",
+      "publishedAt": "2026-10-28T18:51:38Z",
+      "updatedAt": "2026-10-28T18:51:38Z",
+      "collectedAt": "2026-10-29T09:58:38.840386+00:00",
+      "translationStatus": "bilingual-template",
+      "factsReviewed": false,
+      "importance": {
+        "ru": "Пользователи продукта могут проверить список изменений и совместимость. Мы не делаем выводов о безопасности или качестве выпуска.",
+        "en": "Users can review the changes and compatibility. We make no claims about release security or quality."
+      },
+      "next": {
+        "ru": "Изучите примечания к выпуску в первоисточнике перед обновлением.",
+        "en": "Read the original release notes before upgrading."
+      },
+      "publicationMode": "test",
+      "archive": false,
+      "sitePublishedAt": "2026-10-29T09:58:38.842838+00:00",
+      "autoChecks": [
+        {
+          "id": "feed",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:58:38.842838+00:00"
+        },
+        {
+          "id": "release-page",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:58:38.842838+00:00",
+          "evidenceSha256": "d49f16753e2d7ed2ddaf52345439cf9426082f6985268407324e880234132484"
+        }
+      ],
+      "verificationScope": "release-announcement-only"
+    },
+    {
+      "id": "feed-243f98e467424aaf3e47",
+      "category": "technology",
+      "country": null,
+      "title": {
+        "ru": "Node.js: опубликован выпуск v24.22.2",
+        "en": "Node.js: release v24.22.2 published"
+      },
+      "body": {
+        "ru": "В официальном репозитории Node.js опубликовано объявление о выпуске v24.22.2. Подробности и список изменений доступны по ссылке на первоисточник.",
+        "en": "The official Node.js repository published a release announcement for v24.22.2. Details and changes are available at the original source."
+      },
+      "status": "published",
+      "demo": false,
+      "source": {
+        "name": "Node.js — official releases",
+        "url": "https://github.com/nodejs/node/releases/tag/v24.22.2",
+        "language": "en"
+      },
+      "originalTitle": "2026-10-28, Version 24.22.2 'Krypton' (LTS), @aduh95",
+      "publishedAt": "2026-10-28T18:39:09Z",
+      "updatedAt": "2026-10-28T18:39:09Z",
+      "collectedAt": "2026-10-29T09:58:38.297851+00:00",
+      "translationStatus": "bilingual-template",
+      "factsReviewed": false,
+      "importance": {
+        "ru": "Пользователи продукта могут проверить список изменений и совместимость. Мы не делаем выводов о безопасности или качестве выпуска.",
+        "en": "Users can review the changes and compatibility. We make no claims about release security or quality."
+      },
+      "next": {
+        "ru": "Изучите примечания к выпуску в первоисточнике перед обновлением.",
+        "en": "Read the original release notes before upgrading."
+      },
+      "publicationMode": "test",
+      "archive": false,
+      "sitePublishedAt": "2026-10-29T09:58:38.842838+00:00",
+      "autoChecks": [
+        {
+          "id": "feed",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:58:38.842838+00:00"
+        },
+        {
+          "id": "release-page",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:58:38.842838+00:00",
+          "evidenceSha256": "8d2f66fc785d1b7542ee6db58bc5a7273c060d9cbe867c90db42f5f9a5d12d87"
+        }
+      ],
+      "verificationScope": "release-announcement-only"
+    },
+    {
+      "id": "feed-9d1b76e3ad8e736802b9",
+      "category": "technology",
+      "country": null,
+      "title": {
+        "ru": "Node.js: опубликован выпуск v26.13.0",
+        "en": "Node.js: release v26.13.0 published"
+      },
+      "body": {
+        "ru": "В официальном репозитории Node.js опубликовано объявление о выпуске v26.13.0. Подробности и список изменений доступны по ссылке на первоисточник.",
+        "en": "The official Node.js repository published a release announcement for v26.13.0. Details and changes are available at the original source."
+      },
+      "status": "published",
+      "demo": false,
+      "source": {
+        "name": "Node.js — official releases",
+        "url": "https://github.com/nodejs/node/releases/tag/v26.13.0",
+        "language": "en"
+      },
+      "originalTitle": "2026-10-28, Version 26.13.0 'Lithium' (LTS), @richardlau",
+      "publishedAt": "2026-10-28T16:57:41Z",
+      "updatedAt": "2026-10-28T16:57:41Z",
+      "collectedAt": "2026-10-29T09:58:38.297722+00:00",
+      "translationStatus": "bilingual-template",
+      "factsReviewed": false,
+      "importance": {
+        "ru": "Пользователи продукта могут проверить список изменений и совместимость. Мы не делаем выводов о безопасности или качестве выпуска.",
+        "en": "Users can review the changes and compatibility. We make no claims about release security or quality."
+      },
+      "next": {
+        "ru": "Изучите примечания к выпуску в первоисточнике перед обновлением.",
+        "en": "Read the original release notes before upgrading."
+      },
+      "publicationMode": "test",
+      "archive": false,
+      "sitePublishedAt": "2026-10-29T09:58:38.842838+00:00",
+      "autoChecks": [
+        {
+          "id": "feed",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:58:38.842838+00:00"
+        },
+        {
+          "id": "release-page",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:58:38.842838+00:00",
+          "evidenceSha256": "8c2c0d8cc37d20815695069cb7898dc09f5f56782d1ec3506f610b1bf3bc3275"
+        }
+      ],
+      "verificationScope": "release-announcement-only"
+    },
+    {
+      "id": "feed-95ad7c372ca77a5d1aa8",
+      "category": "technology",
+      "country": null,
+      "title": {
+        "ru": "Visual Studio Code: опубликован выпуск 1.143.1",
+        "en": "Visual Studio Code: release 1.143.1 published"
+      },
+      "body": {
+        "ru": "В официальном репозитории Visual Studio Code опубликовано объявление о выпуске 1.143.1. Подробности и список изменений доступны по ссылке на первоисточник.",
+        "en": "The official Visual Studio Code repository published a release announcement for 1.143.1. Details and changes are available at the original source."
+      },
+      "status": "published",
+      "demo": false,
+      "source": {
+        "name": "Visual Studio Code — official releases",
+        "url": "https://github.com/microsoft/vscode/releases/tag/1.143.1",
+        "language": "en"
+      },
+      "originalTitle": "1.143.1",
+      "publishedAt": "2026-10-22T23:04:14Z",
+      "updatedAt": "2026-10-22T23:04:14Z",
+      "collectedAt": "2026-10-29T09:48:28.228589+00:00",
+      "translationStatus": "bilingual-template",
+      "factsReviewed": false,
+      "importance": {
+        "ru": "Пользователи продукта могут проверить список изменений и совместимость. Мы не делаем выводов о безопасности или качестве выпуска.",
+        "en": "Users can review the changes and compatibility. We make no claims about release security or quality."
+      },
+      "next": {
+        "ru": "Изучите примечания к выпуску в первоисточнике перед обновлением.",
+        "en": "Read the original release notes before upgrading."
+      },
+      "publicationMode": "test",
+      "archive": true,
+      "sitePublishedAt": "2026-10-29T09:48:28.228928+00:00",
+      "autoChecks": [
+        {
+          "id": "feed",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:48:28.228928+00:00"
+        },
+        {
+          "id": "release-page",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:48:28.228928+00:00",
+          "evidenceSha256": "9cdfc2f92988b36c7ea41e3ab3072445c4c33c1aba69426fd6f0418d94ac0642"
+        }
+      ],
+      "verificationScope": "release-announcement-only"
+    },
+    {
+      "id": "feed-89b96fd10289f94e9d48",
+      "category": "technology",
+      "country": null,
+      "title": {
+        "ru": "Visual Studio Code: опубликован выпуск 1.143.0",
+        "en": "Visual Studio Code: release 1.143.0 published"
+      },
+      "body": {
+        "ru": "В официальном репозитории Visual Studio Code опубликовано объявление о выпуске 1.143.0. Подробности и список изменений доступны по ссылке на первоисточник.",
+        "en": "The official Visual Studio Code repository published a release announcement for 1.143.0. Details and changes are available at the original source."
+      },
+      "status": "published",
+      "demo": false,
+      "source": {
+        "name": "Visual Studio Code — official releases",
+        "url": "https://github.com/microsoft/vscode/releases/tag/1.143.0",
+        "language": "en"
+      },
+      "originalTitle": "1.143.0",
+      "publishedAt": "2026-10-22T13:00:11Z",
+      "updatedAt": "2026-10-22T13:00:11Z",
+      "collectedAt": "2026-10-29T09:48:28.228612+00:00",
+      "translationStatus": "bilingual-template",
+      "factsReviewed": false,
+      "importance": {
+        "ru": "Пользователи продукта могут проверить список изменений и совместимость. Мы не делаем выводов о безопасности или качестве выпуска.",
+        "en": "Users can review the changes and compatibility. We make no claims about release security or quality."
+      },
+      "next": {
+        "ru": "Изучите примечания к выпуску в первоисточнике перед обновлением.",
+        "en": "Read the original release notes before upgrading."
+      },
+      "publicationMode": "test",
+      "archive": true,
+      "sitePublishedAt": "2026-10-29T09:48:28.228928+00:00",
+      "autoChecks": [
+        {
+          "id": "feed",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:48:28.228928+00:00"
+        },
+        {
+          "id": "release-page",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:48:28.228928+00:00",
+          "evidenceSha256": "e747cde2888c2b98aee90a3e35124008fb080c97018fba52af5958b60a5f0e38"
+        }
+      ],
+      "verificationScope": "release-announcement-only"
+    },
+    {
+      "id": "feed-b63d8bfa28343d307561",
+      "category": "technology",
+      "country": null,
+      "title": {
+        "ru": "Node.js: опубликован выпуск v26.12.1",
+        "en": "Node.js: release v26.12.1 published"
+      },
+      "body": {
+        "ru": "В официальном репозитории Node.js опубликовано объявление о выпуске v26.12.1. Подробности и список изменений доступны по ссылке на первоисточник.",
+        "en": "The official Node.js repository published a release announcement for v26.12.1. Details and changes are available at the original source."
+      },
+      "status": "published",
+      "demo": false,
+      "source": {
+        "name": "Node.js — official releases",
+        "url": "https://github.com/nodejs/node/releases/tag/v26.12.1",
+        "language": "en"
+      },
+      "originalTitle": "2026-10-21, Version 26.12.1 (Current), @aduh95 prepared by @RafaelGSS",
+      "publishedAt": "2026-10-21T10:38:29Z",
+      "updatedAt": "2026-10-21T10:38:29Z",
+      "collectedAt": "2026-10-29T09:48:27.225897+00:00",
+      "translationStatus": "bilingual-template",
+      "factsReviewed": false,
+      "importance": {
+        "ru": "Пользователи продукта могут проверить список изменений и совместимость. Мы не делаем выводов о безопасности или качестве выпуска.",
+        "en": "Users can review the changes and compatibility. We make no claims about release security or quality."
+      },
+      "next": {
+        "ru": "Изучите примечания к выпуску в первоисточнике перед обновлением.",
+        "en": "Read the original release notes before upgrading."
+      },
+      "publicationMode": "test",
+      "archive": true,
+      "sitePublishedAt": "2026-10-29T09:48:28.228928+00:00",
+      "autoChecks": [
+        {
+          "id": "feed",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:48:28.228928+00:00"
+        },
+        {
+          "id": "release-page",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:48:28.228928+00:00",
+          "evidenceSha256": "14daf3567a32b2a27de5fcc1056c387c4dadd4ae07aec6932c2981b6b298a76d"
+        }
+      ],
+      "verificationScope": "release-announcement-only"
+    },
+    {
+      "id": "feed-e550efcaa5dd81d8b8a4",
+      "category": "technology",
+      "country": null,
+      "title": {
+        "ru": "Node.js: опубликован выпуск v24.22.1",
+        "en": "Node.js: release v24.22.1 published"
+      },
+      "body": {
+        "ru": "В официальном репозитории Node.js опубликовано объявление о выпуске v24.22.1. Подробности и список изменений доступны по ссылке на первоисточник.",
+        "en": "The official Node.js repository published a release announcement for v24.22.1. Details and changes are available at the original source."
+      },
+      "status": "published",
+      "demo": false,
+      "source": {
+        "name": "Node.js — official releases",
+        "url": "https://github.com/nodejs/node/releases/tag/v24.22.1",
+        "language": "en"
+      },
+      "originalTitle": "2026-10-21, Version 24.22.1 'Krypton' (LTS), @aduh95",
+      "publishedAt": "2026-10-21T10:38:25Z",
+      "updatedAt": "2026-10-21T10:38:25Z",
+      "collectedAt": "2026-10-29T09:48:27.225927+00:00",
+      "translationStatus": "bilingual-template",
+      "factsReviewed": false,
+      "importance": {
+        "ru": "Пользователи продукта могут проверить список изменений и совместимость. Мы не делаем выводов о безопасности или качестве выпуска.",
+        "en": "Users can review the changes and compatibility. We make no claims about release security or quality."
+      },
+      "next": {
+        "ru": "Изучите примечания к выпуску в первоисточнике перед обновлением.",
+        "en": "Read the original release notes before upgrading."
+      },
+      "publicationMode": "test",
+      "archive": true,
+      "sitePublishedAt": "2026-10-29T09:48:28.228928+00:00",
+      "autoChecks": [
+        {
+          "id": "feed",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:48:28.228928+00:00"
+        },
+        {
+          "id": "release-page",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:48:28.228928+00:00",
+          "evidenceSha256": "1aaf7d09c15f44ded288f9f9e4f88884ec43a891667a6848d416d043f8773722"
+        }
+      ],
+      "verificationScope": "release-announcement-only"
+    },
+    {
+      "id": "feed-ce039770d9d9e48b4598",
+      "category": "technology",
+      "country": null,
+      "title": {
+        "ru": "Node.js: опубликован выпуск v22.23.4",
+        "en": "Node.js: release v22.23.4 published"
+      },
+      "body": {
+        "ru": "В официальном репозитории Node.js опубликовано объявление о выпуске v22.23.4. Подробности и список изменений доступны по ссылке на первоисточник.",
+        "en": "The official Node.js repository published a release announcement for v22.23.4. Details and changes are available at the original source."
+      },
+      "status": "published",
+      "demo": false,
+      "source": {
+        "name": "Node.js — official releases",
+        "url": "https://github.com/nodejs/node/releases/tag/v22.23.4",
+        "language": "en"
+      },
+      "originalTitle": "2026-10-21, Version 22.23.4 'Jod' (LTS), @aduh95",
+      "publishedAt": "2026-10-21T10:38:20Z",
+      "updatedAt": "2026-10-21T10:38:20Z",
+      "collectedAt": "2026-10-29T09:48:27.225957+00:00",
+      "translationStatus": "bilingual-template",
+      "factsReviewed": false,
+      "importance": {
+        "ru": "Пользователи продукта могут проверить список изменений и совместимость. Мы не делаем выводов о безопасности или качестве выпуска.",
+        "en": "Users can review the changes and compatibility. We make no claims about release security or quality."
+      },
+      "next": {
+        "ru": "Изучите примечания к выпуску в первоисточнике перед обновлением.",
+        "en": "Read the original release notes before upgrading."
+      },
+      "publicationMode": "test",
+      "archive": true,
+      "sitePublishedAt": "2026-10-29T09:48:28.228928+00:00",
+      "autoChecks": [
+        {
+          "id": "feed",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:48:28.228928+00:00"
+        },
+        {
+          "id": "release-page",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:48:28.228928+00:00",
+          "evidenceSha256": "e5cbf84cdbaf61ffbfa0250d0754b3888429c218a836c40f08e55795973ef8d4"
+        }
+      ],
+      "verificationScope": "release-announcement-only"
+    },
+    {
+      "id": "feed-bad2b79533f224af79a4",
+      "category": "technology",
+      "country": null,
+      "title": {
+        "ru": "Visual Studio Code: опубликован выпуск 1.142.0",
+        "en": "Visual Studio Code: release 1.142.0 published"
+      },
+      "body": {
+        "ru": "В официальном репозитории Visual Studio Code опубликовано объявление о выпуске 1.142.0. Подробности и список изменений доступны по ссылке на первоисточник.",
+        "en": "The official Visual Studio Code repository published a release announcement for 1.142.0. Details and changes are available at the original source."
+      },
+      "status": "published",
+      "demo": false,
+      "source": {
+        "name": "Visual Studio Code — official releases",
+        "url": "https://github.com/microsoft/vscode/releases/tag/1.142.0",
+        "language": "en"
+      },
+      "originalTitle": "1.142.0",
+      "publishedAt": "2026-10-14T19:46:12Z",
+      "updatedAt": "2026-10-14T19:46:12Z",
+      "collectedAt": "2026-10-29T09:48:28.228635+00:00",
+      "translationStatus": "bilingual-template",
+      "factsReviewed": false,
+      "importance": {
+        "ru": "Пользователи продукта могут проверить список изменений и совместимость. Мы не делаем выводов о безопасности или качестве выпуска.",
+        "en": "Users can review the changes and compatibility. We make no claims about release security or quality."
+      },
+      "next": {
+        "ru": "Изучите примечания к выпуску в первоисточнике перед обновлением.",
+        "en": "Read the original release notes before upgrading."
+      },
+      "publicationMode": "test",
+      "archive": true,
+      "sitePublishedAt": "2026-10-29T09:48:28.228928+00:00",
+      "autoChecks": [
+        {
+          "id": "feed",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:48:28.228928+00:00"
+        },
+        {
+          "id": "release-page",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:48:28.228928+00:00",
+          "evidenceSha256": "13de61df5421af5737e03b50274f1eaa07d0ce73bc1fc7e68e14f379b7f72907"
+        }
+      ],
+      "verificationScope": "release-announcement-only"
+    },
+    {
+      "id": "feed-57351f86b8d6c2de9fcd",
+      "category": "technology",
+      "country": null,
+      "title": {
+        "ru": "Node.js: опубликован выпуск v26.12.0",
+        "en": "Node.js: release v26.12.0 published"
+      },
+      "body": {
+        "ru": "В официальном репозитории Node.js опубликовано объявление о выпуске v26.12.0. Подробности и список изменений доступны по ссылке на первоисточник.",
+        "en": "The official Node.js repository published a release announcement for v26.12.0. Details and changes are available at the original source."
+      },
+      "status": "published",
+      "demo": false,
+      "source": {
+        "name": "Node.js — official releases",
+        "url": "https://github.com/nodejs/node/releases/tag/v26.12.0",
+        "language": "en"
+      },
+      "originalTitle": "2026-10-14, Version 26.12.0 (Current), @richardlau",
+      "publishedAt": "2026-10-14T15:22:04Z",
+      "updatedAt": "2026-10-14T15:22:04Z",
+      "collectedAt": "2026-10-29T09:48:27.225981+00:00",
+      "translationStatus": "bilingual-template",
+      "factsReviewed": false,
+      "importance": {
+        "ru": "Пользователи продукта могут проверить список изменений и совместимость. Мы не делаем выводов о безопасности или качестве выпуска.",
+        "en": "Users can review the changes and compatibility. We make no claims about release security or quality."
+      },
+      "next": {
+        "ru": "Изучите примечания к выпуску в первоисточнике перед обновлением.",
+        "en": "Read the original release notes before upgrading."
+      },
+      "publicationMode": "test",
+      "archive": true,
+      "sitePublishedAt": "2026-10-29T09:48:28.228928+00:00",
+      "autoChecks": [
+        {
+          "id": "feed",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:48:28.228928+00:00"
+        },
+        {
+          "id": "release-page",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:48:28.228928+00:00",
+          "evidenceSha256": "590f3541906d4ad4070f5fc5e5106d8f40ccef9faf8b7f0b3141c7618ac3c67b"
+        }
+      ],
+      "verificationScope": "release-announcement-only"
+    },
+    {
+      "id": "feed-c202181bf05ea4b7f6b6",
+      "category": "technology",
+      "country": null,
+      "title": {
+        "ru": "Node.js: опубликован выпуск v24.22.0",
+        "en": "Node.js: release v24.22.0 published"
+      },
+      "body": {
+        "ru": "В официальном репозитории Node.js опубликовано объявление о выпуске v24.22.0. Подробности и список изменений доступны по ссылке на первоисточник.",
+        "en": "The official Node.js repository published a release announcement for v24.22.0. Details and changes are available at the original source."
+      },
+      "status": "published",
+      "demo": false,
+      "source": {
+        "name": "Node.js — official releases",
+        "url": "https://github.com/nodejs/node/releases/tag/v24.22.0",
+        "language": "en"
+      },
+      "originalTitle": "2026-10-14, Version 24.22.0 'Krypton' (LTS), @richardlau prepared by @aduh95",
+      "publishedAt": "2026-10-14T15:12:46Z",
+      "updatedAt": "2026-10-14T15:12:46Z",
+      "collectedAt": "2026-10-29T09:48:27.226012+00:00",
+      "translationStatus": "bilingual-template",
+      "factsReviewed": false,
+      "importance": {
+        "ru": "Пользователи продукта могут проверить список изменений и совместимость. Мы не делаем выводов о безопасности или качестве выпуска.",
+        "en": "Users can review the changes and compatibility. We make no claims about release security or quality."
+      },
+      "next": {
+        "ru": "Изучите примечания к выпуску в первоисточнике перед обновлением.",
+        "en": "Read the original release notes before upgrading."
+      },
+      "publicationMode": "test",
+      "archive": true,
+      "sitePublishedAt": "2026-10-29T09:48:28.228928+00:00",
+      "autoChecks": [
+        {
+          "id": "feed",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:48:28.228928+00:00"
+        },
+        {
+          "id": "release-page",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:48:28.228928+00:00",
+          "evidenceSha256": "c47accde92a38d7c4c7fb4a91a0af50c351f017416c885fac9315820ba368cfd"
+        }
+      ],
+      "verificationScope": "release-announcement-only"
+    },
+    {
+      "id": "feed-4755cd0b5b43a7d5ae23",
+      "category": "technology",
+      "country": null,
+      "title": {
+        "ru": "Visual Studio Code: опубликован выпуск 1.141.2",
+        "en": "Visual Studio Code: release 1.141.2 published"
+      },
+      "body": {
+        "ru": "В официальном репозитории Visual Studio Code опубликовано объявление о выпуске 1.141.2. Подробности и список изменений доступны по ссылке на первоисточник.",
+        "en": "The official Visual Studio Code repository published a release announcement for 1.141.2. Details and changes are available at the original source."
+      },
+      "status": "published",
+      "demo": false,
+      "source": {
+        "name": "Visual Studio Code — official releases",
+        "url": "https://github.com/microsoft/vscode/releases/tag/1.141.2",
+        "language": "en"
+      },
+      "originalTitle": "1.141.2",
+      "publishedAt": "2026-10-14T14:32:33Z",
+      "updatedAt": "2026-10-14T14:32:33Z",
+      "collectedAt": "2026-10-29T09:48:28.228654+00:00",
+      "translationStatus": "bilingual-template",
+      "factsReviewed": false,
+      "importance": {
+        "ru": "Пользователи продукта могут проверить список изменений и совместимость. Мы не делаем выводов о безопасности или качестве выпуска.",
+        "en": "Users can review the changes and compatibility. We make no claims about release security or quality."
+      },
+      "next": {
+        "ru": "Изучите примечания к выпуску в первоисточнике перед обновлением.",
+        "en": "Read the original release notes before upgrading."
+      },
+      "publicationMode": "test",
+      "archive": true,
+      "sitePublishedAt": "2026-10-29T09:48:28.228928+00:00",
+      "autoChecks": [
+        {
+          "id": "feed",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:48:28.228928+00:00"
+        },
+        {
+          "id": "release-page",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:48:28.228928+00:00",
+          "evidenceSha256": "464d406b58fa96a7b7296b7ba6f533ef51cad397244951fc1aa81170e5a64aa6"
+        }
+      ],
+      "verificationScope": "release-announcement-only"
+    },
+    {
+      "id": "feed-e74b3156482b8b163448",
+      "category": "technology",
+      "country": null,
+      "title": {
+        "ru": "Visual Studio Code: опубликован выпуск 1.141.1",
+        "en": "Visual Studio Code: release 1.141.1 published"
+      },
+      "body": {
+        "ru": "В официальном репозитории Visual Studio Code опубликовано объявление о выпуске 1.141.1. Подробности и список изменений доступны по ссылке на первоисточник.",
+        "en": "The official Visual Studio Code repository published a release announcement for 1.141.1. Details and changes are available at the original source."
+      },
+      "status": "published",
+      "demo": false,
+      "source": {
+        "name": "Visual Studio Code — official releases",
+        "url": "https://github.com/microsoft/vscode/releases/tag/1.141.1",
+        "language": "en"
+      },
+      "originalTitle": "1.141.1",
+      "publishedAt": "2026-10-13T21:53:53Z",
+      "updatedAt": "2026-10-13T21:53:53Z",
+      "collectedAt": "2026-10-29T09:48:28.228679+00:00",
+      "translationStatus": "bilingual-template",
+      "factsReviewed": false,
+      "importance": {
+        "ru": "Пользователи продукта могут проверить список изменений и совместимость. Мы не делаем выводов о безопасности или качестве выпуска.",
+        "en": "Users can review the changes and compatibility. We make no claims about release security or quality."
+      },
+      "next": {
+        "ru": "Изучите примечания к выпуску в первоисточнике перед обновлением.",
+        "en": "Read the original release notes before upgrading."
+      },
+      "publicationMode": "test",
+      "archive": true,
+      "sitePublishedAt": "2026-10-29T09:48:28.228928+00:00",
+      "autoChecks": [
+        {
+          "id": "feed",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:48:28.228928+00:00"
+        },
+        {
+          "id": "release-page",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:48:28.228928+00:00",
+          "evidenceSha256": "68aaf65a976bf454014075bf9774be4926fce2a39e289a0ff50a05fb09f3b746"
+        }
+      ],
+      "verificationScope": "release-announcement-only"
+    },
+    {
+      "id": "feed-fb35576fc2ee54b2c31e",
+      "category": "technology",
+      "country": null,
+      "title": {
+        "ru": "Node.js: опубликован выпуск v26.11.1",
+        "en": "Node.js: release v26.11.1 published"
+      },
+      "body": {
+        "ru": "В официальном репозитории Node.js опубликовано объявление о выпуске v26.11.1. Подробности и список изменений доступны по ссылке на первоисточник.",
+        "en": "The official Node.js repository published a release announcement for v26.11.1. Details and changes are available at the original source."
+      },
+      "status": "published",
+      "demo": false,
+      "source": {
+        "name": "Node.js — official releases",
+        "url": "https://github.com/nodejs/node/releases/tag/v26.11.1",
+        "language": "en"
+      },
+      "originalTitle": "2026-10-07, Version 26.11.1 (Current), @aduh95",
+      "publishedAt": "2026-10-07T23:55:23Z",
+      "updatedAt": "2026-10-07T23:55:23Z",
+      "collectedAt": "2026-10-29T09:48:27.226036+00:00",
+      "translationStatus": "bilingual-template",
+      "factsReviewed": false,
+      "importance": {
+        "ru": "Пользователи продукта могут проверить список изменений и совместимость. Мы не делаем выводов о безопасности или качестве выпуска.",
+        "en": "Users can review the changes and compatibility. We make no claims about release security or quality."
+      },
+      "next": {
+        "ru": "Изучите примечания к выпуску в первоисточнике перед обновлением.",
+        "en": "Read the original release notes before upgrading."
+      },
+      "publicationMode": "test",
+      "archive": true,
+      "sitePublishedAt": "2026-10-29T09:48:28.228928+00:00",
+      "autoChecks": [
+        {
+          "id": "feed",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:48:28.228928+00:00"
+        },
+        {
+          "id": "release-page",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:48:28.228928+00:00",
+          "evidenceSha256": "d412d8fec3c57bb358cd35e7dbc798b1a2f8a75e61e178fe91d7d16bad83979c"
+        }
+      ],
+      "verificationScope": "release-announcement-only"
+    },
+    {
+      "id": "feed-b97eb735f6db9ffae486",
+      "category": "technology",
+      "country": null,
+      "title": {
+        "ru": "Visual Studio Code: опубликован выпуск 1.141.0",
+        "en": "Visual Studio Code: release 1.141.0 published"
+      },
+      "body": {
+        "ru": "В официальном репозитории Visual Studio Code опубликовано объявление о выпуске 1.141.0. Подробности и список изменений доступны по ссылке на первоисточник.",
+        "en": "The official Visual Studio Code repository published a release announcement for 1.141.0. Details and changes are available at the original source."
+      },
+      "status": "published",
+      "demo": false,
+      "source": {
+        "name": "Visual Studio Code — official releases",
+        "url": "https://github.com/microsoft/vscode/releases/tag/1.141.0",
+        "language": "en"
+      },
+      "originalTitle": "1.141.0",
+      "publishedAt": "2026-10-07T11:01:16Z",
+      "updatedAt": "2026-10-07T11:01:16Z",
+      "collectedAt": "2026-10-29T09:48:28.228813+00:00",
+      "translationStatus": "bilingual-template",
+      "factsReviewed": false,
+      "importance": {
+        "ru": "Пользователи продукта могут проверить список изменений и совместимость. Мы не делаем выводов о безопасности или качестве выпуска.",
+        "en": "Users can review the changes and compatibility. We make no claims about release security or quality."
+      },
+      "next": {
+        "ru": "Изучите примечания к выпуску в первоисточнике перед обновлением.",
+        "en": "Read the original release notes before upgrading."
+      },
+      "publicationMode": "test",
+      "archive": true,
+      "sitePublishedAt": "2026-10-29T09:48:28.228928+00:00",
+      "autoChecks": [
+        {
+          "id": "feed",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:48:28.228928+00:00"
+        },
+        {
+          "id": "release-page",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:48:28.228928+00:00",
+          "evidenceSha256": "e177ff06232216ffb306d03eb0f13bcf3bdc1a545b8d664d0e61ee30c64321b9"
+        }
+      ],
+      "verificationScope": "release-announcement-only"
+    },
+    {
+      "id": "feed-6237ddde2e4ee96dae44",
+      "category": "technology",
+      "country": null,
+      "title": {
+        "ru": "Visual Studio Code: опубликован выпуск 1.140.0",
+        "en": "Visual Studio Code: release 1.140.0 published"
+      },
+      "body": {
+        "ru": "В официальном репозитории Visual Studio Code опубликовано объявление о выпуске 1.140.0. Подробности и список изменений доступны по ссылке на первоисточник.",
+        "en": "The official Visual Studio Code repository published a release announcement for 1.140.0. Details and changes are available at the original source."
+      },
+      "status": "published",
+      "demo": false,
+      "source": {
+        "name": "Visual Studio Code — official releases",
+        "url": "https://github.com/microsoft/vscode/releases/tag/1.140.0",
+        "language": "en"
+      },
+      "originalTitle": "1.140.0",
+      "publishedAt": "2026-09-30T22:00:22Z",
+      "updatedAt": "2026-09-30T22:00:22Z",
+      "collectedAt": "2026-10-29T09:48:28.228836+00:00",
+      "translationStatus": "bilingual-template",
+      "factsReviewed": false,
+      "importance": {
+        "ru": "Пользователи продукта могут проверить список изменений и совместимость. Мы не делаем выводов о безопасности или качестве выпуска.",
+        "en": "Users can review the changes and compatibility. We make no claims about release security or quality."
+      },
+      "next": {
+        "ru": "Изучите примечания к выпуску в первоисточнике перед обновлением.",
+        "en": "Read the original release notes before upgrading."
+      },
+      "publicationMode": "test",
+      "archive": true,
+      "sitePublishedAt": "2026-10-29T09:48:28.228928+00:00",
+      "autoChecks": [
+        {
+          "id": "feed",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:48:28.228928+00:00"
+        },
+        {
+          "id": "release-page",
+          "status": "passed",
+          "checkedAt": "2026-10-29T09:48:28.228928+00:00",
+          "evidenceSha256": "77e7014bfba9da741bffec3a59e9f345e27568ef1fa7f70f52f977b368dc400b"
+        }
+      ],
+      "verificationScope": "release-announcement-only"
+    }
+  ],
+  "reports": [
+    {
+      "source": "Node.js — official releases",
+      "ok": true,
+      "items": 8
+    },
+    {
+      "source": "Visual Studio Code — official releases",
+      "ok": true,
+      "items": 8
+    }
+  ],
+  "held": [
+    {
+      "id": "feed-b63d8bfa28343d307561",
+      "title": "2026-10-21, Version 26.12.1 (Current), @aduh95 prepared by @RafaelGSS",
+      "error": "Old entry not eligible for fresh automatic publication"
+    },
+    {
+      "id": "feed-e550efcaa5dd81d8b8a4",
+      "title": "2026-10-21, Version 24.22.1 'Krypton' (LTS), @aduh95",
+      "error": "Old entry not eligible for fresh automatic publication"
+    },
+    {
+      "id": "feed-ce039770d9d9e48b4598",
+      "title": "2026-10-21, Version 22.23.4 'Jod' (LTS), @aduh95",
+      "error": "Old entry not eligible for fresh automatic publication"
+    },
+    {
+      "id": "feed-57351f86b8d6c2de9fcd",
+      "title": "2026-10-14, Version 26.12.0 (Current), @richardlau",
+      "error": "Old entry not eligible for fresh automatic publication"
+    },
+    {
+      "id": "feed-c202181bf05ea4b7f6b6",
+      "title": "2026-10-14, Version 24.22.0 'Krypton' (LTS), @richardlau prepared by @aduh95",
+      "error": "Old entry not eligible for fresh automatic publication"
+    },
+    {
+      "id": "feed-fb35576fc2ee54b2c31e",
+      "title": "2026-10-07, Version 26.11.1 (Current), @aduh95",
+      "error": "Old entry not eligible for fresh automatic publication"
+    },
+    {
+      "id": "feed-95ad7c372ca77a5d1aa8",
+      "title": "1.143.1",
+      "error": "Old entry not eligible for fresh automatic publication"
+    },
+    {
+      "id": "feed-89b96fd10289f94e9d48",
+      "title": "1.143.0",
+      "error": "Old entry not eligible for fresh automatic publication"
+    },
+    {
+      "id": "feed-bad2b79533f224af79a4",
+      "title": "1.142.0",
+      "error": "Old entry not eligible for fresh automatic publication"
+    },
+    {
+      "id": "feed-4755cd0b5b43a7d5ae23",
+      "title": "1.141.2",
+      "error": "Old entry not eligible for fresh automatic publication"
+    },
+    {
+      "id": "feed-e74b3156482b8b163448",
+      "title": "1.141.1",
+      "error": "Old entry not eligible for fresh automatic publication"
+    },
+    {
+      "id": "feed-b97eb735f6db9ffae486",
+      "title": "1.141.0",
+      "error": "Old entry not eligible for fresh automatic publication"
+    },
+    {
+      "id": "feed-6237ddde2e4ee96dae44",
+      "title": "1.140.0",
+      "error": "Old entry not eligible for fresh automatic publication"
+    }
+  ]
+}

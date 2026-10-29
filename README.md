@@ -1,48 +1,65 @@
-# ATLAS news portal
+# ATLAS / Context — test news portal
 
-Bilingual development prototype, Node.js >=22 and Python >=3.10. No package installation or API keys required. Use the existing checkout; cloud tasks are isolated and do not need an additional worktree.
+Node.js >=22, Python >=3.10; no package installation required. Use the existing checkout, not another worktree.
 
 ```sh
 cd /workspace/Diroll25
-npm start
+npm start          # local server, manual collection
+npm run newsroom  # collection + two-stage automatic publication on startup/every 30 min
+npm test
+python3 -m unittest discover -s tests -p 'test_*.py'
 ```
 
-Server: 127.0.0.1:3000; override PORT if needed. For a read-only server use `PUBLIC_DEMO=1 npm start`. The default local newsroom has no login: never expose it publicly. Public mode blocks collecting, reading drafts, editing and publishing. ATLAS_DATA_DIR overrides the local storage directory; default data/articles.json is ignored by Git. Storage mutations are serialized and atomic. No database, accounts, Telegram or background scheduler yet.
+Server binds 127.0.0.1:3000 (PORT override). The default editor is local and has no login: never expose it publicly. `PUBLIC_DEMO=1 npm start` blocks all editorial/collector APIs. Keep the server running for local schedules. GitHub Actions provides the independent scheduled public-site pipeline; schedules can be delayed by GitHub and require Actions permissions. Do not operate two delivery workers for the same Telegram channels.
 
-## Reader experience
+## Current publication
 
-Russian and English, manual world/country scope, remembered topic preferences, five-story briefing derived from the selected feed, dark mode, search, bookmarks, responsive layouts, reading progress and reduced-motion support. The article page explains what happened, why it matters and what comes next, with source links and publication/update times in Moscow time. Global source stories have no invented country. No IP geolocation. Selecting a country switches to local scope; the world tab keeps language and interests unchanged. Topic preferences apply across the feed.
+16 real first-party release announcements passed two checks and are test-published alongside six clearly labelled fictional samples. Thirteen older announcements were explicitly imported as archive for this test; ordinary automatic publication only accepts announcements <=72h old, and existing items age into archive. No AI fact-checking, trend ranking, independent news reporting, full-article reproduction or security assessment is claimed.
 
-## Collection and editorial review
+Two deterministic stages in tools/publish.py:
 
-Open the local Newsroom and choose Collect source updates. Configured first-party Atom feeds: Node.js and VS Code official releases, both via HTTPS github.com. This is a tested initial technology feed, not comprehensive general-news coverage or a trend-ranking agent. Sources for other categories and a scheduler remain to be added. Run `python3 tools/collect.py` to inspect collection as JSON without modifying the store. TLS verification stays enabled. Python uses inherited HTTPS proxy and trust.
+1. Official Atom feed: configured repository/HTTPS URL, category, version in title, valid source timestamp, no future timestamps. Only Node.js and VS Code repositories are accepted.
+2. A separate HTTPS request to the original release page: exact normalized H1 match and corroborated publication timestamp. Redirects and mismatches are held, not published. TLS verification remains enabled. Source-page hash and checked-at time are retained for traceability.
 
-The collector records canonical source links, original titles and timestamps, imports up to eight entries per source, and never publishes them. Recollection deduplicates URLs and preserves editorial decisions. Raw external HTML is not rendered. Full copyrighted articles are not copied. There is no LLM summarization, automated translation or AI fact-checking: imported titles remain in the original language until edited. Each source reports success or a bounded error.
-
-The editor can compare the source with both language drafts, fill What happened / Why it matters / What next, and explicitly confirm facts and both languages. Publishing non-demo drafts requires an HTTPS source, valid date no more than 72 hours old and not over 15 minutes in the future, titles, reviewed facts and reviewed translation. These are formal gates, not proof of factual accuracy. The human must follow the source and check the actual claims. Old announcements remain in the queue but are not eligible for this fresh feed.
-
-A collection test returned 16 real release announcements; these were stored as local pending drafts, without publication. They are excluded from the public build. Do not commit draft data or credentials.
-
-## Public and offline demo
+Only then does a fixed bilingual template say that the official repository announced the specific release. It makes no claims about release quality, safety or undocumented changes. Original wording and source link remain visible. Both checks use the same first-party publisher and do not constitute two independent journalistic sources.
 
 ```sh
-python3 tools/build-preview.py
+python3 tools/collect.py                         # inspect source drafts, no publication
+python3 tools/publish.py                         # verify and publish fresh announcements
+python3 tools/publish.py --include-archive        # explicit one-off test of older entries
+python3 tools/build-preview.py                   # regenerate docs/index.html and atlas-demo.html
 ```
 
-Generates atlas-demo.html and docs/index.html from tracked fictional samples and embedded illustrative photographs, without reading local real drafts. The static Newsroom is a read-only interface demonstration; all writes are disabled. GitHub Pages cannot run the collector or a private newsroom. No Telegram buttons appear until real channels are connected. No fake dates, source citations or AI verification badges are added to samples. Advertising remains a labelled future placement.
+config/published.json is an intentionally public, verified export; data/articles.json and all subscriber data remain ignored by Git. Rejecting a local draft stops local automatic overwrite; the static public snapshot is separate. To retract a public announcement, remove it from config/published.json and remove/disable its source or exclude it from publication before the next refresh. A full shared moderation database is not implemented.
 
-The workflow publishes docs to GitHub Pages once Pages is enabled for GitHub Actions. Alternatively select main /docs in repository Pages settings for branch deployment. Neither mode runs the Node server. Backend approvals update only the server feed; publishing reviewed real content to Pages requires a separate explicit export, not automatic leakage of the queue.
+The Pages workflow tests, refreshes every 30 minutes/on manual dispatch, builds, optionally delivers Telegram, saves the snapshot and deploys. It does not need an LLM key. Push deployments build the committed verified snapshot. GitHub Pages must be enabled; this workflow uses the Actions deployment mode. GitHub's scheduled jobs are not a guaranteed realtime service.
 
-## Verification
+## Reading experience
 
-`npm test` exercises publication gates, URL deduplication, preservation of rejections, the HTTP edit/approve path, persisted approval after restart, cross-origin rejection and public-mode protection. Browser checks cover homepage, sections, articles, embedded photos, bookmarking, language/theme controls, preferences, briefing and the read-only newsroom.
+Larger responsive type, photograph thumbnails in the five-story briefing, source/date/archive labels, world/country scope, interests, dark mode, search, local bookmarks, article What happened / Why it matters / What next and a source-check explanation. Photos are illustrations, not documentary evidence for each story. Russian and English use fixed release templates for automatic stories; arbitrary news translation is not connected. No country is invented for global releases. Dates are shown in Europe/Moscow. No IP geolocation.
 
-## Rollback
+The static newsroom is a read-only layout demonstration. The local editor supports comparing the source with bilingual drafts and manual approval. Manual stories still require human-confirmed facts/translation, source/date/title checks. PUBLIC_DEMO blocks access to real drafts.
 
-The previous design is tagged `atlas-before-editorial-v2`. Use `git revert <editorial-change-commit>` to undo this update without rewriting history, then push to main to redeploy. The ignored data/articles.before-editorial-v2.json preserves local editorial data before the import. Code rollback does not automatically overwrite editorial data; inspect and stop the server before deliberately restoring a data backup.
+## Telegram
 
-## Images and design
+Article links open Telegram's real share dialog. Subscription links appear only for actual channels configured in config/connections.json. None are configured yet. Proposed names and owner setup: TELEGRAM_SETUP.md. Username availability was not confirmed: t.me returned proxy 403. Neither channels nor a bot can be created through the available tools.
 
-Photographs are illustrative, not documentary evidence of fictional stories. Source: MIT-licensed Start Bootstrap Clean Blog, Grayscale and Landing Page repositories; license in public/images/LICENSE.txt. Current BBC, Guardian and Verge pages could not be inspected because of proxy policy. Design uses established editorial conventions, not a claimed live trend survey.
+Sending requires owner-created channels, an admin bot, actual links in connections.telegram.ru/en, and TELEGRAM_BOT_TOKEN stored securely. For GitHub Actions use repository secrets; cloud-environment credentials do not automatically become repository secrets. For local delivery explicitly enable ATLAS_TELEGRAM_DELIVERY=1. Only fresh, non-demo verified announcements are delivered. The journal holds uncertain outcomes to prevent automatic retries after ambiguous delivery. Real Telegram sending has not been validated and no messages were sent; adapter behavior was tested with a simulated response.
 
-For automatic collection while the local server runs, use `npm run newsroom`. It collects on startup and every 30 minutes; ATLAS_COLLECT_INTERVAL_MINUTES can override this (minimum 5). `npm start` keeps collection manual. Public mode always disables the collector. This is a scheduled source reader, not an AI trend evaluator. Failed sources are reported; successful sources still import. Approval is always separate. The running server and scheduler do not survive a stopped cloud task.
+## Email subscriptions
+
+The UI is present but disabled while the transport/backend is missing: no addresses are collected and no fake success is shown. Backend implementation supports explicit consent, language/topics, confirmation with a one-time 24-hour link, per-IP request limits, one-hour confirmation resend cooldown, deletion on unsubscribe, and daily digests only for confirmed readers. Delivery tracks previously sent article IDs. Tests use simulated email transport; no real emails were sent.
+
+To activate, create a Brevo account, verify the sender, and add BREVO_API_KEY, NEWSLETTER_FROM and NEWSLETTER_PUBLIC_URL securely. The latter is an HTTPS URL of a running Node backend, not a Pages URL. Set connections.newsletterEndpoint to that backend's `/api/newsletter/subscribe`; allowed frontend origin is derived from connections.siteUrl. Serve only public-mode APIs on that backend. Enable ATLAS_EMAIL_DELIVERY=1 on the local scheduler after testing email delivery. GitHub Pages cannot accept subscriptions, store private subscriber lists or run this backend.
+
+Subscribers live in private data/subscribers.json (0600, ignored by Git). Keep this directory on persistent storage, back it up securely and never publish it. Confirmation tokens are hashed; a private unsubscribe token is retained to insert an opt-out link in each digest. No subscriber-list endpoint is exposed. One backend process/storage writer is supported; production scale needs a database and a durable job queue. Daily digest delivery has in-process serialization but no transactional external-email guarantee on crashes.
+
+Environment-setting requirements are saved as metadata, not secret values. Saving a draft does not supply credentials, start a backend, publish the environment or set GitHub Actions secrets. Real integration remains blocked until the accounts and backend exist.
+
+## Rollback and data
+
+Previous release tag: atlas-before-autopublish-v3. Earlier design: atlas-before-editorial-v2. Use `git revert` on the update commit and push main; do not rewrite shared history. Code rollback is separate from local editorial/subscriber data. Backup of pre-update local articles: data/articles.before-autopublish-v3.json. ATLAS_DATA_DIR selects an alternate private store. Stop the server before deliberate data restoration. Do not delete subscriber data as part of a visual rollback.
+
+## Photography
+
+Illustrative assets: Start Bootstrap MIT-licensed Clean Blog, Grayscale and Landing Page repositories; license public/images/LICENSE.txt. All are local and embedded in the offline build. Current BBC/Guardian/Verge designs could not be inspected due to proxy restrictions; design uses established editorial patterns.
