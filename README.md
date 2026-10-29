@@ -1,24 +1,48 @@
-# ATLAS — prototype news portal
+# ATLAS news portal
 
-Requires Node.js 22 or newer. No third-party packages or installation needed.
+Bilingual development prototype, Node.js >=22 and Python >=3.10. No package installation or API keys required. Use the existing checkout; cloud tasks are isolated and do not need an additional worktree.
 
 ```sh
 cd /workspace/Diroll25
 npm start
 ```
 
-The server listens on 127.0.0.1:3000 (override PORT as needed). Russian and English UI and sample stories, manual region/topic selection, browser language detection, remembered preferences, and editorial approve/reject queue are implemented. Editorial decisions persist to data/articles.json. Initial stories are explicitly fictional demo material. There is no live collection, translation, AI verification, geolocation, Telegram delivery, authentication, or advertising integration yet.
+Server: 127.0.0.1:3000; override PORT if needed. For a read-only server use `PUBLIC_DEMO=1 npm start`. The default local newsroom has no login: never expose it publicly. Public mode blocks collecting, reading drafts, editing and publishing. ATLAS_DATA_DIR overrides the local storage directory; default data/articles.json is ignored by Git. Storage mutations are serialized and atomic. No database, accounts, Telegram or background scheduler yet.
 
-For a read-only public demo, run `PUBLIC_DEMO=1 npm start`. This hides the newsroom button and denies both reading the review queue and all review mutations with HTTP 403. Never expose the default editorial mode. A public tunnel requires platform TCP access to the provider; current environment has no TCP destinations configured and its TCP proxy refused the connection during validation. No public tunnel has been established.
+## Reader experience
 
-This is a local development prototype. The editorial API has no authentication: do not expose this service publicly. Before deployment add authenticated editor roles, CSRF protection, persistent database transactions, source attribution/licensing, independent fact checks, job retries and Telegram delivery tracking. IP-based location must remain an overridable suggestion. Never commit API keys or bot tokens.
+Russian and English, manual world/country scope, remembered topic preferences, five-story briefing derived from the selected feed, dark mode, search, bookmarks, responsive layouts, reading progress and reduced-motion support. The article page explains what happened, why it matters and what comes next, with source links and publication/update times in Moscow time. Global source stories have no invented country. No IP geolocation. Selecting a country switches to local scope; the world tab keeps language and interests unchanged. Topic preferences apply across the feed.
 
-Next stage: agree on licensed RSS/API sources; implement collection with timestamps and deduplication, source-backed bilingual drafts, review checks, and Telegram delivery only after approval. AI review does not guarantee factual accuracy. Create channels under the owner's Telegram account and grant a bot only required permissions.
+## Collection and editorial review
 
-## Visual prototype, second edition
+Open the local Newsroom and choose Collect source updates. Configured first-party Atom feeds: Node.js and VS Code official releases, both via HTTPS github.com. This is a tested initial technology feed, not comprehensive general-news coverage or a trend-ranking agent. Sources for other categories and a scheduler remain to be added. Run `python3 tools/collect.py` to inspect collection as JSON without modifying the store. TLS verification stays enabled. Python uses inherited HTTPS proxy and trust.
 
-The homepage, category routes (`#category/science`), and article routes (`#article/2`) now have editorial layouts, local illustrative photography, dark mode, headline search, bookmarks, reading progress, and reduced-motion support. Bookmarks and preferences are local to the browser. Category and article navigation works in the offline file. Newsroom APIs remain unchanged and are disabled in public demo mode.
+The collector records canonical source links, original titles and timestamps, imports up to eight entries per source, and never publishes them. Recollection deduplicates URLs and preserves editorial decisions. Raw external HTML is not rendered. Full copyrighted articles are not copied. There is no LLM summarization, automated translation or AI fact-checking: imported titles remain in the original language until edited. Each source reports success or a bounded error.
 
-Build the offline preview with `python3 tools/build-preview.py`, then open `atlas-demo.html`. All six fictional sample stories are included for design review, independently of server publication decisions. This does not publish drafts on the server. No external requests are required by the offline preview. It is a visual prototype, not live news or a fact-checked feed.
+The editor can compare the source with both language drafts, fill What happened / Why it matters / What next, and explicitly confirm facts and both languages. Publishing non-demo drafts requires an HTTPS source, valid date no more than 72 hours old and not over 15 minutes in the future, titles, reviewed facts and reviewed translation. These are formal gates, not proof of factual accuracy. The human must follow the source and check the actual claims. Old announcements remain in the queue but are not eligible for this fresh feed.
 
-Current BBC, Guardian, and Verge pages could not be inspected: the environment returned proxy 403 for each. Design decisions use established editorial patterns rather than a claimed live trend analysis. Photographs are illustrative assets from Start Bootstrap's MIT-licensed Clean Blog, Grayscale and Landing Page template repositories, not documentary evidence for the fictional stories. License: public/images/LICENSE.txt. Sources: https://github.com/StartBootstrap/startbootstrap-clean-blog, https://github.com/StartBootstrap/startbootstrap-grayscale, https://github.com/StartBootstrap/startbootstrap-landing-page.
+A collection test returned 16 real release announcements; these were stored as local pending drafts, without publication. They are excluded from the public build. Do not commit draft data or credentials.
+
+## Public and offline demo
+
+```sh
+python3 tools/build-preview.py
+```
+
+Generates atlas-demo.html and docs/index.html from tracked fictional samples and embedded illustrative photographs, without reading local real drafts. The static Newsroom is a read-only interface demonstration; all writes are disabled. GitHub Pages cannot run the collector or a private newsroom. No Telegram buttons appear until real channels are connected. No fake dates, source citations or AI verification badges are added to samples. Advertising remains a labelled future placement.
+
+The workflow publishes docs to GitHub Pages once Pages is enabled for GitHub Actions. Alternatively select main /docs in repository Pages settings for branch deployment. Neither mode runs the Node server. Backend approvals update only the server feed; publishing reviewed real content to Pages requires a separate explicit export, not automatic leakage of the queue.
+
+## Verification
+
+`npm test` exercises publication gates, URL deduplication, preservation of rejections, the HTTP edit/approve path, persisted approval after restart, cross-origin rejection and public-mode protection. Browser checks cover homepage, sections, articles, embedded photos, bookmarking, language/theme controls, preferences, briefing and the read-only newsroom.
+
+## Rollback
+
+The previous design is tagged `atlas-before-editorial-v2`. Use `git revert <editorial-change-commit>` to undo this update without rewriting history, then push to main to redeploy. The ignored data/articles.before-editorial-v2.json preserves local editorial data before the import. Code rollback does not automatically overwrite editorial data; inspect and stop the server before deliberately restoring a data backup.
+
+## Images and design
+
+Photographs are illustrative, not documentary evidence of fictional stories. Source: MIT-licensed Start Bootstrap Clean Blog, Grayscale and Landing Page repositories; license in public/images/LICENSE.txt. Current BBC, Guardian and Verge pages could not be inspected because of proxy policy. Design uses established editorial conventions, not a claimed live trend survey.
+
+For automatic collection while the local server runs, use `npm run newsroom`. It collects on startup and every 30 minutes; ATLAS_COLLECT_INTERVAL_MINUTES can override this (minimum 5). `npm start` keeps collection manual. Public mode always disables the collector. This is a scheduled source reader, not an AI trend evaluator. Failed sources are reported; successful sources still import. Approval is always separate. The running server and scheduler do not survive a stopped cloud task.

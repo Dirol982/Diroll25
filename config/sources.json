@@ -1,0 +1,4 @@
+[
+  {"id":"nodejs","name":"Node.js — official releases","url":"https://github.com/nodejs/node/releases.atom","category":"technology","country":null,"language":"en"},
+  {"id":"vscode","name":"Visual Studio Code — official releases","url":"https://github.com/microsoft/vscode/releases.atom","category":"technology","country":null,"language":"en"}
+]

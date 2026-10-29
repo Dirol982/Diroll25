@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "category": "technology",
+    "country": "US",
+    "title": {
+      "ru": "Новые идеи в мире технологий",
+      "en": "New ideas in technology"
+    },
+    "body": {
+      "ru": "Это демонстрационный материал для проверки работы портала. Он не является реальной новостью. Здесь появится текст, подготовленный редакцией и проверенный перед публикацией.",
+      "en": "This is sample content for testing the portal, not a real news report. Verified editorial content will appear here before publication."
+    },
+    "status": "published",
+    "demo": true
+  },
+  {
+    "id": "2",
+    "category": "science",
+    "country": "GB",
+    "title": {
+      "ru": "Наука: открытия, которые меняют мир",
+      "en": "Science: discoveries shaping our world"
+    },
+    "body": {
+      "ru": "Это демонстрационный материал для проверки работы портала. Он не является реальной новостью. Здесь появится текст, подготовленный редакцией и проверенный перед публикацией.",
+      "en": "This is sample content for testing the portal, not a real news report. Verified editorial content will appear here before publication."
+    },
+    "status": "published",
+    "demo": true
+  },
+  {
+    "id": "3",
+    "category": "economy",
+    "country": "RU",
+    "title": {
+      "ru": "Экономика: на что обратить внимание",
+      "en": "Economy: what to watch"
+    },
+    "body": {
+      "ru": "Это демонстрационный материал для проверки работы портала. Он не является реальной новостью. Здесь появится текст, подготовленный редакцией и проверенный перед публикацией.",
+      "en": "This is sample content for testing the portal, not a real news report. Verified editorial content will appear here before publication."
+    },
+    "status": "published",
+    "demo": true
+  },
+  {
+    "id": "4",
+    "category": "culture",
+    "country": "GB",
+    "title": {
+      "ru": "Культура без границ",
+      "en": "Culture without borders"
+    },
+    "body": {
+      "ru": "Это демонстрационный материал для проверки работы портала. Он не является реальной новостью. Здесь появится текст, подготовленный редакцией и проверенный перед публикацией.",
+      "en": "This is sample content for testing the portal, not a real news report. Verified editorial content will appear here before publication."
+    },
+    "status": "published",
+    "demo": true
+  },
+  {
+    "id": "5",
+    "category": "sport",
+    "country": "US",
+    "title": {
+      "ru": "Спорт: главные темы недели",
+      "en": "Sport: this week’s talking points"
+    },
+    "body": {
+      "ru": "Это демонстрационный материал для проверки работы портала. Он не является реальной новостью. Здесь появится текст, подготовленный редакцией и проверенный перед публикацией.",
+      "en": "This is sample content for testing the portal, not a real news report. Verified editorial content will appear here before publication."
+    },
+    "status": "pending",
+    "demo": true
+  },
+  {
+    "id": "6",
+    "category": "travel",
+    "country": "RU",
+    "title": {
+      "ru": "Путешествия: открываем новые места",
+      "en": "Travel: discovering new places"
+    },
+    "body": {
+      "ru": "Это демонстрационный материал для проверки работы портала. Он не является реальной новостью. Здесь появится текст, подготовленный редакцией и проверенный перед публикацией.",
+      "en": "This is sample content for testing the portal, not a real news report. Verified editorial content will appear here before publication."
+    },
+    "status": "pending",
+    "demo": true
+  }
+]
