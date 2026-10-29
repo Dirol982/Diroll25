@@ -1,5 +1,51 @@
 [
   {
+    "startedAt": "2026-10-29T11:37:47.413Z",
+    "published": [],
+    "held": [],
+    "rejected": [],
+    "errors": [
+      {
+        "topic": "technology",
+        "stage": "search",
+        "error": "Gemini 429: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. "
+      },
+      {
+        "topic": "science",
+        "stage": "search",
+        "error": "Gemini 429: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. "
+      },
+      {
+        "topic": "economy",
+        "stage": "search",
+        "error": "Gemini 429: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. "
+      },
+      {
+        "topic": "culture",
+        "stage": "search",
+        "error": "Gemini 429: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. "
+      },
+      {
+        "topic": "sport",
+        "stage": "search",
+        "error": "Gemini 429: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. "
+      },
+      {
+        "topic": "travel",
+        "stage": "search",
+        "error": "Gemini 429: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. "
+      }
+    ],
+    "usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "finishedAt": "2026-10-29T11:53:20.464Z",
+    "status": "failed",
+    "provider": "gemini",
+    "model": "gemini-3.8-flash"
+  },
+  {
     "startedAt": "2026-10-29T11:18:48.019Z",
     "published": [],
     "held": [],
