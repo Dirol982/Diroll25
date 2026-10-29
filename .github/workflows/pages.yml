@@ -56,12 +56,20 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          # Only this workflow writes these data files. Carry them onto the latest main,
+          # so commits pushed while the run was working never cause a conflict.
+          data="config/published.json config/agent-seen.json config/agent-runs.json config/telegram-deliveries.json"
+          mkdir -p "$RUNNER_TEMP/data"
+          for f in $data; do if [ -f "$f" ]; then cp "$f" "$RUNNER_TEMP/data/"; fi; done
+          git fetch origin main
+          git reset --hard origin/main
+          for f in $data; do if [ -f "$RUNNER_TEMP/data/$(basename "$f")" ]; then cp "$RUNNER_TEMP/data/$(basename "$f")" "$f"; fi; done
+          python3 tools/build-preview.py
           git add config/published.json config/agent-seen.json config/agent-runs.json docs/index.html docs/cabinet.html atlas-demo.html
           if [ -f config/telegram-deliveries.json ]; then git add config/telegram-deliveries.json; fi
           if ! git diff --cached --quiet; then
             git commit -m 'Refresh verified ATLAS publications'
-            git pull --rebase origin main
-            git push
+            git push origin HEAD:main
           fi
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
