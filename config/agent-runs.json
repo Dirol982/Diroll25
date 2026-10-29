@@ -1,5 +1,73 @@
 [
   {
+    "startedAt": "2026-10-29T12:02:22.753Z",
+    "published": [],
+    "held": [],
+    "rejected": [],
+    "errors": [
+      {
+        "topic": "technology",
+        "stage": "search",
+        "error": "Gemini 404 (gemini-2.5-flash-lite): This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/g"
+      },
+      {
+        "topic": "science",
+        "stage": "search",
+        "error": "Gemini 404 (gemini-2.5-flash-lite): This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/g"
+      },
+      {
+        "topic": "economy",
+        "stage": "search",
+        "error": "Gemini 404 (gemini-2.5-flash-lite): This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/g"
+      },
+      {
+        "topic": "culture",
+        "stage": "search",
+        "error": "Gemini 404 (gemini-2.5-flash-lite): This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/g"
+      },
+      {
+        "topic": "sport",
+        "stage": "search",
+        "error": "Gemini 404 (gemini-2.5-flash-lite): This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/g"
+      },
+      {
+        "topic": "travel",
+        "stage": "search",
+        "error": "Gemini 404 (gemini-2.5-flash-lite): This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/g"
+      }
+    ],
+    "usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "finishedAt": "2026-10-29T12:07:07.372Z",
+    "status": "failed",
+    "provider": "gemini",
+    "skippedModels": [
+      "gemini-3.8-flash",
+      "gemini-3.7-flash",
+      "gemini-3.6-flash",
+      "gemini-3.5-flash",
+      "gemini-2.5-flash",
+      "gemini-3.5-flash-lite",
+      "gemini-3.1-flash-lite",
+      "gemini-2.5-flash-lite"
+    ],
+    "diagnostics": {
+      "modelErrors": {
+        "gemini-3.8-flash": "Gemini 429 (gemini-3.8-flash): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ",
+        "gemini-3.7-flash": "Gemini 429 (gemini-3.7-flash): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ",
+        "gemini-3.6-flash": "Gemini 429 (gemini-3.6-flash): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ",
+        "gemini-3.5-flash": "Gemini 429 (gemini-3.5-flash): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ",
+        "gemini-2.5-flash": "Gemini 404 (gemini-2.5-flash): This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).",
+        "gemini-3.5-flash-lite": "Gemini 429 (gemini-3.5-flash-lite): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ",
+        "gemini-3.1-flash-lite": "Gemini 429 (gemini-3.1-flash-lite): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ",
+        "gemini-2.5-flash-lite": "Gemini 404 (gemini-2.5-flash-lite): This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/g"
+      },
+      "probe": "The operation was aborted due to timeout"
+    }
+  },
+  {
     "startedAt": "2026-10-29T11:55:29.101Z",
     "published": [],
     "held": [],
