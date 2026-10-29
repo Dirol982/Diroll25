@@ -5,6 +5,7 @@ import {searchTopic} from './agents/search.js';
 import {verifyStory} from './agents/verify.js';
 import {rewriteStory} from './agents/rewrite.js';
 import {AgentRefusal, normalizeUrl} from './agents/claude.js';
+import {findImage} from './images.js';
 
 const words = s => new Set(String(s).toLowerCase().replace(/[^\p{L}\p{N}\s]/gu, ' ').split(/\s+/).filter(w => w.length > 3));
 export function similar(a, b) {
@@ -31,6 +32,7 @@ export function buildArticle({story, verification, copy, topic, now, status}) {
     importance: pick('whyItMatters'),
     next: pick('whatNext'),
     telegramText: pick('telegram'),
+    imageQuery: copy.imageQuery || '',
     status,
     demo: false,
     priority: Math.max(1, Math.min(5, story.importance || 3)),
@@ -55,7 +57,7 @@ export function buildArticle({story, verification, copy, topic, now, status}) {
   };
 }
 
-export async function runPipeline({client, store, topics, now = new Date(), perTopic = 2, maxStories = 6, autoPublish = true, log = console.log}) {
+export async function runPipeline({client, store, topics, now = new Date(), perTopic = 2, maxStories = 6, autoPublish = true, imageFinder = findImage, log = console.log}) {
   const report = {startedAt: now.toISOString(), published: [], held: [], rejected: [], errors: [], usage: {input_tokens: 0, output_tokens: 0}};
   const addUsage = u => { if (u) { report.usage.input_tokens += u.input_tokens; report.usage.output_tokens += u.output_tokens; } };
   const seen = await store.seen();
@@ -89,6 +91,9 @@ export async function runPipeline({client, store, topics, now = new Date(), perT
         addUsage(usage);
         const publish = autoPublish && verification.decision === 'publish' && !problems.length;
         const article = buildArticle({story, verification: {...verification, problems: [...verification.problems, ...problems]}, copy, topic, now, status: publish ? 'published' : 'pending'});
+        const image = await imageFinder(article.imageQuery);
+        if (image) article.image = image;
+        article.imageSearchedAt = new Date().toISOString();
         await store.save(article);
         await mark(publish ? 'published' : 'held');
         (publish ? report.published : report.held).push({id: article.id, title: article.title.en, problems: article.verification.problems});

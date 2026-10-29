@@ -50,9 +50,9 @@ test('feed newsroom publishes only events reported by two different outlets', as
           {topic: 'science', items: [n('Bee study')], headline: 'Bee study', importance: 2, country: ''},
         ]}, usage: {input_tokens: 5, output_tokens: 5}};
       }
-      return {result: {ru: copy('ru'), en: copy('en')}, usage: {input_tokens: 5, output_tokens: 5}};
+      return {result: {ru: copy('ru'), en: copy('en'), imageQuery: 'Mars orbiter'}, usage: {input_tokens: 5, output_tokens: 5}};
     }};
-    const report = await runFeedPipeline({client, store, feeds, topics: [{id: 'science', name: {ru: 'Наука', en: 'Science'}}], now, fetcher: async url => ({ok: true, text: async () => bodies[url]}), log() {}});
+    const report = await runFeedPipeline({client, store, feeds, topics: [{id: 'science', name: {ru: 'Наука', en: 'Science'}}], now, fetcher: async url => ({ok: true, text: async () => bodies[url]}), imageFinder: async q => ({url: 'https://upload.wikimedia.org/x.jpg', query: q, license: 'CC BY-SA 4.0'}), log() {}});
     assert.equal(report.published.length, 1, JSON.stringify(report));
     assert.equal(report.rejected[0].verdict, 'single-outlet');
     assert.equal(prompts.length, 2);
@@ -61,8 +61,10 @@ test('feed newsroom publishes only events reported by two different outlets', as
     assert.equal(article.verification.independentSources, 3);
     assert.equal(article.sources.length, 3);
     assert.equal(article.priority, 4);
+    assert.equal(article.image.url, 'https://upload.wikimedia.org/x.jpg');
+    assert.equal(article.imageQuery, 'Mars orbiter');
     // Everything in the published group is remembered, so the next run does not repeat it.
-    const again = await runFeedPipeline({client, store, feeds, topics: [{id: 'science', name: {ru: 'Наука', en: 'Science'}}], now, fetcher: async url => ({ok: true, text: async () => bodies[url]}), log() {}});
+    const again = await runFeedPipeline({client, store, feeds, topics: [{id: 'science', name: {ru: 'Наука', en: 'Science'}}], now, fetcher: async url => ({ok: true, text: async () => bodies[url]}), imageFinder: async q => ({url: 'https://upload.wikimedia.org/x.jpg', query: q, license: 'CC BY-SA 4.0'}), log() {}});
     assert.equal(again.published.length, 0);
   } finally { await rm(dir, {recursive: true, force: true}); }
 });

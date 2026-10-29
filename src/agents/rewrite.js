@@ -18,8 +18,12 @@ const languageBlock = {
 const articleSchema = {
   type: 'object',
   additionalProperties: false,
-  required: ['ru', 'en'],
-  properties: {ru: languageBlock, en: languageBlock},
+  required: ['ru', 'en', 'imageQuery'],
+  properties: {
+    ru: languageBlock,
+    en: languageBlock,
+    imageQuery: {type: 'string', description: 'English photo search query, 2-4 words, naming a concrete visible subject of the story (a place, building, object or public figure), e.g. "State Duma building" or "International Space Station". No abstract words.'},
+  },
 };
 
 const SYSTEM = `You are the bilingual writing desk of ATLAS. Write an original news article in Russian and in English.

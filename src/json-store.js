@@ -20,6 +20,7 @@ export async function openJsonStore({publishedPath, seenPath, keepDays = 7, now 
   // Already-published URLs are always "seen", even after the journal is pruned.
   const fromSnapshot = snapshot.articles.flatMap(a => (a.sources || [a.source]).map(s => ({url: s.url, title: a.originalTitle || a.title?.en, category: a.category})));
   return {
+    async list() { return snapshot.articles; },
     async seen() { return [...fromSnapshot, ...journal]; },
     async markSeen(entry) { journal.push(entry); await writeJson(seenPath, journal); },
     async save(article) {

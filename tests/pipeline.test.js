@@ -34,7 +34,7 @@ async function withStore(fn) {
 test('confirmed story with two independent sources is published in both languages', async () => {
   await withStore(async (store, dir) => {
     const client = fakeClient('confirmed', [{url: 'https://www.esa.int/probe', publisher: 'ESA', confirms: true}, {url: 'https://www.reuters.com/science/probe', publisher: 'Reuters', confirms: true}]);
-    const report = await runPipeline({client, store, topics: [topic], now, log() {}});
+    const report = await runPipeline({client, store, topics: [topic], now, imageFinder: async () => null, log() {}});
     assert.equal(report.published.length, 1);
     const saved = JSON.parse(await readFile(dir + '/published.json', 'utf8')).articles[0];
     assert.equal(saved.title.ru, 'Зонд вышел на орбиту Марса');
@@ -42,14 +42,14 @@ test('confirmed story with two independent sources is published in both language
     assert.equal(client.calls[0].model, 'claude-opus-5-5');
     assert.equal(client.calls[0].fallbacks, 'default');
     // A second run must not re-verify the same story.
-    const again = await runPipeline({client, store, topics: [topic], now, log() {}});
+    const again = await runPipeline({client, store, topics: [topic], now, imageFinder: async () => null, log() {}});
     assert.equal(again.published.length + again.rejected.length + again.held.length, 0);
   });
 });
 
 test('single-source or unseen-source stories are not published', async () => {
   await withStore(async (store, dir) => {
-    const report = await runPipeline({client: fakeClient('confirmed', [{url: 'https://www.esa.int/probe', publisher: 'ESA', confirms: true}, {url: 'https://esa.int/other', publisher: 'ESA', confirms: true}]), store, topics: [topic], now, log() {}});
+    const report = await runPipeline({client: fakeClient('confirmed', [{url: 'https://www.esa.int/probe', publisher: 'ESA', confirms: true}, {url: 'https://esa.int/other', publisher: 'ESA', confirms: true}]), store, topics: [topic], now, imageFinder: async () => null, log() {}});
     assert.equal(report.published.length, 0);
     assert.equal(report.rejected.length, 1);
     assert.equal(JSON.parse(await readFile(dir + '/seen.json', 'utf8'))[0].decision, 'rejected');

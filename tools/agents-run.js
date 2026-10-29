@@ -4,6 +4,7 @@
 import {readFile, writeFile, appendFile} from 'node:fs/promises';
 import {runPipeline} from '../src/pipeline.js';
 import {runFeedPipeline} from '../src/feed-pipeline.js';
+import {backfillImages} from '../src/images.js';
 import {openJsonStore} from '../src/json-store.js';
 import {createAgentClient, selectedProvider} from '../src/agents/provider.js';
 
@@ -52,6 +53,8 @@ const report = mode === 'feeds'
     // Pages has no review queue, so held stories are simply not published there.
     autoPublish: true,
   });
+// Photos for earlier stories that do not have one yet (free, no AI calls).
+report.imagesBackfilled = await backfillImages(await store.list(), a => store.save(a));
 const searchFailures = report.errors.filter(e => e.stage === 'search' || e.stage === 'cluster').length;
 const searchable = mode === 'feeds' ? 1 : topics.filter(t => t.search !== false).length;
 const status = searchFailures === searchable ? 'failed' : report.errors.length ? 'partial' : 'ok';

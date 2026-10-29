@@ -7,6 +7,7 @@ import {openDatabase, articleRepo, pipelineStore, nowIso} from './db.js';
 import {runPipeline} from './pipeline.js';
 import {createAgentClient, selectedProvider} from './agents/provider.js';
 import {campaignService} from './ads.js';
+import {backfillImages} from './images.js';
 import {channelsForArticle, telegramURL, formatArticlePost, formatAdPost, sendTelegram, TelegramRejected} from '../telegram.js';
 import {Subscriptions, brevoSender, validEmail} from '../subscriptions.js';
 
@@ -45,6 +46,7 @@ async function runNewsroom() {
       maxStories: Number(process.env.ATLAS_MAX_STORIES_PER_RUN || 6),
       autoPublish: process.env.ATLAS_AUTO_PUBLISH !== '0',
     });
+    report.imagesBackfilled = await backfillImages(articles.byStatus('published', 100), a => articles.save(a));
     db.prepare("UPDATE jobs SET status = 'done', finished_at = ?, result = ? WHERE id = ?").run(nowIso(), JSON.stringify(report), id);
   } catch (e) {
     db.prepare("UPDATE jobs SET status = 'failed', finished_at = ?, result = ? WHERE id = ?").run(nowIso(), JSON.stringify({error: String(e.message).slice(0, 500)}), id);

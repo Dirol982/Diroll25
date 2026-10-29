@@ -7,6 +7,7 @@ import {runAgent, normalizeUrl, AgentRefusal} from './agents/claude.js';
 import {rewriteStory} from './agents/rewrite.js';
 import {buildArticle} from './pipeline.js';
 import {fetchFeeds} from './feeds.js';
+import {findImage} from './images.js';
 
 const clusterSchema = {
   type: 'object',
@@ -34,7 +35,7 @@ Group headlines that report the SAME specific event (same people, place, numbers
 Return only events covered by at least two different outlets, most significant first. Skip opinion, reviews, quizzes, live blogs, horoscopes and promotional items.
 Never merge different events just because the topic is similar.`;
 
-export async function runFeedPipeline({client, store, topics, feeds, now = new Date(), maxStories = 3, fetcher = fetch, log = console.log}) {
+export async function runFeedPipeline({client, store, topics, feeds, now = new Date(), maxStories = 3, fetcher = fetch, imageFinder = findImage, log = console.log}) {
   const report = {mode: 'feeds', startedAt: now.toISOString(), published: [], held: [], rejected: [], errors: [], usage: {input_tokens: 0, output_tokens: 0}};
   const add = u => { if (u) { report.usage.input_tokens += u.input_tokens; report.usage.output_tokens += u.output_tokens; } };
   const sections = topics.filter(t => t.search !== false);
@@ -85,6 +86,9 @@ export async function runFeedPipeline({client, store, topics, feeds, now = new D
       const {article: copy, problems, usage} = await rewriteStory(client, {story, verification, topic});
       add(usage);
       const article = buildArticle({story, verification: {...verification, problems}, copy, topic, now, status: problems.length ? 'pending' : 'published'});
+      const image = await imageFinder(article.imageQuery);
+      if (image) article.image = image;
+      article.imageSearchedAt = new Date().toISOString();
       await store.save(article);
       await mark(problems.length ? 'held' : 'published');
       (problems.length ? report.held : report.published).push({id: article.id, title: article.title.en, outlets: [...outlets]});

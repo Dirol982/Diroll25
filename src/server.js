@@ -90,7 +90,7 @@ function articlePage(a, lang) {
   return `<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><title>${esc(title)} — ATLAS</title>
 <meta name="description" content="${esc(description)}"><meta property="og:type" content="article"><meta property="og:site_name" content="ATLAS">
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}">
-<meta property="og:image" content="${esc(new URL('/images/' + (photos[a.category] || 'landscape.jpg'), publicUrl).href)}">
+<meta property="og:image" content="${esc(a.image?.url || new URL('/images/' + (photos[a.category] || 'landscape.jpg'), publicUrl).href)}">
 <meta property="og:url" content="${esc(new URL('/a/' + a.id + '?lang=' + lang, publicUrl).href)}">
 <meta http-equiv="refresh" content="0; url=${esc(target)}"></head><body><a href="${esc(target)}">${esc(title)}</a></body></html>`;
 }
