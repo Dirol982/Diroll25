@@ -1,6 +1,272 @@
 [
   {
     "mode": "feeds",
+    "startedAt": "2026-10-29T12:41:04.181Z",
+    "published": [
+      {
+        "id": "agent-e5675650b4bbcaa6b709",
+        "title": "State Duma Passes Russia's 2027–2029 Draft Federal Budget in First Reading",
+        "outlets": [
+          "kommersant.ru",
+          "interfax.ru",
+          "rbc.ru"
+        ]
+      },
+      {
+        "id": "agent-c348b9789a0b99d21f2e",
+        "title": "U.S. GDP Grows at Faster-Than-Expected 3.4% Rate in Third Quarter of 2026",
+        "outlets": [
+          "nytimes.com",
+          "interfax.ru"
+        ]
+      },
+      {
+        "id": "agent-f117d5255dd2a1807a46",
+        "title": "Astronauts Step Outside International Space Station to Install Roll-Out Solar Array",
+        "outlets": [
+          "theguardian.com",
+          "interfax.ru"
+        ]
+      }
+    ],
+    "held": [],
+    "rejected": [],
+    "errors": [],
+    "usage": {
+      "input_tokens": 9343,
+      "output_tokens": 5776
+    },
+    "feeds": [
+      {
+        "feed": "BBC News / technology",
+        "ok": true,
+        "items": 20
+      },
+      {
+        "feed": "The Guardian / technology",
+        "ok": true,
+        "items": 36
+      },
+      {
+        "feed": "The New York Times / technology",
+        "ok": true,
+        "items": 25
+      },
+      {
+        "feed": "Ars Technica / technology",
+        "ok": true,
+        "items": 20
+      },
+      {
+        "feed": "The Verge / technology",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "NPR / technology",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "Хабр / technology",
+        "ok": true,
+        "items": 40
+      },
+      {
+        "feed": "3DNews / technology",
+        "ok": true,
+        "items": 56
+      },
+      {
+        "feed": "iXBT / technology",
+        "ok": true,
+        "items": 50
+      },
+      {
+        "feed": "BBC News / science",
+        "ok": true,
+        "items": 42
+      },
+      {
+        "feed": "The Guardian / science",
+        "ok": true,
+        "items": 27
+      },
+      {
+        "feed": "The New York Times / science",
+        "ok": true,
+        "items": 28
+      },
+      {
+        "feed": "NPR / science",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "ScienceDaily / science",
+        "ok": true,
+        "items": 60
+      },
+      {
+        "feed": "N + 1 / science",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "Naked Science / science",
+        "ok": true,
+        "items": 20
+      },
+      {
+        "feed": "BBC News / economy",
+        "ok": true,
+        "items": 40
+      },
+      {
+        "feed": "The Guardian / economy",
+        "ok": true,
+        "items": 19
+      },
+      {
+        "feed": "The New York Times / economy",
+        "ok": true,
+        "items": 50
+      },
+      {
+        "feed": "NPR / economy",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "CNBC / economy",
+        "ok": true,
+        "items": 30
+      },
+      {
+        "feed": "Коммерсантъ / economy",
+        "ok": true,
+        "items": 25
+      },
+      {
+        "feed": "РБК / economy",
+        "ok": true,
+        "items": 30
+      },
+      {
+        "feed": "Интерфакс / economy",
+        "ok": true,
+        "items": 25
+      },
+      {
+        "feed": "BBC News / culture",
+        "ok": true,
+        "items": 23
+      },
+      {
+        "feed": "The Guardian / culture",
+        "ok": true,
+        "items": 26
+      },
+      {
+        "feed": "The New York Times / culture",
+        "ok": true,
+        "items": 62
+      },
+      {
+        "feed": "NPR / culture",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "Коммерсантъ / culture",
+        "ok": true,
+        "items": 12
+      },
+      {
+        "feed": "BBC Sport / sport",
+        "ok": true,
+        "items": 63
+      },
+      {
+        "feed": "The Guardian / sport",
+        "ok": true,
+        "items": 26
+      },
+      {
+        "feed": "The New York Times / sport",
+        "ok": true,
+        "items": 0
+      },
+      {
+        "feed": "ESPN / sport",
+        "ok": true,
+        "items": 0
+      },
+      {
+        "feed": "Чемпионат / sport",
+        "ok": true,
+        "items": 31
+      },
+      {
+        "feed": "Sports.ru / sport",
+        "ok": true,
+        "items": 20
+      },
+      {
+        "feed": "Спорт-Экспресс / sport",
+        "ok": true,
+        "items": 612
+      },
+      {
+        "feed": "The Guardian / travel",
+        "ok": true,
+        "items": 35
+      },
+      {
+        "feed": "The New York Times / travel",
+        "ok": true,
+        "items": 20
+      },
+      {
+        "feed": "Skift / travel",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "Лента.ру / travel",
+        "ok": true,
+        "items": 200
+      },
+      {
+        "feed": "РИА Новости / travel",
+        "ok": false,
+        "error": "HTTP 404"
+      },
+      {
+        "feed": "Лента.ру / culture",
+        "ok": true,
+        "items": 200
+      },
+      {
+        "feed": "Лента.ру / economy",
+        "ok": true,
+        "items": 200
+      },
+      {
+        "feed": "Лента.ру / science",
+        "ok": false,
+        "error": "fetch failed"
+      }
+    ],
+    "candidates": 235,
+    "finishedAt": "2026-10-29T12:57:12.273Z",
+    "status": "ok",
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "skippedModels": []
+  },
+  {
+    "mode": "feeds",
     "startedAt": "2026-10-29T12:18:48.545Z",
     "published": [],
     "held": [],

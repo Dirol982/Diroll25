@@ -1,8 +1,232 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-10-29T12:18:47.825357+00:00",
-  "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
+  "builtAt": "2026-10-29T12:57:12.270Z",
+  "verification": "Agent pipeline: search, independent verification by a second agent with at least two independent sources, bilingual rewrite; plus deterministic first-party release checks",
   "articles": [
+    {
+      "id": "agent-c348b9789a0b99d21f2e",
+      "category": "economy",
+      "country": "US",
+      "title": {
+        "ru": "ВВП США в третьем квартале 2026 года вырос на 3,4%",
+        "en": "U.S. GDP Grows at Faster-Than-Expected 3.4% Rate in Third Quarter of 2026"
+      },
+      "body": {
+        "ru": "Экономика США в третьем квартале 2026 года увеличилась на 3,4% в пересчете на годовые темпы, превысив прогнозы аналитиков.",
+        "en": "The United States economy grew at an annualized rate of 3.4% in the third quarter of 2026, exceeding forecasts."
+      },
+      "content": {
+        "ru": [
+          "По предварительным данным Министерства торговли США, которые приводит «Интерфакс», темпы роста валового внутреннего продукта страны оказались выше ожиданий рынка.",
+          "Как сообщает The New York Times со ссылкой на федеральную статистику, ключевыми драйверами подъема американского ВВП в третьем квартале стали потребительские расходы и затраты компаний, работающих в сфере искусственного интеллекта.",
+          "Опубликованные цифры отражают первоначальную оценку динамики экономики за прошедший квартал."
+        ],
+        "en": [
+          "The preliminary figures from the U.S. Department of Commerce showed an economic expansion that outpaced market projections, according to Interfax.",
+          "Federal data cited by The New York Times indicated that gross domestic product growth during the three-month period was powered by consumer spending alongside outlays from artificial intelligence companies.",
+          "The initial estimate reflects economic performance during the quarter ahead of subsequent government revisions."
+        ]
+      },
+      "importance": {
+        "ru": "Показатели свидетельствуют о сохранении устойчивости американской экономики, поддерживаемой потребительским сектором и растущими инвестициями в технологии искусственного интеллекта.",
+        "en": "The data highlights steady momentum in the world's largest economy, driven by consumer activity and sustained corporate expenditure in the artificial intelligence sector."
+      },
+      "next": {
+        "ru": "Министерство торговли США опубликует последующие пересмотренные оценки динамики ВВП за третий квартал в рамках стандартного графика статистических релизов.",
+        "en": "The Department of Commerce will release revised estimates for third-quarter gross domestic product in upcoming updates."
+      },
+      "telegramText": {
+        "ru": "ВВП США в третьем квартале 2026 года увеличился на 3,4% в пересчете на годовые темпы, превысив предварительные прогнозы. Об этом свидетельствуют первые оценки Министерства торговли США, сообщает «Интерфакс». Согласно сведениям The New York Times, основную поддержку подъему оказали потребительские расходы и инвестиции компаний сектора искусственного интеллекта.",
+        "en": "The U.S. economy expanded at an annualized rate of 3.4% in the third quarter of 2026, beating expectations. According to preliminary Department of Commerce data reported by Interfax, growth was stronger than anticipated. Federal figures highlighted by The New York Times showed that the increase was primarily driven by consumer spending and outlays from artificial intelligence firms."
+      },
+      "status": "published",
+      "demo": false,
+      "priority": 3,
+      "originalTitle": "US Economy Grows at Faster-Than-Expected 3.4% Rate in Third Quarter",
+      "source": {
+        "name": "The New York Times",
+        "url": "https://www.nytimes.com/2026/10/29/business/economy/us-economy-gdp.html",
+        "language": "en"
+      },
+      "sources": [
+        {
+          "publisher": "The New York Times",
+          "url": "https://www.nytimes.com/2026/10/29/business/economy/us-economy-gdp.html",
+          "confirms": true
+        },
+        {
+          "publisher": "Интерфакс",
+          "url": "https://www.interfax.ru/business/1125827",
+          "confirms": true
+        }
+      ],
+      "publishedAt": "2026-10-29T12:35:00.000Z",
+      "updatedAt": "2026-10-29T12:35:00.000Z",
+      "collectedAt": "2026-10-29T12:41:04.181Z",
+      "sitePublishedAt": "2026-10-29T12:41:04.181Z",
+      "publicationMode": "agents",
+      "translationStatus": "ai-bilingual",
+      "factsReviewed": false,
+      "verification": {
+        "verdict": "cross-source",
+        "independentSources": 2,
+        "disputedFacts": [],
+        "problems": [],
+        "notes": "Reported by several outlets in their own feeds",
+        "checkedAt": "2026-10-29T12:41:04.181Z"
+      }
+    },
+    {
+      "id": "agent-e5675650b4bbcaa6b709",
+      "category": "economy",
+      "country": "RU",
+      "title": {
+        "ru": "Госдума приняла в первом чтении проект федерального бюджета на 2027–2029 годы",
+        "en": "State Duma Passes Russia's 2027–2029 Draft Federal Budget in First Reading"
+      },
+      "body": {
+        "ru": "Государственная дума одобрила в первом чтении проект закона о федеральном бюджете на 2027 год и плановый период 2028–2029 годов.",
+        "en": "Russia's State Duma has approved the draft federal budget for 2027 and the 2028–2029 planning period in its first reading."
+      },
+      "content": {
+        "ru": [
+          "В ходе пленарного заседания в четверг за принятие финансового документа проголосовали 372 депутата, что составило 82,7% присутствовавших в зале парламентариев, сообщает «Коммерсантъ». Против утверждения законопроекта никто не высказался.",
+          "Документ определяет параметры казны на ближайший трехлетний цикл, охватывая 2027 год и плановые периоды 2028 и 2029 годов, уточняет «Интерфакс».",
+          "По данным издания РБК, проект бюджета закладывает существенную корректировку бюджетного правила, а также предполагает превышение уровня государственного долга отметки в 20%."
+        ],
+        "en": [
+          "During a parliamentary session on Thursday, 372 lawmakers voted in favor of the bill, representing 82.7% of the deputies present, according to Kommersant. No votes were cast against the measure.",
+          "The legislation establishes federal fiscal framework targets for 2027 alongside projected baselines for 2028 and 2029, Interfax reported.",
+          "According to RBC, the draft budget includes a major adjustment to the national fiscal rule and projects that the government debt level will exceed 20%."
+        ]
+      },
+      "importance": {
+        "ru": "Одобрение проекта в первом чтении фиксирует ключевые концептуальные параметры государственной финансовой системы на ближайшие три года, включая обновленные механизмы бюджетного правила и допустимые объемы госдолга.",
+        "en": "The first reading vote establishes the structural parameters of Russia's public finances for the upcoming three-year cycle, formally advancing revisions to sovereign borrowing limits and fiscal spending rules."
+      },
+      "next": {
+        "ru": "Законопроекту предстоит пройти процедуры второго и третьего чтений в Государственной думе, в рамках которых депутаты будут рассматривать детальные поправки к распределению средств.",
+        "en": "The draft law will move to its second reading in the State Duma, during which lawmakers will review specific amendments and targeted resource allocations."
+      },
+      "telegramText": {
+        "ru": "Госдума одобрила в первом чтении проект федерального бюджета на 2027 год и плановый период 2028–2029 годов. \n\nЗа принятие документа проголосовали 372 депутата (82,7% присутствовавших), голосов против подано не было. Как сообщают СМИ, представленный трехлетний проект предполагает значительную корректировку бюджетного правила и закладывает уровень государственного долга выше 20%.",
+        "en": "Russia's State Duma has approved the draft federal budget for 2027–2029 in its first reading.\n\nThe bill was backed by 372 deputies (82.7% of those present), with no votes cast against it. Media reports indicate that the incoming three-year financial plan outlines a significant overhaul of the fiscal rule and projects public debt to surpass 20%."
+      },
+      "status": "published",
+      "demo": false,
+      "priority": 3,
+      "originalTitle": "Russian State Duma Passes Three-Year Federal Draft Budget in First Reading",
+      "source": {
+        "name": "Коммерсантъ",
+        "url": "https://www.kommersant.ru/doc/9063831",
+        "language": "en"
+      },
+      "sources": [
+        {
+          "publisher": "Коммерсантъ",
+          "url": "https://www.kommersant.ru/doc/9063831",
+          "confirms": true
+        },
+        {
+          "publisher": "Интерфакс",
+          "url": "https://www.interfax.ru/business/1125825",
+          "confirms": true
+        },
+        {
+          "publisher": "РБК",
+          "url": "https://www.rbc.ru/economics/29/10/2026/6ae32b5df1d11a85f97f2468",
+          "confirms": true
+        }
+      ],
+      "publishedAt": "2026-10-29T12:29:41.000Z",
+      "updatedAt": "2026-10-29T12:29:41.000Z",
+      "collectedAt": "2026-10-29T12:41:04.181Z",
+      "sitePublishedAt": "2026-10-29T12:41:04.181Z",
+      "publicationMode": "agents",
+      "translationStatus": "ai-bilingual",
+      "factsReviewed": false,
+      "verification": {
+        "verdict": "cross-source",
+        "independentSources": 3,
+        "disputedFacts": [],
+        "problems": [],
+        "notes": "Reported by several outlets in their own feeds",
+        "checkedAt": "2026-10-29T12:41:04.181Z"
+      }
+    },
+    {
+      "id": "agent-f117d5255dd2a1807a46",
+      "category": "science",
+      "country": null,
+      "title": {
+        "ru": "Астронавты вышли в открытый космос для установки новой солнечной батареи на МКС",
+        "en": "Astronauts Step Outside International Space Station to Install Roll-Out Solar Array"
+      },
+      "body": {
+        "ru": "В четверг двое астронавтов вышли за пределы Международной космической станции для выполнения работ по модернизации бортовой системы электропитания.",
+        "en": "Astronauts aboard the International Space Station conducted a spacewalk on Thursday to carry out scheduled power system upgrades."
+      },
+      "content": {
+        "ru": [
+          "Как сообщает The Guardian, внекорабельную деятельность осуществляют астронавт NASA Анил Менон и астронавт Канадского космического агентства (CSA) Джошуа Кутрик.",
+          "Перед членами экипажа стоит задача по установке и развертыванию выкатной солнечной батареи International Space Station Roll-Out Solar Array (IROSA).",
+          "По данным агентства «Интерфакс», данные монтажные работы направлены на модернизацию системы энергоснабжения орбитальной лаборатории. Прямую трансляцию происходящего в открытом космосе обеспечивает NASA."
+        ],
+        "en": [
+          "NASA astronaut Anil Menon and Canadian Space Agency (CSA) astronaut Joshua Kutryk exited the station to perform the orbital tasks, according to The Guardian.",
+          "The primary objective of the excursion is to install and deploy an International Space Station Roll-Out Solar Array (IROSA) on the exterior of the complex.",
+          "As reported by Interfax, the operation is aimed at modernising the orbiting laboratory's electrical power system. NASA hosted a live stream covering the spacewalk."
+        ]
+      },
+      "importance": {
+        "ru": "Монтаж панелей IROSA позволяет обновить инфраструктуру электроснабжения космической станции, поддерживая ее стабильную работу на орбите.",
+        "en": "The installation of the IROSA unit directly enhances and updates the electrical power generation capabilities supporting the orbital laboratory."
+      },
+      "next": {
+        "ru": "Астронавтам предстоит завершить запланированные монтажные операции и развертывание панели солнечных батарей перед возвращением внутрь шлюзового отсека.",
+        "en": "The crew must complete the mechanical installation and roll-out deployment of the solar panel before returning inside the airlock."
+      },
+      "telegramText": {
+        "ru": "Астронавт NASA Анил Менон и астронавт Канадского космического агентства Джошуа Кутрик вышли за пределы Международной космической станции для проведения работ на внешней поверхности комплекса. По информации The Guardian и «Интерфакса», выход посвящен модернизации энергосистемы орбитальной лаборатории: специалистам предстоит установить и развернуть панель солнечных батарей IROSA. Прямой эфир операции ведет NASA.",
+        "en": "NASA astronaut Anil Menon and Canadian Space Agency astronaut Joshua Kutryk have stepped out of the International Space Station for a spacewalk, according to The Guardian and Interfax. The astronauts are working outside the orbital complex to upgrade its power system by installing and deploying an International Space Station Roll-Out Solar Array (IROSA). NASA provided live coverage of the exterior operation."
+      },
+      "status": "published",
+      "demo": false,
+      "priority": 3,
+      "originalTitle": "Astronauts Conduct Spacewalk Outside International Space Station",
+      "source": {
+        "name": "The Guardian",
+        "url": "https://www.theguardian.com/science/video/2026/oct/29/astronauts-step-out-of-the-iss-for-spacewalk-watch-live",
+        "language": "en"
+      },
+      "sources": [
+        {
+          "publisher": "The Guardian",
+          "url": "https://www.theguardian.com/science/video/2026/oct/29/astronauts-step-out-of-the-iss-for-spacewalk-watch-live",
+          "confirms": true
+        },
+        {
+          "publisher": "Интерфакс",
+          "url": "https://www.interfax.ru/world/1125817",
+          "confirms": true
+        }
+      ],
+      "publishedAt": "2026-10-29T10:37:14.000Z",
+      "updatedAt": "2026-10-29T10:37:14.000Z",
+      "collectedAt": "2026-10-29T12:41:04.181Z",
+      "sitePublishedAt": "2026-10-29T12:41:04.181Z",
+      "publicationMode": "agents",
+      "translationStatus": "ai-bilingual",
+      "factsReviewed": false,
+      "verification": {
+        "verdict": "cross-source",
+        "independentSources": 2,
+        "disputedFacts": [],
+        "problems": [],
+        "notes": "Reported by several outlets in their own feeds",
+        "checkedAt": "2026-10-29T12:41:04.181Z"
+      }
+    },
     {
       "id": "feed-073bc027b25d4ba6cfbd",
       "category": "technology",
@@ -25,7 +249,7 @@
       "originalTitle": "1.144.0",
       "publishedAt": "2026-10-28T18:51:38Z",
       "updatedAt": "2026-10-28T18:51:38Z",
-      "collectedAt": "2026-10-29T12:18:47.825254+00:00",
+      "collectedAt": "2026-10-29T12:41:03.421514+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -38,18 +262,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-10-29T12:18:47.825357+00:00",
+      "sitePublishedAt": "2026-10-29T12:41:03.421760+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-10-29T12:18:47.825357+00:00"
+          "checkedAt": "2026-10-29T12:41:03.421760+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-10-29T12:18:47.825357+00:00",
-          "evidenceSha256": "125da8bef75476de8e0997705f046ee0b4023f7bd663e1b843625de506a32ae6"
+          "checkedAt": "2026-10-29T12:41:03.421760+00:00",
+          "evidenceSha256": "9befc96a5fe93bae232044525aa124b0e71d94de9c8eb893de2c8e606c0a82e3"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -76,7 +300,7 @@
       "originalTitle": "2026-10-28, Version 24.22.2 'Krypton' (LTS), @aduh95",
       "publishedAt": "2026-10-28T18:39:09Z",
       "updatedAt": "2026-10-28T18:39:09Z",
-      "collectedAt": "2026-10-29T12:18:47.506801+00:00",
+      "collectedAt": "2026-10-29T12:41:03.048015+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -89,18 +313,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-10-29T12:18:47.825357+00:00",
+      "sitePublishedAt": "2026-10-29T12:41:03.421760+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-10-29T12:18:47.825357+00:00"
+          "checkedAt": "2026-10-29T12:41:03.421760+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-10-29T12:18:47.825357+00:00",
-          "evidenceSha256": "0a8aa7838baa42e6f0b654558cab88d6f97e78e355df0b9d1ea4b94e1ec90846"
+          "checkedAt": "2026-10-29T12:41:03.421760+00:00",
+          "evidenceSha256": "314e944d4f467fa61d3d4f4fba9fca2a1f9b684c7e64af2eedd1256518d2fd16"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -127,7 +351,7 @@
       "originalTitle": "2026-10-28, Version 26.13.0 'Lithium' (LTS), @richardlau",
       "publishedAt": "2026-10-28T16:57:41Z",
       "updatedAt": "2026-10-28T16:57:41Z",
-      "collectedAt": "2026-10-29T12:18:47.506756+00:00",
+      "collectedAt": "2026-10-29T12:41:03.047940+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -140,18 +364,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-10-29T12:18:47.825357+00:00",
+      "sitePublishedAt": "2026-10-29T12:41:03.421760+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-10-29T12:18:47.825357+00:00"
+          "checkedAt": "2026-10-29T12:41:03.421760+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-10-29T12:18:47.825357+00:00",
-          "evidenceSha256": "7403d5bde8369b5f1027365e8d7ea5682adf9b8ad0a912ee93c894179295e158"
+          "checkedAt": "2026-10-29T12:41:03.421760+00:00",
+          "evidenceSha256": "e094f431dafe50bcf351dcc753c2d31cd9dd1711d2e5dad63b037f35dab66616"
         }
       ],
       "verificationScope": "release-announcement-only"
