@@ -1,5 +1,49 @@
 [
   {
+    "startedAt": "2026-10-29T11:18:48.019Z",
+    "published": [],
+    "held": [],
+    "rejected": [],
+    "errors": [
+      {
+        "topic": "technology",
+        "stage": "search",
+        "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CgWSJ1ZpaC1Md8yCuxdiY\"}"
+      },
+      {
+        "topic": "science",
+        "stage": "search",
+        "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CgWSJ2AY5z5s7WbMyxRNW\"}"
+      },
+      {
+        "topic": "economy",
+        "stage": "search",
+        "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CgWSJ2X7so9kowyY8P9cG\"}"
+      },
+      {
+        "topic": "culture",
+        "stage": "search",
+        "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CgWSJ2sCWCyEKznNEdVSU\"}"
+      },
+      {
+        "topic": "sport",
+        "stage": "search",
+        "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CgWSJ3Do1yPaE3XfjzvPy\"}"
+      },
+      {
+        "topic": "travel",
+        "stage": "search",
+        "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CgWSJ3c6hWo4BErqmWJDj\"}"
+      }
+    ],
+    "usage": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "finishedAt": "2026-10-29T11:18:48.667Z",
+    "status": "failed"
+  },
+  {
     "startedAt": "2026-10-29T11:15:57.606Z",
     "status": "skipped",
     "message": "ANTHROPIC_API_KEY is not available to this workflow run"
