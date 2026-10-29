@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-10-29T09:58:38.842838+00:00",
+  "builtAt": "2026-10-29T11:02:34.721554+00:00",
   "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
   "articles": [
     {
@@ -25,7 +25,7 @@
       "originalTitle": "1.144.0",
       "publishedAt": "2026-10-28T18:51:38Z",
       "updatedAt": "2026-10-28T18:51:38Z",
-      "collectedAt": "2026-10-29T09:58:38.840386+00:00",
+      "collectedAt": "2026-10-29T11:02:34.721335+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -38,18 +38,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-10-29T09:58:38.842838+00:00",
+      "sitePublishedAt": "2026-10-29T11:02:34.721554+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-10-29T09:58:38.842838+00:00"
+          "checkedAt": "2026-10-29T11:02:34.721554+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-10-29T09:58:38.842838+00:00",
-          "evidenceSha256": "d49f16753e2d7ed2ddaf52345439cf9426082f6985268407324e880234132484"
+          "checkedAt": "2026-10-29T11:02:34.721554+00:00",
+          "evidenceSha256": "07b49bee72b8d2ea8a5b55be4be3754e8aca31a8a63836ac00a2791c43236262"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -76,7 +76,7 @@
       "originalTitle": "2026-10-28, Version 24.22.2 'Krypton' (LTS), @aduh95",
       "publishedAt": "2026-10-28T18:39:09Z",
       "updatedAt": "2026-10-28T18:39:09Z",
-      "collectedAt": "2026-10-29T09:58:38.297851+00:00",
+      "collectedAt": "2026-10-29T11:02:34.383541+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -89,18 +89,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-10-29T09:58:38.842838+00:00",
+      "sitePublishedAt": "2026-10-29T11:02:34.721554+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-10-29T09:58:38.842838+00:00"
+          "checkedAt": "2026-10-29T11:02:34.721554+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-10-29T09:58:38.842838+00:00",
-          "evidenceSha256": "8d2f66fc785d1b7542ee6db58bc5a7273c060d9cbe867c90db42f5f9a5d12d87"
+          "checkedAt": "2026-10-29T11:02:34.721554+00:00",
+          "evidenceSha256": "3278ca909ed2e0e1854191c53cb1a428096c2bf5c2f9751bc659bb155bf38eaf"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -127,7 +127,7 @@
       "originalTitle": "2026-10-28, Version 26.13.0 'Lithium' (LTS), @richardlau",
       "publishedAt": "2026-10-28T16:57:41Z",
       "updatedAt": "2026-10-28T16:57:41Z",
-      "collectedAt": "2026-10-29T09:58:38.297722+00:00",
+      "collectedAt": "2026-10-29T11:02:34.383476+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -140,18 +140,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-10-29T09:58:38.842838+00:00",
+      "sitePublishedAt": "2026-10-29T11:02:34.721554+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-10-29T09:58:38.842838+00:00"
+          "checkedAt": "2026-10-29T11:02:34.721554+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-10-29T09:58:38.842838+00:00",
-          "evidenceSha256": "8c2c0d8cc37d20815695069cb7898dc09f5f56782d1ec3506f610b1bf3bc3275"
+          "checkedAt": "2026-10-29T11:02:34.721554+00:00",
+          "evidenceSha256": "88e3db150939baf933ff947624bd8e4c8ee91d4edca5cd9ad83fdaf4e9744762"
         }
       ],
       "verificationScope": "release-announcement-only"
