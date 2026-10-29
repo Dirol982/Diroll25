@@ -1,8 +1,59 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-10-29T17:25:28.345286+00:00",
+  "builtAt": "2026-10-29T22:43:10.389928+00:00",
   "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
   "articles": [
+    {
+      "id": "feed-c99e237d5d0c56f7b33d",
+      "category": "technology",
+      "country": null,
+      "title": {
+        "ru": "Node.js: опубликован выпуск v27.0.0-alpha.0.0.0",
+        "en": "Node.js: release v27.0.0-alpha.0.0.0 published"
+      },
+      "body": {
+        "ru": "В официальном репозитории Node.js опубликовано объявление о выпуске v27.0.0-alpha.0.0.0. Подробности и список изменений доступны по ссылке на первоисточник.",
+        "en": "The official Node.js repository published a release announcement for v27.0.0-alpha.0.0.0. Details and changes are available at the original source."
+      },
+      "status": "published",
+      "demo": false,
+      "source": {
+        "name": "Node.js — official releases",
+        "url": "https://github.com/nodejs/node/releases/tag/v27.0.0-alpha.0.0.0",
+        "language": "en"
+      },
+      "originalTitle": "2026-10-29, Version 27.0.0-alpha.0.0.0 (Alpha), @RafaelGSS",
+      "publishedAt": "2026-10-29T18:36:37Z",
+      "updatedAt": "2026-10-29T18:36:37Z",
+      "collectedAt": "2026-10-29T22:43:10.014013+00:00",
+      "translationStatus": "bilingual-template",
+      "factsReviewed": false,
+      "importance": {
+        "ru": "Пользователи продукта могут проверить список изменений и совместимость. Мы не делаем выводов о безопасности или качестве выпуска.",
+        "en": "Users can review the changes and compatibility. We make no claims about release security or quality."
+      },
+      "next": {
+        "ru": "Изучите примечания к выпуску в первоисточнике перед обновлением.",
+        "en": "Read the original release notes before upgrading."
+      },
+      "publicationMode": "test",
+      "archive": false,
+      "sitePublishedAt": "2026-10-29T22:43:10.389928+00:00",
+      "autoChecks": [
+        {
+          "id": "feed",
+          "status": "passed",
+          "checkedAt": "2026-10-29T22:43:10.389928+00:00"
+        },
+        {
+          "id": "release-page",
+          "status": "passed",
+          "checkedAt": "2026-10-29T22:43:10.389928+00:00",
+          "evidenceSha256": "3075b16cfef348395ac7b211251ce128802e0c029efa9104470f5def9991efd2"
+        }
+      ],
+      "verificationScope": "release-announcement-only"
+    },
     {
       "id": "agent-4c3e1447cc7984602a20",
       "category": "sport",
@@ -528,7 +579,7 @@
       "originalTitle": "1.144.0",
       "publishedAt": "2026-10-28T18:51:38Z",
       "updatedAt": "2026-10-28T18:51:38Z",
-      "collectedAt": "2026-10-29T17:25:28.345082+00:00",
+      "collectedAt": "2026-10-29T22:43:10.389723+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -541,18 +592,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-10-29T17:25:28.345286+00:00",
+      "sitePublishedAt": "2026-10-29T22:43:10.389928+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-10-29T17:25:28.345286+00:00"
+          "checkedAt": "2026-10-29T22:43:10.389928+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-10-29T17:25:28.345286+00:00",
-          "evidenceSha256": "0d1c052cf9dac74620696efe9ae6225490706dc367c17f8748d2b278ad6b1377"
+          "checkedAt": "2026-10-29T22:43:10.389928+00:00",
+          "evidenceSha256": "3aab695df32ba960df9c959806cc9ca23aab0fcdc3267baa72d2cc7e9250d61d"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -579,7 +630,7 @@
       "originalTitle": "2026-10-28, Version 24.22.2 'Krypton' (LTS), @aduh95",
       "publishedAt": "2026-10-28T18:39:09Z",
       "updatedAt": "2026-10-28T18:39:09Z",
-      "collectedAt": "2026-10-29T17:25:27.878694+00:00",
+      "collectedAt": "2026-10-29T22:43:10.014117+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -592,18 +643,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-10-29T17:25:28.345286+00:00",
+      "sitePublishedAt": "2026-10-29T22:43:10.389928+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-10-29T17:25:28.345286+00:00"
+          "checkedAt": "2026-10-29T22:43:10.389928+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-10-29T17:25:28.345286+00:00",
-          "evidenceSha256": "ed309bf4809f9331a5c74dc4d6cda2fe820cc7754bf2f438e2f62c9552beceb2"
+          "checkedAt": "2026-10-29T22:43:10.389928+00:00",
+          "evidenceSha256": "b7144d8e23371f5ef7e32b33382c40ed3eea789778af6922600f6a56873458b4"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -630,7 +681,7 @@
       "originalTitle": "2026-10-28, Version 26.13.0 'Lithium' (LTS), @richardlau",
       "publishedAt": "2026-10-28T16:57:41Z",
       "updatedAt": "2026-10-28T16:57:41Z",
-      "collectedAt": "2026-10-29T17:25:27.878621+00:00",
+      "collectedAt": "2026-10-29T22:43:10.014080+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -643,18 +694,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-10-29T17:25:28.345286+00:00",
+      "sitePublishedAt": "2026-10-29T22:43:10.389928+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-10-29T17:25:28.345286+00:00"
+          "checkedAt": "2026-10-29T22:43:10.389928+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-10-29T17:25:28.345286+00:00",
-          "evidenceSha256": "ab85308ac560af7c12182d1d9faed880fc4a8ef8b050a60beff7101d4d3e1cd0"
+          "checkedAt": "2026-10-29T22:43:10.389928+00:00",
+          "evidenceSha256": "c871ba53d6c4be8c1db9f89b6e195d6930ab630ee44d1efd5b696e9fac13d861"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -1359,11 +1410,6 @@
     {
       "id": "feed-c202181bf05ea4b7f6b6",
       "title": "2026-10-14, Version 24.22.0 'Krypton' (LTS), @richardlau prepared by @aduh95",
-      "error": "Old entry not eligible for fresh automatic publication"
-    },
-    {
-      "id": "feed-fb35576fc2ee54b2c31e",
-      "title": "2026-10-07, Version 26.11.1 (Current), @aduh95",
       "error": "Old entry not eligible for fresh automatic publication"
     },
     {
