@@ -1,8 +1,93 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-10-29T12:57:12.270Z",
+  "builtAt": "2026-10-29T13:20:12.061Z",
   "verification": "Agent pipeline: search, independent verification by a second agent with at least two independent sources, bilingual rewrite; plus deterministic first-party release checks",
   "articles": [
+    {
+      "id": "agent-4c3e1447cc7984602a20",
+      "category": "sport",
+      "country": "FR",
+      "title": {
+        "ru": "Жоффруа Ру де Безье возглавил оргкомитет зимней Олимпиады 2030 года",
+        "en": "Geoffroy Roux de Bézieux Appointed to Lead 2030 Winter Olympics Organizing Committee"
+      },
+      "body": {
+        "ru": "Бывший глава Движения предпринимателей Франции (MEDEF) Жоффруа Ру де Безье назначен руководителем оргкомитета зимних Олимпийских и Паралимпийских игр 2030 года.",
+        "en": "Former MEDEF president Geoffroy Roux de Bézieux has been named head of the organizing committee for the 2030 Winter Olympic and Paralympic Games in France."
+      },
+      "content": {
+        "ru": [
+          "Бывший председатель Движения предпринимателей Франции (MEDEF) Жоффруа Ру де Безье назначен руководителем оргкомитета зимних Олимпийских и Паралимпийских игр 2030 года во Франции. Об этом сообщает Le Figaro, передает «Спорт-Экспресс».",
+          "На этой должности Ру де Безье сменил Эдгара Гроспирона, который ранее возглавлял структуру, отвечающую за подготовку к национальным Олимпийским и Паралимпийским играм.",
+          "Новое руководство оргкомитета берет на себя администрирование ключевых процессов подготовки к международным зимним соревнованиям 2030 года."
+        ],
+        "en": [
+          "Former president of the Movement of French Enterprises (MEDEF) Geoffroy Roux de Bézieux has been appointed head of the organizing committee for the 2030 Winter Olympic and Paralympic Games in France, according to Le Figaro.",
+          "Roux de Bézieux replaces Edgar Grospiron in this position, taking over the leadership of the body responsible for preparing the multi-sport event.",
+          "The leadership change places the former business executive at the head of preparations for both the Olympic and Paralympic Winter Games scheduled for 2030 in France."
+        ]
+      },
+      "importance": {
+        "ru": "Смена руководства оргкомитета определяет новый управленческий подход к подготовке зимних Олимпийских и Паралимпийских игр 2030 года во Франции.",
+        "en": "The appointment shifts the leadership of the body overseeing preparations for France's 2030 Olympic and Paralympic Winter Games to a prominent business figure."
+      },
+      "next": {
+        "ru": "Оргкомитету под новым руководством предстоит продолжить организационные работы по подготовке к проведению Игр 2030 года.",
+        "en": "The organizing committee under its new leadership will proceed with official preparations for hosting the 2030 Winter Games."
+      },
+      "telegramText": {
+        "ru": "Бывший председатель Движения предпринимателей Франции (MEDEF) Жоффруа Ру де Безье возглавил оргкомитет зимних Олимпийских и Паралимпийских игр 2030 года во Франции. Об этом пишет Le Figaro. На этом посту он сменил Эдгара Гроспирона. Новое руководство оргкомитета будет отвечать за подготовку предстоящих зимних Игр.",
+        "en": "Former head of the Movement of French Enterprises (MEDEF) Geoffroy Roux de Bézieux has been appointed president of the organizing committee for the 2030 Winter Olympic and Paralympic Games in France. According to Le Figaro, he succeeds Edgar Grospiron in the role. Roux de Bézieux will lead the organizational preparations for both the Olympic and Paralympic Winter Games."
+      },
+      "imageQuery": "Geoffroy Roux de Bezieux",
+      "status": "published",
+      "demo": false,
+      "priority": 3,
+      "originalTitle": "Former MEDEF Head Geoffroy Roux de Bézieux Appointed to Lead 2030 Winter Olympics Organizing Committee",
+      "source": {
+        "name": "РБК",
+        "url": "https://www.rbc.ru/sport/29/10/2026/6ae33c232fd1a98b116df3d5",
+        "language": "en"
+      },
+      "sources": [
+        {
+          "publisher": "РБК",
+          "url": "https://www.rbc.ru/sport/29/10/2026/6ae33c232fd1a98b116df3d5",
+          "confirms": true
+        },
+        {
+          "publisher": "Спорт-Экспресс",
+          "url": "https://www.sport-express.ru/olympics/news/eks-predsedatel-medef-ru-de-beze-vozglavil-orgkomitet-olimpiady-2030-vo-francii-2468686/",
+          "confirms": true
+        }
+      ],
+      "publishedAt": "2026-10-29T12:55:19.000Z",
+      "updatedAt": "2026-10-29T12:55:19.000Z",
+      "collectedAt": "2026-10-29T13:06:24.551Z",
+      "sitePublishedAt": "2026-10-29T13:06:24.551Z",
+      "publicationMode": "agents",
+      "translationStatus": "ai-bilingual",
+      "factsReviewed": false,
+      "verification": {
+        "verdict": "cross-source",
+        "independentSources": 2,
+        "disputedFacts": [],
+        "problems": [],
+        "notes": "Reported by several outlets in their own feeds",
+        "checkedAt": "2026-10-29T13:06:24.551Z"
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/REF.090_28_08_2019_cRM_I.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "title": "REF.090 28 08 2019 cRM I",
+        "creator": "Kbeka2",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:REF.090_28_08_2019_cRM_I.jpg",
+        "provider": "Wikimedia Commons",
+        "query": "Geoffroy Roux de Bezieux"
+      },
+      "imageSearchedAt": "2026-10-29T13:19:29.348Z"
+    },
     {
       "id": "agent-c348b9789a0b99d21f2e",
       "category": "economy",
@@ -74,7 +159,9 @@
         "problems": [],
         "notes": "Reported by several outlets in their own feeds",
         "checkedAt": "2026-10-29T12:41:04.181Z"
-      }
+      },
+      "archive": false,
+      "imageSearchedAt": "2026-10-29T13:19:49.917Z"
     },
     {
       "id": "agent-e5675650b4bbcaa6b709",
@@ -152,7 +239,184 @@
         "problems": [],
         "notes": "Reported by several outlets in their own feeds",
         "checkedAt": "2026-10-29T12:41:04.181Z"
-      }
+      },
+      "archive": false,
+      "imageSearchedAt": "2026-10-29T13:20:10.514Z"
+    },
+    {
+      "id": "agent-d0cb8cc0a5b9d13e8c1c",
+      "category": "science",
+      "country": null,
+      "title": {
+        "ru": "В Обсерватории имени Веры Рубин открыли кандидата в карликовые планеты 2026 ED138",
+        "en": "Astronomers Identify Potential Dwarf Planet 2026 ED138 Beyond Pluto"
+      },
+      "body": {
+        "ru": "Астрономы с помощью Обсерватории имени Веры Рубин зафиксировали за орбитой Нептуна крупный объект размером до 1500 километров, претендующий на статус карликовой планеты.",
+        "en": "Scientists using the Vera C. Rubin Observatory have detected an object measuring up to 1,500 kilometers across beyond Neptune, identifying it as a candidate dwarf planet."
+      },
+      "content": {
+        "ru": [
+          "Как сообщили издания iXBT и РБК, обнаруженное небесное тело получило предварительное обозначение 2026 ED138. Открытие было сделано инструментами Обсерватории имени Веры Рубин.",
+          "Объект располагается за орбитами Нептуна и Плутона. По оценкам специалистов, его диаметр может достигать 1500 километров.",
+          "В настоящее время астрономический объект рассматривается исследователями как претендент на статус шестой карликовой планеты."
+        ],
+        "en": [
+          "According to reports from iXBT and RBC, the astronomical body has received the preliminary designation 2026 ED138 following its detection by the Vera C. Rubin Observatory.",
+          "The newly detected body is located beyond the orbits of Neptune and Pluto. Its size is estimated to be up to 1,500 kilometers across.",
+          "Researchers consider 2026 ED138 a candidate to potentially become designated as the solar system's sixth dwarf planet."
+        ]
+      },
+      "importance": {
+        "ru": "Обнаружение крупного тела размером до 1500 километров за орбитой Плутона расширяет данные о внешних границах Солнечной системы и количестве массивных транснептуновых объектов.",
+        "en": "The identification of a body up to 1,500 kilometers in diameter beyond Pluto offers new insight into the population of large objects residing in the distant regions of the solar system."
+      },
+      "next": {
+        "ru": "Ученым предстоит детально изучить параметры орбиты и физические свойства 2026 ED138 для возможного официального утверждения его статуса.",
+        "en": "Astronomers will continue tracking 2026 ED138 to precisely determine its orbital parameters and verify whether it meets the official criteria for dwarf planet classification."
+      },
+      "telegramText": {
+        "ru": "Астрономы с помощью Обсерватории имени Веры Рубин обнаружили за орбитой Плутона нового кандидата в карликовые планеты. Небесное тело получило предварительное наименование 2026 ED138. По оценкам исследователей, диаметр объекта достигает 1500 километров. В будущем обнаруженное небесное тело может претендовать на статус шестой карликовой планеты.",
+        "en": "Scientists using the Vera C. Rubin Observatory have discovered a new candidate dwarf planet beyond the orbit of Pluto. The body has been provisionally designated 2026 ED138. With an estimated size of up to 1,500 kilometers across, the distant object is a candidate to gain recognition as the sixth dwarf planet."
+      },
+      "imageQuery": "Vera C. Rubin Observatory",
+      "status": "published",
+      "demo": false,
+      "priority": 3,
+      "originalTitle": "Astronomers Discover Potential Dwarf Planet Beyond Neptune",
+      "source": {
+        "name": "iXBT",
+        "url": "https://www.ixbt.com/news/2026/10/29/observatoriia-imeni-very-rubin-nasla-za-neptunom-obieekt-razmerom-do-1500-km-kandidata-v-karlikovye-planety.html",
+        "language": "en"
+      },
+      "sources": [
+        {
+          "publisher": "iXBT",
+          "url": "https://www.ixbt.com/news/2026/10/29/observatoriia-imeni-very-rubin-nasla-za-neptunom-obieekt-razmerom-do-1500-km-kandidata-v-karlikovye-planety.html",
+          "confirms": true
+        },
+        {
+          "publisher": "РБК",
+          "url": "https://www.rbc.ru/society/29/10/2026/6ae30bb95317b954bbe0617d",
+          "confirms": true
+        }
+      ],
+      "publishedAt": "2026-10-29T12:14:00.000Z",
+      "updatedAt": "2026-10-29T12:14:00.000Z",
+      "collectedAt": "2026-10-29T13:06:24.551Z",
+      "sitePublishedAt": "2026-10-29T13:06:24.551Z",
+      "publicationMode": "agents",
+      "translationStatus": "ai-bilingual",
+      "factsReviewed": false,
+      "verification": {
+        "verdict": "cross-source",
+        "independentSources": 2,
+        "disputedFacts": [],
+        "problems": [],
+        "notes": "Reported by several outlets in their own feeds",
+        "checkedAt": "2026-10-29T13:06:24.551Z"
+      },
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Vera_C_Rubin_Observatory_in_the_Snow_%28IMG_0315-CC%29.jpg/1920px-Vera_C_Rubin_Observatory_in_the_Snow_%28IMG_0315-CC%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Vera C Rubin Observatory in the Snow (IMG 0315-CC)",
+        "creator": "NOIRLab/NSF/AURA/C. Corco",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vera_C_Rubin_Observatory_in_the_Snow_(IMG_0315-CC).jpg",
+        "provider": "Wikimedia Commons",
+        "query": "Vera C Rubin Observatory"
+      },
+      "imageSearchedAt": "2026-10-29T13:18:36.274Z"
+    },
+    {
+      "id": "agent-8c368b844569d2bdafff",
+      "category": "travel",
+      "country": "AM",
+      "title": {
+        "ru": "Самолет «Азимута» вернулся в Ереван из-за проблем с кондиционированием",
+        "en": "Azimuth Flight Returns to Yerevan After Issuing Emergency Signal"
+      },
+      "body": {
+        "ru": "Пассажирский лайнер авиакомпании «Азимут», вылетевший из Еревана в Минеральные Воды, подал сигнал тревоги и вернулся в аэропорт отправления.",
+        "en": "An Azimuth Airlines flight heading to Mineralnye Vody returned to Yerevan shortly after takeoff following a technical issue."
+      },
+      "content": {
+        "ru": [
+          "Рейс А46030 российской авиакомпании «Азимут», направлявшийся 29 октября из столицы Армении в Минеральные Воды, совершил разворот спустя примерно 20 минут после взлета. Экипаж принял решение прервать полет из-за возникшей неполадки.",
+          "Как сообщает ТАСС со ссылкой на представителя перевозчика в Армении, поводом для возврата стали проблемы в системе кондиционирования воздуха. В пресс-службе «Азимута» подтвердили «Интерфаксу», что поводом для разворота воздушного судна послужила техническая причина.",
+          "В процессе полета экипаж подал сигнал бедствия, после чего направил самолет обратно в Ереван. Для пассажиров прерванного рейса организована подготовка резервного борта."
+        ],
+        "en": [
+          "Flight A46030, operated by Russian carrier Azimuth Airlines from Yerevan to Mineralnye Vody on October 29, turned back to the Armenian capital about 20 minutes into the flight. The crew decided to return to the departure airport after encountering a malfunction.",
+          "According to TASS, citing an airline representative in Armenia, the aircraft returned due to a problem in its air conditioning system. Interfax also reported, citing the airline's press service, that the crew aborted the route for technical reasons.",
+          "Before turning around, the aircraft transmitted a distress signal. The airline has begun preparing a substitute plane to transport the passengers."
+        ]
+      },
+      "importance": {
+        "ru": "Своевременный разворот самолета при неисправностях показывает соблюдение экипажем установленных протоколов авиационной безопасности.",
+        "en": "Prompt turnbacks following technical issues demonstrate adherence to safety protocols when flight systems fail."
+      },
+      "next": {
+        "ru": "Авиакомпания «Азимут» готовит резервное воздушное судно для доставки пассажиров в пункт назначения.",
+        "en": "Azimuth Airlines is preparing a backup aircraft to take the passengers to Mineralnye Vody."
+      },
+      "telegramText": {
+        "ru": "Самолет «Азимута», следовавший из Еревана в Минеральные Воды, подал сигнал тревоги и вернулся в аэропорт вылета через 20 минут после старта. По данным ТАСС, причиной стали проблемы с кондиционированием. Как сообщили «Интерфаксу» в пресс-службе перевозчика, для пассажиров готовится резервный борт.",
+        "en": "An Azimuth Airlines flight from Yerevan to Mineralnye Vody issued an emergency signal and returned to Yerevan 20 minutes after takeoff on October 29. According to TASS, the issue was linked to the air conditioning system. Interfax reported that a backup aircraft is being prepared for the passengers."
+      },
+      "imageQuery": "Azimuth Airlines aircraft",
+      "status": "published",
+      "demo": false,
+      "priority": 3,
+      "originalTitle": "Azimuth Airlines Flight to Mineralnye Vody Diverts Back to Yerevan After Emergency Signal",
+      "source": {
+        "name": "РБК",
+        "url": "https://www.rbc.ru/rbcfreenews/6ae33be7063f45a4a78daa0a",
+        "language": "en"
+      },
+      "sources": [
+        {
+          "publisher": "РБК",
+          "url": "https://www.rbc.ru/rbcfreenews/6ae33be7063f45a4a78daa0a",
+          "confirms": true
+        },
+        {
+          "publisher": "Интерфакс",
+          "url": "https://www.interfax.ru/russia/1125815",
+          "confirms": true
+        },
+        {
+          "publisher": "Лента.ру",
+          "url": "https://lenta.ru/news/2026/10/29/letevshiy-v-rossiyu-samolet-podal-signal-bedstviya/",
+          "confirms": true
+        }
+      ],
+      "publishedAt": "2026-10-29T11:23:00.000Z",
+      "updatedAt": "2026-10-29T11:23:00.000Z",
+      "collectedAt": "2026-10-29T13:06:24.551Z",
+      "sitePublishedAt": "2026-10-29T13:06:24.551Z",
+      "publicationMode": "agents",
+      "translationStatus": "ai-bilingual",
+      "factsReviewed": false,
+      "verification": {
+        "verdict": "cross-source",
+        "independentSources": 3,
+        "disputedFacts": [],
+        "problems": [],
+        "notes": "Reported by several outlets in their own feeds",
+        "checkedAt": "2026-10-29T13:06:24.551Z"
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Azimuth%2C_RA-89139%2C_Sukhoi_Superjet_100-95B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "title": "Azimuth, RA-89139, Sukhoi Superjet 100-95B",
+        "creator": "Anna Zvereva",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Azimuth,_RA-89139,_Sukhoi_Superjet_100-95B.jpg",
+        "provider": "Wikimedia Commons",
+        "query": "Azimuth Airlines aircraft"
+      },
+      "imageSearchedAt": "2026-10-29T13:19:16.280Z"
     },
     {
       "id": "agent-f117d5255dd2a1807a46",
@@ -225,7 +489,19 @@
         "problems": [],
         "notes": "Reported by several outlets in their own feeds",
         "checkedAt": "2026-10-29T12:41:04.181Z"
-      }
+      },
+      "archive": false,
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/NASA_astronaut_Chris_Williams_during_a_spacewalk_outside_the_International_Space_Station_%28iss074e040292%29.jpg/1920px-NASA_astronaut_Chris_Williams_during_a_spacewalk_outside_the_International_Space_Station_%28iss074e040292%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "NASA astronaut Chris Williams during a spacewalk outside the International Space Station (iss074e040292)",
+        "creator": "NASA Johnson",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:NASA_astronaut_Chris_Williams_during_a_spacewalk_outside_the_International_Space_Station_(iss074e040292).jpg",
+        "provider": "Wikimedia Commons",
+        "query": "Astronauts Conduct Spacewalk Outside International Space Station"
+      },
+      "imageSearchedAt": "2026-10-29T13:20:12.061Z"
     },
     {
       "id": "feed-073bc027b25d4ba6cfbd",
@@ -249,7 +525,7 @@
       "originalTitle": "1.144.0",
       "publishedAt": "2026-10-28T18:51:38Z",
       "updatedAt": "2026-10-28T18:51:38Z",
-      "collectedAt": "2026-10-29T12:41:03.421514+00:00",
+      "collectedAt": "2026-10-29T13:06:23.783057+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -262,18 +538,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-10-29T12:41:03.421760+00:00",
+      "sitePublishedAt": "2026-10-29T13:06:23.783235+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-10-29T12:41:03.421760+00:00"
+          "checkedAt": "2026-10-29T13:06:23.783235+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-10-29T12:41:03.421760+00:00",
-          "evidenceSha256": "9befc96a5fe93bae232044525aa124b0e71d94de9c8eb893de2c8e606c0a82e3"
+          "checkedAt": "2026-10-29T13:06:23.783235+00:00",
+          "evidenceSha256": "78fe1684e91ded28434d4fa230185cdc2a4174b75d24e2eaaeb60d49a6de97a2"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -300,7 +576,7 @@
       "originalTitle": "2026-10-28, Version 24.22.2 'Krypton' (LTS), @aduh95",
       "publishedAt": "2026-10-28T18:39:09Z",
       "updatedAt": "2026-10-28T18:39:09Z",
-      "collectedAt": "2026-10-29T12:41:03.048015+00:00",
+      "collectedAt": "2026-10-29T13:06:23.354582+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -313,18 +589,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-10-29T12:41:03.421760+00:00",
+      "sitePublishedAt": "2026-10-29T13:06:23.783235+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-10-29T12:41:03.421760+00:00"
+          "checkedAt": "2026-10-29T13:06:23.783235+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-10-29T12:41:03.421760+00:00",
-          "evidenceSha256": "314e944d4f467fa61d3d4f4fba9fca2a1f9b684c7e64af2eedd1256518d2fd16"
+          "checkedAt": "2026-10-29T13:06:23.783235+00:00",
+          "evidenceSha256": "faa900f6311977e0ed02b79f9f3952e36137188382ae1fd32d32ea2e311171a8"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -351,7 +627,7 @@
       "originalTitle": "2026-10-28, Version 26.13.0 'Lithium' (LTS), @richardlau",
       "publishedAt": "2026-10-28T16:57:41Z",
       "updatedAt": "2026-10-28T16:57:41Z",
-      "collectedAt": "2026-10-29T12:41:03.047940+00:00",
+      "collectedAt": "2026-10-29T13:06:23.354512+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -364,18 +640,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-10-29T12:41:03.421760+00:00",
+      "sitePublishedAt": "2026-10-29T13:06:23.783235+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-10-29T12:41:03.421760+00:00"
+          "checkedAt": "2026-10-29T13:06:23.783235+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-10-29T12:41:03.421760+00:00",
-          "evidenceSha256": "e094f431dafe50bcf351dcc753c2d31cd9dd1711d2e5dad63b037f35dab66616"
+          "checkedAt": "2026-10-29T13:06:23.783235+00:00",
+          "evidenceSha256": "60cdbcd1dcccc631e5ac19f1cef0f6ab4b6e359ab4d2b21c760b95fbb931c75f"
         }
       ],
       "verificationScope": "release-announcement-only"
