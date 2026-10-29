@@ -48,7 +48,7 @@ export function groundedSources(candidate, into = new Set()) {
   return into;
 }
 
-export function createGeminiClient({key = process.env.GEMINI_API_KEY, fetcher = fetch, minIntervalMs = Number(process.env.GEMINI_MIN_INTERVAL_MS || 6000)} = {}) {
+export function createGeminiClient({key = process.env.GEMINI_API_KEY, fetcher = fetch, minIntervalMs = Number(process.env.GEMINI_MIN_INTERVAL_MS || 13000)} = {}) {
   if (!key) throw Error('GEMINI_API_KEY is not set; agents cannot run');
   let models, index = 0, lastCall = 0;
   const tried = [];

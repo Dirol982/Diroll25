@@ -3,6 +3,7 @@
 // Each run is summarised in config/agent-runs.json and in the Actions job summary.
 import {readFile, writeFile, appendFile} from 'node:fs/promises';
 import {runPipeline} from '../src/pipeline.js';
+import {runFeedPipeline} from '../src/feed-pipeline.js';
 import {openJsonStore} from '../src/json-store.js';
 import {createAgentClient, selectedProvider} from '../src/agents/provider.js';
 
@@ -29,22 +30,32 @@ if (!provider) {
   console.log('No AI key set; agent newsroom skipped');
   process.exit(0);
 }
+// Free Gemini keys allow ~20 requests a day: run every 6 hours (manual runs always go through).
+const everyHours = Number(process.env.ATLAS_AGENT_EVERY_HOURS || (provider === 'gemini' ? 6 : 1));
+if (process.env.GITHUB_EVENT_NAME === 'schedule' && new Date().getUTCHours() % everyHours !== 0) {
+  console.log(`Agent newsroom runs every ${everyHours} h; skipping this hour`);
+  process.exit(0);
+}
+// "feeds": RSS + cross-outlet check (no web search, few AI calls); "web": agents search the web themselves.
+const mode = process.env.ATLAS_SEARCH_MODE || (provider === 'gemini' ? 'feeds' : 'web');
 const client = createAgentClient();
 const {topics} = JSON.parse(await readFile(new URL('config/topics.json', root), 'utf8'));
 const store = await openJsonStore({publishedPath: new URL('config/published.json', root).pathname, seenPath: new URL('config/agent-seen.json', root).pathname});
-const report = await runPipeline({
-  client,
-  store,
-  topics,
-  perTopic: Number(process.env.ATLAS_STORIES_PER_TOPIC || 2),
-  maxStories: Number(process.env.ATLAS_MAX_STORIES_PER_RUN || (provider === 'gemini' ? 4 : 6)),
-  // Pages has no review queue, so held stories are simply not published there.
-  autoPublish: true,
-});
-const searchFailures = report.errors.filter(e => e.stage === 'search').length;
-const searchable = topics.filter(t => t.search !== false).length;
+const report = mode === 'feeds'
+  ? await runFeedPipeline({client, store, topics, feeds: JSON.parse(await readFile(new URL('config/feeds.json', root), 'utf8')).feeds, maxStories: Number(process.env.ATLAS_MAX_STORIES_PER_RUN || 3)})
+  : await runPipeline({
+    client,
+    store,
+    topics,
+    perTopic: Number(process.env.ATLAS_STORIES_PER_TOPIC || 2),
+    maxStories: Number(process.env.ATLAS_MAX_STORIES_PER_RUN || 6),
+    // Pages has no review queue, so held stories are simply not published there.
+    autoPublish: true,
+  });
+const searchFailures = report.errors.filter(e => e.stage === 'search' || e.stage === 'cluster').length;
+const searchable = mode === 'feeds' ? 1 : topics.filter(t => t.search !== false).length;
 const status = searchFailures === searchable ? 'failed' : report.errors.length ? 'partial' : 'ok';
-const diagnostics = provider === 'gemini' && status === 'failed' ? {modelErrors: client.modelErrors, probe: await client.probe().catch(e => String(e.message))} : undefined;
+const diagnostics = provider === 'gemini' && status === 'failed' ? {modelErrors: client.modelErrors} : undefined;
 await record({...report, status, provider, model: provider === 'gemini' ? client.model : undefined, skippedModels: provider === 'gemini' ? client.triedModels : undefined, diagnostics});
 console.log(JSON.stringify(report, null, 2));
 // Every section failing means a configuration problem (key, model, quota): make the run visibly red.

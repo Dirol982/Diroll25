@@ -5,9 +5,12 @@ import {readFile, writeFile, rename} from 'node:fs/promises';
 async function readJson(path, fallback) {
   try { return JSON.parse(await readFile(path, 'utf8')); } catch (e) { if (e.code === 'ENOENT') return fallback; throw e; }
 }
-async function writeJson(path, data) {
-  await writeFile(path + '.tmp', JSON.stringify(data, null, 2) + '\n');
-  await rename(path + '.tmp', path);
+// Writes are queued so overlapping saves never share the temporary file.
+let queue = Promise.resolve();
+function writeJson(path, data) {
+  const text = JSON.stringify(data, null, 2) + '\n';
+  queue = queue.catch(() => {}).then(async () => { await writeFile(path + '.tmp', text); await rename(path + '.tmp', path); });
+  return queue;
 }
 
 export async function openJsonStore({publishedPath, seenPath, keepDays = 7, now = new Date()}) {
