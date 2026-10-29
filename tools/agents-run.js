@@ -1,12 +1,33 @@
 // Runs the agent newsroom once against the public snapshot (used by GitHub Actions).
 // Without ANTHROPIC_API_KEY it exits cleanly so the rest of the Pages build still runs.
-import {readFile} from 'node:fs/promises';
+// Each run is summarised in config/agent-runs.json and in the Actions job summary.
+import {readFile, writeFile, appendFile} from 'node:fs/promises';
 import {runPipeline} from '../src/pipeline.js';
 import {openJsonStore} from '../src/json-store.js';
 import {createClient} from '../src/agents/claude.js';
 
 const root = new URL('../', import.meta.url);
-if (!process.env.ANTHROPIC_API_KEY) { console.log('ANTHROPIC_API_KEY not set; agent newsroom skipped'); process.exit(0); }
+const runsPath = new URL('config/agent-runs.json', root);
+
+async function record(entry) {
+  let runs = [];
+  try { runs = JSON.parse(await readFile(runsPath, 'utf8')); } catch (e) { if (e.code !== 'ENOENT') throw e; }
+  await writeFile(runsPath, JSON.stringify([entry, ...runs].slice(0, 30), null, 2) + '\n');
+  if (process.env.GITHUB_STEP_SUMMARY) {
+    const lines = [`### Agent newsroom: ${entry.status}`, '', `Published: ${entry.published?.length ?? 0} · Held: ${entry.held?.length ?? 0} · Rejected: ${entry.rejected?.length ?? 0} · Errors: ${entry.errors?.length ?? 0}`, ''];
+    for (const p of entry.published || []) lines.push(`- ✅ ${p.title}`);
+    for (const r of entry.rejected || []) lines.push(`- ✖ ${r.headline} (${r.verdict}; ${r.problems.join(', ')})`);
+    for (const e of entry.errors || []) lines.push(`- ⚠ ${e.topic} / ${e.stage}: ${e.error}`);
+    if (entry.message) lines.push(entry.message);
+    await appendFile(process.env.GITHUB_STEP_SUMMARY, lines.join('\n') + '\n');
+  }
+}
+
+if (!process.env.ANTHROPIC_API_KEY) {
+  await record({startedAt: new Date().toISOString(), status: 'skipped', message: 'ANTHROPIC_API_KEY is not available to this workflow run'});
+  console.log('ANTHROPIC_API_KEY not set; agent newsroom skipped');
+  process.exit(0);
+}
 const {topics} = JSON.parse(await readFile(new URL('config/topics.json', root), 'utf8'));
 const store = await openJsonStore({publishedPath: new URL('config/published.json', root).pathname, seenPath: new URL('config/agent-seen.json', root).pathname});
 const report = await runPipeline({
@@ -18,4 +39,10 @@ const report = await runPipeline({
   // Pages has no review queue, so held stories are simply not published there.
   autoPublish: true,
 });
+const searchFailures = report.errors.filter(e => e.stage === 'search').length;
+const searchable = topics.filter(t => t.search !== false).length;
+const status = searchFailures === searchable ? 'failed' : report.errors.length ? 'partial' : 'ok';
+await record({...report, status});
 console.log(JSON.stringify(report, null, 2));
+// Every section failing means a configuration problem (key, model, quota): make the run visibly red.
+if (status === 'failed') { console.error('Agent search failed for every section:', report.errors[0]?.error); process.exit(1); }

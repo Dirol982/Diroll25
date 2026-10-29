@@ -33,7 +33,9 @@ jobs:
         if: github.event_name != 'push'
         run: python3 tools/publish.py
       - name: Agent newsroom (search, independent verification, bilingual rewrite)
+        id: agents
         if: github.event_name != 'push'
+        continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           ATLAS_MAX_STORIES_PER_RUN: ${{ vars.ATLAS_MAX_STORIES_PER_RUN || '6' }}
@@ -51,7 +53,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add config/published.json config/agent-seen.json docs/index.html docs/cabinet.html atlas-demo.html
+          git add config/published.json config/agent-seen.json config/agent-runs.json docs/index.html docs/cabinet.html atlas-demo.html
           if [ -f config/telegram-deliveries.json ]; then git add config/telegram-deliveries.json; fi
           if ! git diff --cached --quiet; then
             git commit -m 'Refresh verified ATLAS publications'
@@ -65,3 +67,8 @@ jobs:
       - name: Publish
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Report agent failure
+        if: steps.agents.outcome == 'failure'
+        run: |
+          echo "Agent newsroom failed for every section; see config/agent-runs.json" >&2
+          exit 1
