@@ -52,6 +52,7 @@ export function createGeminiClient({key = process.env.GEMINI_API_KEY, fetcher = 
   if (!key) throw Error('GEMINI_API_KEY is not set; agents cannot run');
   let models, index = 0, lastCall = 0;
   const tried = [];
+  const errors = {};
 
   async function call(model, body) {
     // Free-tier keys have small per-minute quotas: space calls out.
@@ -69,13 +70,14 @@ export function createGeminiClient({key = process.env.GEMINI_API_KEY, fetcher = 
 
   async function generate(body) {
     models ||= await resolveModels(key, fetcher);
-    let last;
+    let last = Object.values(errors).at(-1);
     while (index < models.length) {
       const model = models[index];
       for (let attempt = 0; attempt < 3; attempt++) {
         const {res, data} = await call(model, body);
         if (res.ok) return data;
         last = `Gemini ${res.status} (${model}): ${data.error?.message || 'request failed'}`;
+        errors[model] = last.slice(0, 300);
         if (res.status === 429) {
           // A daily or zero quota will not recover by waiting: move to the next model at once.
           const details = JSON.stringify(data.error?.details || []);
@@ -99,6 +101,17 @@ export function createGeminiClient({key = process.env.GEMINI_API_KEY, fetcher = 
     checkLinks: true,
     get model() { return models?.[index]; },
     get triedModels() { return [...tried]; },
+    get modelErrors() { return {...errors}; },
+    // Diagnosis after a failed run: can this key generate text at all without Google Search?
+    async probe() {
+      models ||= await resolveModels(key, fetcher);
+      const out = {};
+      for (const model of models.slice(0, 3).concat(models.filter(m => m.includes('lite')).slice(0, 1))) {
+        const {res, data} = await call(model, {contents: [{role: 'user', parts: [{text: 'Reply with OK'}]}]});
+        out[model] = res.ok ? 'ok without search' : `${res.status}: ${(data.error?.message || '').slice(0, 200)}`;
+      }
+      return out;
+    },
     async runAgent({system, prompt, tools = [], submitTool, outputSchema, maxTokens = 16000}) {
       const schema = outputSchema || tools.find(t => t.name === submitTool)?.input_schema;
       const search = tools.some(t => t.name === 'web_search' || t.name === 'web_fetch');

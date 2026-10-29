@@ -44,7 +44,8 @@ const report = await runPipeline({
 const searchFailures = report.errors.filter(e => e.stage === 'search').length;
 const searchable = topics.filter(t => t.search !== false).length;
 const status = searchFailures === searchable ? 'failed' : report.errors.length ? 'partial' : 'ok';
-await record({...report, status, provider, model: provider === 'gemini' ? client.model : undefined, skippedModels: provider === 'gemini' ? client.triedModels : undefined});
+const diagnostics = provider === 'gemini' && status === 'failed' ? {modelErrors: client.modelErrors, probe: await client.probe().catch(e => String(e.message))} : undefined;
+await record({...report, status, provider, model: provider === 'gemini' ? client.model : undefined, skippedModels: provider === 'gemini' ? client.triedModels : undefined, diagnostics});
 console.log(JSON.stringify(report, null, 2));
 // Every section failing means a configuration problem (key, model, quota): make the run visibly red.
 if (status === 'failed') { console.error('Agent search failed for every section:', report.errors[0]?.error); process.exit(1); }
