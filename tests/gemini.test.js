@@ -54,3 +54,19 @@ test('search agent runs on Gemini with grounding and spaced, retried calls', asy
   assert.match(calls[1].systemInstruction.parts[0].text, /JSON Schema/);
   assert.equal(client.model, 'gemini-3.0-flash');
 });
+
+test('a model with no free quota is skipped for the next one', async () => {
+  const used = [];
+  const fetcher = async (url, init) => {
+    if (url.endsWith('/models?pageSize=1000')) return ok(models);
+    const model = url.match(/models\/([^:]+):/)[1];
+    used.push(model);
+    if (model === 'gemini-3.0-flash') return {ok: false, status: 429, json: async () => ({error: {message: 'You exceeded your current quota', details: [{'@type': 'type.googleapis.com/google.rpc.QuotaFailure', violations: [{quotaId: 'GenerateRequestsPerDayPerProjectPerModel-FreeTier'}]}]}})};
+    return ok({candidates: [{finishReason: 'STOP', content: {parts: [{text: '{"stories": []}'}]}}]});
+  };
+  const client = createGeminiClient({key: 'k', fetcher, minIntervalMs: 0});
+  await searchTopic(client, {topic: {name: {en: 'Science'}, brief: 'space'}});
+  assert.deepEqual(used, ['gemini-3.0-flash', 'gemini-2.5-flash']);
+  assert.equal(client.model, 'gemini-2.5-flash');
+  assert.deepEqual(client.triedModels, ['gemini-3.0-flash']);
+});

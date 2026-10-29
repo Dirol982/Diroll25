@@ -7,20 +7,25 @@ import {AgentRefusal, normalizeUrl, publisherDomain} from './claude.js';
 const API = 'https://generativelanguage.googleapis.com/v1beta';
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
-// Picks the newest stable "gemini-X.Y-flash" model available to the key, unless GEMINI_MODEL is set.
-export async function resolveModel(key, fetcher = fetch) {
-  if (process.env.GEMINI_MODEL) return process.env.GEMINI_MODEL;
+// Candidate models, best first: GEMINI_MODEL if set, then stable gemini-X.Y-flash (newest first),
+// then flash-lite. The newest models often have no free-tier quota, so callers fall back down the list.
+export async function resolveModels(key, fetcher = fetch) {
   const res = await fetcher(`${API}/models?pageSize=1000`, {headers: {'x-goog-api-key': key}, signal: AbortSignal.timeout(20000)});
   const body = await res.json().catch(() => ({}));
   if (!res.ok) throw Error(`Gemini API rejected the key: ${body.error?.message || res.status}`);
   const usable = (body.models || []).filter(m => m.supportedGenerationMethods?.includes('generateContent')).map(m => m.name.replace(/^models\//, ''));
   const version = name => Number((name.match(/^gemini-(\d+(?:\.\d+)?)/) || [])[1] || 0);
-  const pick = list => list.sort((a, b) => version(b) - version(a))[0];
-  const model = pick(usable.filter(n => /^gemini-\d+(\.\d+)?-flash$/.test(n)))
-    || pick(usable.filter(n => /^gemini-.*flash/.test(n) && !/lite|image|tts|live|audio|thinking|exp/.test(n)));
-  if (!model) throw Error('No Gemini Flash model is available to this key; set GEMINI_MODEL');
-  return model;
+  const newest = list => list.sort((a, b) => version(b) - version(a));
+  const ordered = [
+    ...(process.env.GEMINI_MODEL ? [process.env.GEMINI_MODEL] : []),
+    ...newest(usable.filter(n => /^gemini-\d+(\.\d+)?-flash$/.test(n))),
+    ...newest(usable.filter(n => /^gemini-\d+(\.\d+)?-flash-lite$/.test(n))),
+  ];
+  const models = [...new Set(ordered)];
+  if (!models.length) throw Error('No Gemini Flash model is available to this key; set GEMINI_MODEL');
+  return models;
 }
+export async function resolveModel(key, fetcher = fetch) { return (await resolveModels(key, fetcher))[0]; }
 
 // Extracts the first JSON object from model text (it may wrap it in ``` fences or prose).
 export function extractJson(text) {
@@ -45,36 +50,55 @@ export function groundedSources(candidate, into = new Set()) {
 
 export function createGeminiClient({key = process.env.GEMINI_API_KEY, fetcher = fetch, minIntervalMs = Number(process.env.GEMINI_MIN_INTERVAL_MS || 6000)} = {}) {
   if (!key) throw Error('GEMINI_API_KEY is not set; agents cannot run');
-  let model, lastCall = 0;
+  let models, index = 0, lastCall = 0;
+  const tried = [];
+
+  async function call(model, body) {
+    // Free-tier keys have small per-minute quotas: space calls out.
+    const wait = lastCall + minIntervalMs - Date.now();
+    if (wait > 0) await sleep(wait);
+    lastCall = Date.now();
+    const res = await fetcher(`${API}/models/${model}:generateContent`, {
+      method: 'POST',
+      headers: {'x-goog-api-key': key, 'Content-Type': 'application/json'},
+      body: JSON.stringify(body),
+      signal: AbortSignal.timeout(180000),
+    });
+    return {res, data: await res.json().catch(() => ({}))};
+  }
 
   async function generate(body) {
-    model ||= await resolveModel(key, fetcher);
-    for (let attempt = 0; attempt < 5; attempt++) {
-      // Free-tier keys have small per-minute quotas: space calls out and back off on 429/503.
-      const wait = lastCall + minIntervalMs - Date.now();
-      if (wait > 0) await sleep(wait);
-      lastCall = Date.now();
-      const res = await fetcher(`${API}/models/${model}:generateContent`, {
-        method: 'POST',
-        headers: {'x-goog-api-key': key, 'Content-Type': 'application/json'},
-        body: JSON.stringify(body),
-        signal: AbortSignal.timeout(180000),
-      });
-      const data = await res.json().catch(() => ({}));
-      if (res.ok) return data;
-      if ([429, 500, 503].includes(res.status) && attempt < 4) {
-        const hint = data.error?.details?.find(d => d.retryDelay)?.retryDelay;
-        await sleep(hint ? parseFloat(hint) * 1000 + 1000 : 15000 * (attempt + 1));
-        continue;
+    models ||= await resolveModels(key, fetcher);
+    let last;
+    while (index < models.length) {
+      const model = models[index];
+      for (let attempt = 0; attempt < 3; attempt++) {
+        const {res, data} = await call(model, body);
+        if (res.ok) return data;
+        last = `Gemini ${res.status} (${model}): ${data.error?.message || 'request failed'}`;
+        if (res.status === 429) {
+          // A daily or zero quota will not recover by waiting: move to the next model at once.
+          const details = JSON.stringify(data.error?.details || []);
+          if (/PerDay|limit: 0|"quotaValue":"0"/.test(details + (data.error?.message || '')) || attempt === 2) break;
+          const hint = data.error?.details?.find(d => d.retryDelay)?.retryDelay;
+          await sleep(Math.min(hint ? parseFloat(hint) * 1000 + 1000 : 20000, 65000));
+          continue;
+        }
+        if ([500, 503].includes(res.status) && attempt < 2) { await sleep(15000 * (attempt + 1)); continue; }
+        if (res.status === 404 || res.status === 400 && /not (found|supported)/i.test(last)) break;
+        throw Error(last.slice(0, 400));
       }
-      throw Error(`Gemini ${res.status}: ${data.error?.message || 'request failed'}`.slice(0, 400));
+      tried.push(model);
+      index++;
     }
+    throw Error(`${last} — tried: ${tried.join(', ')}`.slice(0, 500));
   }
 
   return {
     provider: 'gemini',
     checkLinks: true,
-    get model() { return model; },
+    get model() { return models?.[index]; },
+    get triedModels() { return [...tried]; },
     async runAgent({system, prompt, tools = [], submitTool, outputSchema, maxTokens = 16000}) {
       const schema = outputSchema || tools.find(t => t.name === submitTool)?.input_schema;
       const search = tools.some(t => t.name === 'web_search' || t.name === 'web_fetch');
