@@ -1,51 +1,269 @@
 {
   "note": "RSS/Atom feeds of established outlets per section. A story is published only when at least two different outlets report it. Feeds that fail are listed in config/agent-runs.json.",
   "feeds": [
-    {"topic": "technology", "lang": "en", "name": "BBC News", "url": "https://feeds.bbci.co.uk/news/technology/rss.xml"},
-    {"topic": "technology", "lang": "en", "name": "The Guardian", "url": "https://www.theguardian.com/technology/rss"},
-    {"topic": "technology", "lang": "en", "name": "The New York Times", "url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml"},
-    {"topic": "technology", "lang": "en", "name": "Ars Technica", "url": "https://feeds.arstechnica.com/arstechnica/index"},
-    {"topic": "technology", "lang": "en", "name": "The Verge", "url": "https://www.theverge.com/rss/index.xml"},
-    {"topic": "technology", "lang": "en", "name": "NPR", "url": "https://feeds.npr.org/1019/rss.xml"},
-    {"topic": "technology", "lang": "ru", "name": "Хабр", "url": "https://habr.com/ru/rss/news/"},
-    {"topic": "technology", "lang": "ru", "name": "3DNews", "url": "https://3dnews.ru/news/rss/"},
-    {"topic": "technology", "lang": "ru", "name": "iXBT", "url": "https://www.ixbt.com/export/news.rss"},
-
-    {"topic": "science", "lang": "en", "name": "BBC News", "url": "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml"},
-    {"topic": "science", "lang": "en", "name": "The Guardian", "url": "https://www.theguardian.com/science/rss"},
-    {"topic": "science", "lang": "en", "name": "The New York Times", "url": "https://rss.nytimes.com/services/xml/rss/nyt/Science.xml"},
-    {"topic": "science", "lang": "en", "name": "NPR", "url": "https://feeds.npr.org/1007/rss.xml"},
-    {"topic": "science", "lang": "en", "name": "ScienceDaily", "url": "https://www.sciencedaily.com/rss/top/science.xml"},
-    {"topic": "science", "lang": "ru", "name": "N + 1", "url": "https://nplus1.ru/rss"},
-    {"topic": "science", "lang": "ru", "name": "Naked Science", "url": "https://naked-science.ru/feed"},
-
-    {"topic": "economy", "lang": "en", "name": "BBC News", "url": "https://feeds.bbci.co.uk/news/business/rss.xml"},
-    {"topic": "economy", "lang": "en", "name": "The Guardian", "url": "https://www.theguardian.com/business/rss"},
-    {"topic": "economy", "lang": "en", "name": "The New York Times", "url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml"},
-    {"topic": "economy", "lang": "en", "name": "NPR", "url": "https://feeds.npr.org/1006/rss.xml"},
-    {"topic": "economy", "lang": "en", "name": "CNBC", "url": "https://www.cnbc.com/id/10001147/device/rss/rss.html"},
-    {"topic": "economy", "lang": "ru", "name": "Коммерсантъ", "url": "https://www.kommersant.ru/RSS/section-economics.xml"},
-    {"topic": "economy", "lang": "ru", "name": "РБК", "url": "https://rssexport.rbc.ru/rbcnews/news/30/full.rss"},
-    {"topic": "economy", "lang": "ru", "name": "Интерфакс", "url": "https://www.interfax.ru/rss.asp"},
-
-    {"topic": "culture", "lang": "en", "name": "BBC News", "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"},
-    {"topic": "culture", "lang": "en", "name": "The Guardian", "url": "https://www.theguardian.com/culture/rss"},
-    {"topic": "culture", "lang": "en", "name": "The New York Times", "url": "https://rss.nytimes.com/services/xml/rss/nyt/Arts.xml"},
-    {"topic": "culture", "lang": "en", "name": "NPR", "url": "https://feeds.npr.org/1008/rss.xml"},
-    {"topic": "culture", "lang": "ru", "name": "Коммерсантъ", "url": "https://www.kommersant.ru/RSS/section-culture.xml"},
-
-    {"topic": "sport", "lang": "en", "name": "BBC Sport", "url": "https://feeds.bbci.co.uk/sport/rss.xml"},
-    {"topic": "sport", "lang": "en", "name": "The Guardian", "url": "https://www.theguardian.com/sport/rss"},
-    {"topic": "sport", "lang": "en", "name": "The New York Times", "url": "https://rss.nytimes.com/services/xml/rss/nyt/Sports.xml"},
-    {"topic": "sport", "lang": "en", "name": "ESPN", "url": "https://www.espn.com/espn/rss/news"},
-    {"topic": "sport", "lang": "ru", "name": "Чемпионат", "url": "https://www.championat.com/rss/news/"},
-    {"topic": "sport", "lang": "ru", "name": "Sports.ru", "url": "https://www.sports.ru/rss/main.xml"},
-    {"topic": "sport", "lang": "ru", "name": "Спорт-Экспресс", "url": "https://www.sport-express.ru/services/materials/news/se/"},
-
-    {"topic": "travel", "lang": "en", "name": "The Guardian", "url": "https://www.theguardian.com/travel/rss"},
-    {"topic": "travel", "lang": "en", "name": "The New York Times", "url": "https://rss.nytimes.com/services/xml/rss/nyt/Travel.xml"},
-    {"topic": "travel", "lang": "en", "name": "Skift", "url": "https://skift.com/feed/"},
-    {"topic": "travel", "lang": "ru", "name": "АТОР", "url": "https://www.atorus.ru/rss.xml"},
-    {"topic": "travel", "lang": "ru", "name": "Туристический бизнес (Tourdom)", "url": "https://www.tourdom.ru/rss/news.xml"}
+    {
+      "topic": "technology",
+      "lang": "en",
+      "name": "BBC News",
+      "url": "https://feeds.bbci.co.uk/news/technology/rss.xml"
+    },
+    {
+      "topic": "technology",
+      "lang": "en",
+      "name": "The Guardian",
+      "url": "https://www.theguardian.com/technology/rss"
+    },
+    {
+      "topic": "technology",
+      "lang": "en",
+      "name": "The New York Times",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml"
+    },
+    {
+      "topic": "technology",
+      "lang": "en",
+      "name": "Ars Technica",
+      "url": "https://feeds.arstechnica.com/arstechnica/index"
+    },
+    {
+      "topic": "technology",
+      "lang": "en",
+      "name": "The Verge",
+      "url": "https://www.theverge.com/rss/index.xml"
+    },
+    {
+      "topic": "technology",
+      "lang": "en",
+      "name": "NPR",
+      "url": "https://feeds.npr.org/1019/rss.xml"
+    },
+    {
+      "topic": "technology",
+      "lang": "ru",
+      "name": "Хабр",
+      "url": "https://habr.com/ru/rss/news/"
+    },
+    {
+      "topic": "technology",
+      "lang": "ru",
+      "name": "3DNews",
+      "url": "https://3dnews.ru/news/rss/"
+    },
+    {
+      "topic": "technology",
+      "lang": "ru",
+      "name": "iXBT",
+      "url": "https://www.ixbt.com/export/news.rss"
+    },
+    {
+      "topic": "science",
+      "lang": "en",
+      "name": "BBC News",
+      "url": "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml"
+    },
+    {
+      "topic": "science",
+      "lang": "en",
+      "name": "The Guardian",
+      "url": "https://www.theguardian.com/science/rss"
+    },
+    {
+      "topic": "science",
+      "lang": "en",
+      "name": "The New York Times",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/Science.xml"
+    },
+    {
+      "topic": "science",
+      "lang": "en",
+      "name": "NPR",
+      "url": "https://feeds.npr.org/1007/rss.xml"
+    },
+    {
+      "topic": "science",
+      "lang": "en",
+      "name": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/rss/top/science.xml"
+    },
+    {
+      "topic": "science",
+      "lang": "ru",
+      "name": "N + 1",
+      "url": "https://nplus1.ru/rss"
+    },
+    {
+      "topic": "science",
+      "lang": "ru",
+      "name": "Naked Science",
+      "url": "https://naked-science.ru/feed"
+    },
+    {
+      "topic": "economy",
+      "lang": "en",
+      "name": "BBC News",
+      "url": "https://feeds.bbci.co.uk/news/business/rss.xml"
+    },
+    {
+      "topic": "economy",
+      "lang": "en",
+      "name": "The Guardian",
+      "url": "https://www.theguardian.com/business/rss"
+    },
+    {
+      "topic": "economy",
+      "lang": "en",
+      "name": "The New York Times",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml"
+    },
+    {
+      "topic": "economy",
+      "lang": "en",
+      "name": "NPR",
+      "url": "https://feeds.npr.org/1006/rss.xml"
+    },
+    {
+      "topic": "economy",
+      "lang": "en",
+      "name": "CNBC",
+      "url": "https://www.cnbc.com/id/10001147/device/rss/rss.html"
+    },
+    {
+      "topic": "economy",
+      "lang": "ru",
+      "name": "Коммерсантъ",
+      "url": "https://www.kommersant.ru/RSS/section-economics.xml"
+    },
+    {
+      "topic": "economy",
+      "lang": "ru",
+      "name": "РБК",
+      "url": "https://rssexport.rbc.ru/rbcnews/news/30/full.rss"
+    },
+    {
+      "topic": "economy",
+      "lang": "ru",
+      "name": "Интерфакс",
+      "url": "https://www.interfax.ru/rss.asp"
+    },
+    {
+      "topic": "culture",
+      "lang": "en",
+      "name": "BBC News",
+      "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
+    },
+    {
+      "topic": "culture",
+      "lang": "en",
+      "name": "The Guardian",
+      "url": "https://www.theguardian.com/culture/rss"
+    },
+    {
+      "topic": "culture",
+      "lang": "en",
+      "name": "The New York Times",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/Arts.xml"
+    },
+    {
+      "topic": "culture",
+      "lang": "en",
+      "name": "NPR",
+      "url": "https://feeds.npr.org/1008/rss.xml"
+    },
+    {
+      "topic": "culture",
+      "lang": "ru",
+      "name": "Коммерсантъ",
+      "url": "https://www.kommersant.ru/RSS/section-culture.xml"
+    },
+    {
+      "topic": "sport",
+      "lang": "en",
+      "name": "BBC Sport",
+      "url": "https://feeds.bbci.co.uk/sport/rss.xml"
+    },
+    {
+      "topic": "sport",
+      "lang": "en",
+      "name": "The Guardian",
+      "url": "https://www.theguardian.com/sport/rss"
+    },
+    {
+      "topic": "sport",
+      "lang": "en",
+      "name": "The New York Times",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/Sports.xml"
+    },
+    {
+      "topic": "sport",
+      "lang": "en",
+      "name": "ESPN",
+      "url": "https://www.espn.com/espn/rss/news"
+    },
+    {
+      "topic": "sport",
+      "lang": "ru",
+      "name": "Чемпионат",
+      "url": "https://www.championat.com/rss/news/"
+    },
+    {
+      "topic": "sport",
+      "lang": "ru",
+      "name": "Sports.ru",
+      "url": "https://www.sports.ru/rss/main.xml"
+    },
+    {
+      "topic": "sport",
+      "lang": "ru",
+      "name": "Спорт-Экспресс",
+      "url": "https://www.sport-express.ru/services/materials/news/se/"
+    },
+    {
+      "topic": "travel",
+      "lang": "en",
+      "name": "The Guardian",
+      "url": "https://www.theguardian.com/travel/rss"
+    },
+    {
+      "topic": "travel",
+      "lang": "en",
+      "name": "The New York Times",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/Travel.xml"
+    },
+    {
+      "topic": "travel",
+      "lang": "en",
+      "name": "Skift",
+      "url": "https://skift.com/feed/"
+    },
+    {
+      "topic": "travel",
+      "lang": "ru",
+      "name": "Лента.ру",
+      "url": "https://lenta.ru/rss/news/travel"
+    },
+    {
+      "topic": "travel",
+      "lang": "ru",
+      "name": "РИА Новости",
+      "url": "https://ria.ru/export/rss2/tourism_news/index.xml"
+    },
+    {
+      "topic": "culture",
+      "lang": "ru",
+      "name": "Лента.ру",
+      "url": "https://lenta.ru/rss/news/culture"
+    },
+    {
+      "topic": "economy",
+      "lang": "ru",
+      "name": "Лента.ру",
+      "url": "https://lenta.ru/rss/news/economics"
+    },
+    {
+      "topic": "science",
+      "lang": "ru",
+      "name": "Лента.ру",
+      "url": "https://lenta.ru/rss/news/science"
+    }
   ]
 }

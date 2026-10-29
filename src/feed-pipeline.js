@@ -42,9 +42,9 @@ export async function runFeedPipeline({client, store, topics, feeds, now = new D
   report.feeds = feedReport;
   const seen = await store.seen();
   const seenUrls = new Set(seen.map(s => s.url));
-  const items = all.filter(i => !seenUrls.has(normalizeUrl(i.url)))
-    .sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt))
-    .slice(0, 400);
+  // The newest 40 headlines per section keep the grouping prompt small and fast.
+  const fresh = all.filter(i => !seenUrls.has(normalizeUrl(i.url))).sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt));
+  const items = sections.flatMap(t => fresh.filter(i => i.topic === t.id).slice(0, Number(process.env.ATLAS_HEADLINES_PER_SECTION || 40)));
   report.candidates = items.length;
   if (items.length < 2) return {...report, finishedAt: new Date().toISOString()};
 

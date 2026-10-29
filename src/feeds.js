@@ -47,7 +47,7 @@ export async function fetchFeeds(feeds, {fetcher = fetch, now = new Date(), hour
   const report = new Array(feeds.length);
   const results = await Promise.all(feeds.map(async (feed, index) => {
     try {
-      const res = await fetcher(feed.url, {headers: {'User-Agent': 'Mozilla/5.0 (compatible; ATLAS news reader)', Accept: 'application/rss+xml, application/atom+xml, application/xml, text/xml'}, signal: AbortSignal.timeout(20000)});
+      const res = await fetcher(feed.url, {headers: {'User-Agent': 'Mozilla/5.0 (compatible; ATLAS news reader)', Accept: '*/*'}, signal: AbortSignal.timeout(20000)});
       if (!res.ok) throw Error('HTTP ' + res.status);
       const items = parseFeed(await res.text(), feed);
       report[index] = {feed: feed.name + ' / ' + feed.topic, ok: true, items: items.length};

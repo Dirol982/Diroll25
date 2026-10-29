@@ -50,7 +50,7 @@ export function groundedSources(candidate, into = new Set()) {
 
 export function createGeminiClient({key = process.env.GEMINI_API_KEY, fetcher = fetch, minIntervalMs = Number(process.env.GEMINI_MIN_INTERVAL_MS || 13000)} = {}) {
   if (!key) throw Error('GEMINI_API_KEY is not set; agents cannot run');
-  let models, index = 0, lastCall = 0;
+  let models, index = 0, lastCall = 0, thinking = true;
   const tried = [];
   const errors = {};
 
@@ -63,7 +63,7 @@ export function createGeminiClient({key = process.env.GEMINI_API_KEY, fetcher = 
       method: 'POST',
       headers: {'x-goog-api-key': key, 'Content-Type': 'application/json'},
       body: JSON.stringify(body),
-      signal: AbortSignal.timeout(180000),
+      signal: AbortSignal.timeout(300000),
     });
     return {res, data: await res.json().catch(() => ({}))};
   }
@@ -87,6 +87,7 @@ export function createGeminiClient({key = process.env.GEMINI_API_KEY, fetcher = 
           continue;
         }
         if ([500, 503].includes(res.status) && attempt < 2) { await sleep(15000 * (attempt + 1)); continue; }
+        if (res.status === 400 && body.generationConfig?.thinkingConfig && /thinking/i.test(last)) { thinking = false; delete body.generationConfig.thinkingConfig; attempt--; continue; }
         if (res.status === 404 || res.status === 400 && /not (found|supported)/i.test(last)) break;
         throw Error(last.slice(0, 400));
       }
@@ -112,7 +113,7 @@ export function createGeminiClient({key = process.env.GEMINI_API_KEY, fetcher = 
       }
       return out;
     },
-    async runAgent({system, prompt, tools = [], submitTool, outputSchema, maxTokens = 16000}) {
+    async runAgent({system, prompt, tools = [], submitTool, outputSchema, maxTokens = 16000, effort = 'medium'}) {
       const schema = outputSchema || tools.find(t => t.name === submitTool)?.input_schema;
       const search = tools.some(t => t.name === 'web_search' || t.name === 'web_fetch');
       const instructions = `${system}\n\n${search ? 'Use Google Search to find and check information. ' : ''}Reply with a single JSON object and nothing else. It must match this JSON Schema:\n${JSON.stringify(schema)}`;
@@ -120,7 +121,7 @@ export function createGeminiClient({key = process.env.GEMINI_API_KEY, fetcher = 
         systemInstruction: {parts: [{text: instructions}]},
         contents: [{role: 'user', parts: [{text: prompt}]}],
         ...(search ? {tools: [{google_search: {}}]} : {}),
-        generationConfig: {maxOutputTokens: maxTokens, ...(search ? {} : {responseMimeType: 'application/json'})},
+        generationConfig: {maxOutputTokens: maxTokens, ...(search ? {} : {responseMimeType: 'application/json'}), ...(thinking && effort === 'low' ? {thinkingConfig: {thinkingLevel: 'low'}} : {})},
       });
       if (data.promptFeedback?.blockReason) throw new AgentRefusal('Gemini blocked the prompt: ' + data.promptFeedback.blockReason);
       const candidate = data.candidates?.[0];
