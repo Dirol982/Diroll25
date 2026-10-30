@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-10-30T02:35:09.537961+00:00",
+  "builtAt": "2026-10-30T09:57:33.381273+00:00",
   "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
   "articles": [
     {
@@ -25,7 +25,7 @@
       "originalTitle": "2026-10-29, Version 27.0.0-alpha.0.0.0 (Alpha), @RafaelGSS",
       "publishedAt": "2026-10-29T18:36:37Z",
       "updatedAt": "2026-10-29T18:36:37Z",
-      "collectedAt": "2026-10-30T02:35:09.190542+00:00",
+      "collectedAt": "2026-10-30T09:57:32.997660+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -38,18 +38,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-10-30T02:35:09.537961+00:00",
+      "sitePublishedAt": "2026-10-30T09:57:33.381273+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-10-30T02:35:09.537961+00:00"
+          "checkedAt": "2026-10-30T09:57:33.381273+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-10-30T02:35:09.537961+00:00",
-          "evidenceSha256": "dd1c1966c446f6e34d8acd6d25b3aaaa4a9cc33383cb00c79c4e9dc67692fb8f"
+          "checkedAt": "2026-10-30T09:57:33.381273+00:00",
+          "evidenceSha256": "1d417bf9d976c2f3b25a6e9ef42b14335e084f0e6dea68b2faeda621502ee74b"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -579,7 +579,7 @@
       "originalTitle": "1.144.0",
       "publishedAt": "2026-10-28T18:51:38Z",
       "updatedAt": "2026-10-28T18:51:38Z",
-      "collectedAt": "2026-10-30T02:35:09.537794+00:00",
+      "collectedAt": "2026-10-30T09:57:33.381095+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -592,18 +592,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-10-30T02:35:09.537961+00:00",
+      "sitePublishedAt": "2026-10-30T09:57:33.381273+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-10-30T02:35:09.537961+00:00"
+          "checkedAt": "2026-10-30T09:57:33.381273+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-10-30T02:35:09.537961+00:00",
-          "evidenceSha256": "4faeb3be9bfdb3538529f55514a722a765ff0f39ac2858aaf3784a5c5972577a"
+          "checkedAt": "2026-10-30T09:57:33.381273+00:00",
+          "evidenceSha256": "5fc251ffb958bb2c35da6e286fe9fd831391e96b3c3805353b4e727acaac492b"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -630,7 +630,7 @@
       "originalTitle": "2026-10-28, Version 24.22.2 'Krypton' (LTS), @aduh95",
       "publishedAt": "2026-10-28T18:39:09Z",
       "updatedAt": "2026-10-28T18:39:09Z",
-      "collectedAt": "2026-10-30T02:35:09.190628+00:00",
+      "collectedAt": "2026-10-30T09:57:32.997783+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -643,18 +643,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-10-30T02:35:09.537961+00:00",
+      "sitePublishedAt": "2026-10-30T09:57:33.381273+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-10-30T02:35:09.537961+00:00"
+          "checkedAt": "2026-10-30T09:57:33.381273+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-10-30T02:35:09.537961+00:00",
-          "evidenceSha256": "122adb71303cdd17ba09d69897a82db09430d4510aa7b570c56973e387ba157d"
+          "checkedAt": "2026-10-30T09:57:33.381273+00:00",
+          "evidenceSha256": "e74f87a0d7e8e27bc1255b8d5d74e26141d244a69d180cfea43289bb39174854"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -681,7 +681,7 @@
       "originalTitle": "2026-10-28, Version 26.13.0 'Lithium' (LTS), @richardlau",
       "publishedAt": "2026-10-28T16:57:41Z",
       "updatedAt": "2026-10-28T16:57:41Z",
-      "collectedAt": "2026-10-30T02:35:09.190597+00:00",
+      "collectedAt": "2026-10-30T09:57:32.997744+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -694,18 +694,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-10-30T02:35:09.537961+00:00",
+      "sitePublishedAt": "2026-10-30T09:57:33.381273+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-10-30T02:35:09.537961+00:00"
+          "checkedAt": "2026-10-30T09:57:33.381273+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-10-30T02:35:09.537961+00:00",
-          "evidenceSha256": "ec90527fe40f224829c607fc6f08a97fa88a6c8152a9061d78a809c7ea0ae87b"
+          "checkedAt": "2026-10-30T09:57:33.381273+00:00",
+          "evidenceSha256": "502a8708a8391e8645cdab4d2080f75b54fc9e13bdbe09107343b1600a32ec63"
         }
       ],
       "verificationScope": "release-announcement-only"
