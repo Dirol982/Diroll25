@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-10-31T15:18:35.990552+00:00",
+  "builtAt": "2026-10-31T19:57:41.389301+00:00",
   "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
   "articles": [
     {
@@ -25,7 +25,7 @@
       "originalTitle": "2026-10-29, Version 27.0.0-alpha.0.0.0 (Alpha), @RafaelGSS",
       "publishedAt": "2026-10-29T18:36:37Z",
       "updatedAt": "2026-10-29T18:36:37Z",
-      "collectedAt": "2026-10-31T15:18:35.621130+00:00",
+      "collectedAt": "2026-10-31T19:57:41.033356+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -38,18 +38,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-10-31T15:18:35.990552+00:00",
+      "sitePublishedAt": "2026-10-31T19:57:41.389301+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-10-31T15:18:35.990552+00:00"
+          "checkedAt": "2026-10-31T19:57:41.389301+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-10-31T15:18:35.990552+00:00",
-          "evidenceSha256": "81a14c198c10c7139bee6d062e07fcd824aa74f27fd11180ef040a77e4da5e78"
+          "checkedAt": "2026-10-31T19:57:41.389301+00:00",
+          "evidenceSha256": "d73653b4b2452fe6ad86dccc53555198fe01bcef5a14584ed4278fec39ceb9df"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -591,7 +591,7 @@
         "en": "Read the original release notes before upgrading."
       },
       "publicationMode": "test",
-      "archive": false,
+      "archive": true,
       "sitePublishedAt": "2026-10-31T15:18:35.990552+00:00",
       "autoChecks": [
         {
@@ -642,7 +642,7 @@
         "en": "Read the original release notes before upgrading."
       },
       "publicationMode": "test",
-      "archive": false,
+      "archive": true,
       "sitePublishedAt": "2026-10-31T15:18:35.990552+00:00",
       "autoChecks": [
         {
@@ -693,7 +693,7 @@
         "en": "Read the original release notes before upgrading."
       },
       "publicationMode": "test",
-      "archive": false,
+      "archive": true,
       "sitePublishedAt": "2026-10-31T15:18:35.990552+00:00",
       "autoChecks": [
         {
@@ -1388,6 +1388,16 @@
   ],
   "held": [
     {
+      "id": "feed-9d1b76e3ad8e736802b9",
+      "title": "2026-10-28, Version 26.13.0 'Lithium' (LTS), @richardlau",
+      "error": "Old entry not eligible for fresh automatic publication"
+    },
+    {
+      "id": "feed-243f98e467424aaf3e47",
+      "title": "2026-10-28, Version 24.22.2 'Krypton' (LTS), @aduh95",
+      "error": "Old entry not eligible for fresh automatic publication"
+    },
+    {
       "id": "feed-b63d8bfa28343d307561",
       "title": "2026-10-21, Version 26.12.1 (Current), @aduh95 prepared by @RafaelGSS",
       "error": "Old entry not eligible for fresh automatic publication"
@@ -1410,6 +1420,11 @@
     {
       "id": "feed-c202181bf05ea4b7f6b6",
       "title": "2026-10-14, Version 24.22.0 'Krypton' (LTS), @richardlau prepared by @aduh95",
+      "error": "Old entry not eligible for fresh automatic publication"
+    },
+    {
+      "id": "feed-073bc027b25d4ba6cfbd",
+      "title": "1.144.0",
       "error": "Old entry not eligible for fresh automatic publication"
     },
     {
