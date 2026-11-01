@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-11-01T18:42:57.805Z",
-  "verification": "Agent pipeline: search, independent verification by a second agent with at least two independent sources, bilingual rewrite; plus deterministic first-party release checks",
+  "builtAt": "2026-11-01T22:46:57.256744+00:00",
+  "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
   "articles": [
     {
       "id": "agent-08f695774f92d61675e0",
@@ -86,7 +86,8 @@
         "provider": "Wikimedia Commons",
         "query": "Esequiel Barco"
       },
-      "imageSearchedAt": "2026-11-01T18:39:53.417Z"
+      "imageSearchedAt": "2026-11-01T18:39:53.417Z",
+      "archive": false
     },
     {
       "id": "agent-307fcec3303372625c4b",
@@ -171,7 +172,8 @@
         "provider": "Wikimedia Commons",
         "query": "director Michael Mann"
       },
-      "imageSearchedAt": "2026-11-01T18:42:53.938Z"
+      "imageSearchedAt": "2026-11-01T18:42:53.938Z",
+      "archive": false
     },
     {
       "id": "agent-e521e8be4198719165ca",
@@ -261,7 +263,8 @@
         "provider": "Wikimedia Commons",
         "query": "Binance"
       },
-      "imageSearchedAt": "2026-11-01T18:35:34.628Z"
+      "imageSearchedAt": "2026-11-01T18:35:34.628Z",
+      "archive": false
     },
     {
       "id": "feed-c99e237d5d0c56f7b33d",
@@ -297,7 +300,7 @@
         "en": "Read the original release notes before upgrading."
       },
       "publicationMode": "test",
-      "archive": false,
+      "archive": true,
       "sitePublishedAt": "2026-11-01T18:27:18.030337+00:00",
       "autoChecks": [
         {
@@ -1669,6 +1672,11 @@
     }
   ],
   "held": [
+    {
+      "id": "feed-c99e237d5d0c56f7b33d",
+      "title": "2026-10-29, Version 27.0.0-alpha.0.0.0 (Alpha), @RafaelGSS",
+      "error": "Old entry not eligible for fresh automatic publication"
+    },
     {
       "id": "feed-9d1b76e3ad8e736802b9",
       "title": "2026-10-28, Version 26.13.0 'Lithium' (LTS), @richardlau",
