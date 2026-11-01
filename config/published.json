@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-11-01T05:57:51.366513+00:00",
+  "builtAt": "2026-11-01T13:17:05.603586+00:00",
   "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
   "articles": [
     {
@@ -25,7 +25,7 @@
       "originalTitle": "2026-10-29, Version 27.0.0-alpha.0.0.0 (Alpha), @RafaelGSS",
       "publishedAt": "2026-10-29T18:36:37Z",
       "updatedAt": "2026-10-29T18:36:37Z",
-      "collectedAt": "2026-11-01T05:57:51.091514+00:00",
+      "collectedAt": "2026-11-01T13:17:05.220289+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -38,18 +38,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-01T05:57:51.366513+00:00",
+      "sitePublishedAt": "2026-11-01T13:17:05.603586+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-01T05:57:51.366513+00:00"
+          "checkedAt": "2026-11-01T13:17:05.603586+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-01T05:57:51.366513+00:00",
-          "evidenceSha256": "b841b0f84f0042fed4d082acdd0435eea23e402fa600383d78d630de0b8664fa"
+          "checkedAt": "2026-11-01T13:17:05.603586+00:00",
+          "evidenceSha256": "912c088023dee42e25380c29cff7c297396272949969889a21b3eb5d81151368"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -138,7 +138,7 @@
         "query": "Geoffroy Roux de Bezieux"
       },
       "imageSearchedAt": "2026-10-29T13:19:29.348Z",
-      "archive": false
+      "archive": true
     },
     {
       "id": "agent-c348b9789a0b99d21f2e",
@@ -212,7 +212,7 @@
         "notes": "Reported by several outlets in their own feeds",
         "checkedAt": "2026-10-29T12:41:04.181Z"
       },
-      "archive": false,
+      "archive": true,
       "imageSearchedAt": "2026-10-29T13:19:49.917Z"
     },
     {
@@ -292,7 +292,7 @@
         "notes": "Reported by several outlets in their own feeds",
         "checkedAt": "2026-10-29T12:41:04.181Z"
       },
-      "archive": false,
+      "archive": true,
       "imageSearchedAt": "2026-10-29T13:20:10.514Z"
     },
     {
@@ -379,7 +379,7 @@
         "query": "Vera C Rubin Observatory"
       },
       "imageSearchedAt": "2026-10-29T13:18:36.274Z",
-      "archive": false
+      "archive": true
     },
     {
       "id": "agent-8c368b844569d2bdafff",
@@ -470,7 +470,7 @@
         "query": "Azimuth Airlines aircraft"
       },
       "imageSearchedAt": "2026-10-29T13:19:16.280Z",
-      "archive": false
+      "archive": true
     },
     {
       "id": "agent-f117d5255dd2a1807a46",
@@ -544,7 +544,7 @@
         "notes": "Reported by several outlets in their own feeds",
         "checkedAt": "2026-10-29T12:41:04.181Z"
       },
-      "archive": false,
+      "archive": true,
       "image": {
         "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/NASA_astronaut_Chris_Williams_during_a_spacewalk_outside_the_International_Space_Station_%28iss074e040292%29.jpg/1920px-NASA_astronaut_Chris_Williams_during_a_spacewalk_outside_the_International_Space_Station_%28iss074e040292%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "title": "NASA astronaut Chris Williams during a spacewalk outside the International Space Station (iss074e040292)",
