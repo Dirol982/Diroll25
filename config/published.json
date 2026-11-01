@@ -1,8 +1,268 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-11-01T13:17:05.603586+00:00",
-  "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
+  "builtAt": "2026-11-01T18:42:57.805Z",
+  "verification": "Agent pipeline: search, independent verification by a second agent with at least two independent sources, bilingual rewrite; plus deterministic first-party release checks",
   "articles": [
+    {
+      "id": "agent-08f695774f92d61675e0",
+      "category": "sport",
+      "country": "RU",
+      "title": {
+        "ru": "«Спартак» разгромил «Локомотив» в столичном дерби 13-го тура РПЛ",
+        "en": "Spartak Dominates Lokomotiv in Moscow Premier League Derby"
+      },
+      "body": {
+        "ru": "Московский «Спартак» одержал уверенную победу над столичным «Локомотивом» в рамках 13-го тура Российской Премьер-Лиги.",
+        "en": "Spartak Moscow secured a commanding victory over Lokomotiv Moscow in round 13 of the Russian Premier League season."
+      },
+      "content": {
+        "ru": [
+          "В первом тайме московского дерби красно-белые отправили в ворота хозяев три безответных мяча. В перерыве пресс-служба «Локомотива» охарактеризовала стартовые сорок пять минут фразой «тайм, который хочется забыть», а на счет 0:3 отреагировал комментатор Константин Генич.",
+          "После трех пропущенных мячей болельщики железнодорожников начали скандировать с трибун «позор» и бросать шарфы, о чем в эфире телеканала «Матч ТВ» рассказал комментатор Сергей Дурасов. Вратарь «Локомотива» Антон Митрюшкин во время перерыва заявил: «Конечно, так нельзя играть».",
+          "Во втором тайме преимущество красно-белых увеличилось. На 76-й минуте полузащитник «Спартака» Эсекьель Барко успешно реализовал одиннадцатиметровый удар, забив четвертый мяч своей команды в матче."
+        ],
+        "en": [
+          "The red-and-whites took complete control of the Moscow derby in the first half, scoring three unanswered goals. Lokomotiv's press service described the opening period as a \"half to forget,\" while commentator Konstantin Genich also publicly reacted to the 3-0 scoreline.",
+          "The first-half collapse prompted a hostile reaction from the home crowd. According to Match TV commentator Sergey Durasov, Lokomotiv fans chanted \"shame\" and threw their scarves. Lokomotiv goalkeeper Anton Mitryushkin commented during the halftime break: \"Of course, you cannot play like this.\"",
+          "Spartak extended their advantage after the break. In the 76th minute, midfielder Esequiel Barco converted a penalty kick to score the team's fourth goal of the match."
+        ]
+      },
+      "importance": {
+        "ru": "Крупная победа в дерби укрепляет турнирные позиции «Спартака», в то время как «Локомотив» столкнулся с резкой критикой собственных болельщиков и болезненным результатом против принципиального соперника.",
+        "en": "The heavy derby victory provides Spartak with momentum in the title race, while Lokomotiv must address severe defensive vulnerabilities and mounting frustration from their fan base."
+      },
+      "next": {
+        "ru": "Командам предстоит подвести итоги встречи и продолжить выступления в матчах чемпионата России сезона-2026/2027.",
+        "en": "Both clubs will analyze the derby result as they prepare for the subsequent fixtures of the 2026/2027 Russian Premier League campaign."
+      },
+      "telegramText": {
+        "ru": "«Спартак» забил четыре безответных мяча «Локомотиву» в матче 13-го тура РПЛ сезона-2026/2027. Первый тайм завершился со счетом 3:0 в пользу красно-белых, что вызвало резкую реакцию трибун: фанаты «Локомотива» скандировали «позор» и бросали шарфы, а вратарь Антон Митрюшкин в перерыве признал, что «так нельзя играть». Пресс-служба железнодорожников назвала отрезок «таймом, который хочется забыть». На 76-й минуте Барко реализовал пенальти, доведя счет до 4:0.",
+        "en": "Spartak Moscow dominated Lokomotiv Moscow in their round 13 Russian Premier League derby. The visitors built a 3-0 lead by halftime, prompting Lokomotiv supporters to chant \"shame\" and toss scarves in frustration, according to Match TV. Lokomotiv keeper Anton Mitryushkin acknowledged at the break that \"you cannot play like this,\" while the club's media called it a \"half to forget.\" In the 76th minute, Esequiel Barco converted a penalty to make it 4-0."
+      },
+      "imageQuery": "Esequiel Barco",
+      "status": "published",
+      "demo": false,
+      "priority": 3,
+      "originalTitle": "Spartak Moscow Defeats Lokomotiv Moscow in Russian Premier League Derby",
+      "source": {
+        "name": "Чемпионат",
+        "url": "https://www.championat.com/football/news-6681716-genich-otreagiroval-na-schyot-3-0-posle-pervogo-tajma-v-derbi-lokomotiv-spartak.html",
+        "language": "en"
+      },
+      "sources": [
+        {
+          "publisher": "Чемпионат",
+          "url": "https://www.championat.com/football/news-6681716-genich-otreagiroval-na-schyot-3-0-posle-pervogo-tajma-v-derbi-lokomotiv-spartak.html",
+          "confirms": true
+        },
+        {
+          "publisher": "Спорт-Экспресс",
+          "url": "https://www.sport-express.ru/football/rfpl/news/lokomotiv-posle-treh-propuschennyh-golov-ot-spartaka-taym-kotoryy-hochetsya-zabyt-2469793/",
+          "confirms": true
+        }
+      ],
+      "publishedAt": "2026-11-01T17:42:04.000Z",
+      "updatedAt": "2026-11-01T17:42:04.000Z",
+      "collectedAt": "2026-11-01T18:27:19.116Z",
+      "sitePublishedAt": "2026-11-01T18:27:19.116Z",
+      "publicationMode": "agents",
+      "translationStatus": "ai-bilingual",
+      "factsReviewed": false,
+      "verification": {
+        "verdict": "cross-source",
+        "independentSources": 2,
+        "disputedFacts": [],
+        "problems": [],
+        "notes": "Reported by several outlets in their own feeds",
+        "checkedAt": "2026-11-01T18:27:19.116Z"
+      },
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Argentina_0_v_Australia_2_-_Tokyo_2020_-_1.jpg/1920px-Argentina_0_v_Australia_2_-_Tokyo_2020_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Argentina 0 v Australia 2 - Tokyo 2020 - 1",
+        "creator": "Argentina.gob.ar",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Argentina_0_v_Australia_2_-_Tokyo_2020_-_1.jpg",
+        "provider": "Wikimedia Commons",
+        "query": "Esequiel Barco"
+      },
+      "imageSearchedAt": "2026-11-01T18:39:53.417Z"
+    },
+    {
+      "id": "agent-307fcec3303372625c4b",
+      "category": "culture",
+      "country": "US",
+      "title": {
+        "ru": "Режиссер Майкл Манн случайно ранил себя на стрельбище в Лос-Анджелесе",
+        "en": "Director Michael Mann in Stable Condition After Accidental Shooting at LA Gun Range"
+      },
+      "body": {
+        "ru": "Американский кинорежиссер и продюсер Майкл Манн находится в стабильном состоянии после случайного самострела на стрельбище в Лос-Анджелесе.",
+        "en": "Director and producer Michael Mann is in stable condition after his firearm accidentally discharged at a Los Angeles gun range on Saturday, his representative said."
+      },
+      "content": {
+        "ru": [
+          "Инцидент произошел в субботу, когда оружие режиссера случайно выстрелило во время его пребывания на стрельбище в Лос-Анджелесе, сообщает газета The New York Times со ссылкой на его представителя.",
+          "В результате непреднамеренного выстрела кинематографист получил ранение. По словам официального представителя Манна, пострадавший находится в стабильном состоянии.",
+          "О произошедшем со ссылкой на американские источники также сообщило российское издание «Лента.ру». Подробности о характере полученных травм пока не раскрываются."
+        ],
+        "en": [
+          "The incident took place on Saturday at a shooting range in Los Angeles, where Mann accidentally shot himself, according to a report by The New York Times.",
+          "A representative for the filmmaker confirmed that Mann's gun accidentally discharged during the visit. Following the mishap, the director was reported to be in stable condition.",
+          "Details regarding the specific nature or severity of Mann's injuries were not immediately made public."
+        ]
+      },
+      "importance": {
+        "ru": "Майкл Манн — один из наиболее заметных голливудских режиссеров и продюсеров, известный своим вниманием к деталям обращения с оружием в кино.",
+        "en": "Michael Mann is an acclaimed Hollywood director and producer recognized globally for his distinctive visual style and realistic action sequences."
+      },
+      "next": {
+        "ru": "Ожидается дальнейшая информация о состоянии здоровья режиссера и обстоятельствах непреднамеренного выстрела.",
+        "en": "Additional updates on the filmmaker's recovery and the circumstances surrounding the accidental discharge have yet to be disclosed."
+      },
+      "telegramText": {
+        "ru": "Режиссер и продюсер Майкл Манн случайно ранил себя на стрельбище в Лос-Анджелесе, сообщает The New York Times со ссылкой на его представителя. \n\nИнцидент произошел в субботу: принадлежащее кинематографисту оружие случайно выстрелило. Представитель Манна сообщил, что режиссер находится в стабильном состоянии. Подробности о тяжести полученных травм пока не приводятся.",
+        "en": "Director and producer Michael Mann is in stable condition after accidentally shooting himself at a Los Angeles gun range, according to a representative.\n\nThe incident took place on Saturday when Mann's firearm accidentally discharged, The New York Times reported. Further details regarding the extent of his injuries have not yet been provided."
+      },
+      "imageQuery": "director Michael Mann",
+      "status": "published",
+      "demo": false,
+      "priority": 3,
+      "originalTitle": "Director Michael Mann Accidentally Shoots Himself at Los Angeles Gun Range",
+      "source": {
+        "name": "Лента.ру",
+        "url": "https://lenta.ru/news/2026/11/01/amerikanskiy-rezhisser-sluchayno-vystrelil-v-sebya/",
+        "language": "en"
+      },
+      "sources": [
+        {
+          "publisher": "Лента.ру",
+          "url": "https://lenta.ru/news/2026/11/01/amerikanskiy-rezhisser-sluchayno-vystrelil-v-sebya/",
+          "confirms": true
+        },
+        {
+          "publisher": "The New York Times",
+          "url": "https://www.nytimes.com/2026/11/01/movies/michael-mann-shooting.html",
+          "confirms": true
+        }
+      ],
+      "publishedAt": "2026-11-01T17:14:22.000Z",
+      "updatedAt": "2026-11-01T17:14:22.000Z",
+      "collectedAt": "2026-11-01T18:27:19.116Z",
+      "sitePublishedAt": "2026-11-01T18:27:19.116Z",
+      "publicationMode": "agents",
+      "translationStatus": "ai-bilingual",
+      "factsReviewed": false,
+      "verification": {
+        "verdict": "cross-source",
+        "independentSources": 2,
+        "disputedFacts": [],
+        "problems": [],
+        "notes": "Reported by several outlets in their own feeds",
+        "checkedAt": "2026-11-01T18:27:19.116Z"
+      },
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Michael_Mann_-_French_Cinematheque_-_4th_July_2009.jpg/1920px-Michael_Mann_-_French_Cinematheque_-_4th_July_2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Michael Mann - French Cinematheque - 4th July 2009",
+        "creator": "Thbz",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Michael_Mann_-_French_Cinematheque_-_4th_July_2009.jpg",
+        "provider": "Wikimedia Commons",
+        "query": "director Michael Mann"
+      },
+      "imageSearchedAt": "2026-11-01T18:42:53.938Z"
+    },
+    {
+      "id": "agent-e521e8be4198719165ca",
+      "category": "technology",
+      "country": null,
+      "title": {
+        "ru": "Binance возобновила вывод средств после кражи 6,3 миллиарда долларов",
+        "en": "Binance Resumes Withdrawals and Recovers Funds Following $6.3 Billion Heist"
+      },
+      "body": {
+        "ru": "Криптовалютная биржа Binance восстановила операции по выводу ряда активов и заявила о возврате 95 процентов средств, похищенных в ходе масштабного взлома.",
+        "en": "Cryptocurrency exchange Binance has resumed withdrawals for major tokens after recovering 95 percent of the $6.3 billion stolen in an October 29 cyberattack."
+      },
+      "content": {
+        "ru": [
+          "В воскресенье Binance возобновила вывод биткоинов, Ethereum и некоторых стейблкоинов. Этому предшествовало временное ограничение операций после инцидента 29 октября, когда киберпреступники вывели с платформы 6,3 миллиарда долларов. По сообщению компании, основную часть украденного объема уже удалось компенсировать.",
+          "Вслед за восстановлением функционала площадки клиенты сервиса начали активно выводить активы. По информации издания «Лента.ру», сумма средств, выведенных пользователями после кибератаки, превысила три миллиарда долларов.",
+          "ФБР связало нападение на биржу с Северной Кореей, присвоив активности хакеров обозначение TraderTraitor. Американское ведомство зафиксировало конвертацию похищенных токенов в Ethereum и подготовку к их последующему отмыванию."
+        ],
+        "en": [
+          "Binance resumed withdrawals of Bitcoin, Ethereum, and selected stablecoins on Sunday. The move followed the suspension of operations caused by a major security breach on October 29, during which attackers took $6.3 billion. The exchange announced that 95 percent of the stolen assets have already been recovered.",
+          "Following the restoration of access, platform users moved quickly to pull their holdings. According to Lenta.ru, customers withdrew more than $3 billion from the platform in the aftermath of the cyberattack.",
+          "The FBI attributed the breach to North Korea, identifying the perpetrators under the designation TraderTraitor. Federal investigators reported observing the actors converting stolen tokens into Ethereum and preparing to launder the proceeds."
+        ]
+      },
+      "importance": {
+        "ru": "Хищение 6,3 миллиарда долларов стало крупнейшей кражей в истории криптовалютной индустрии, а официальное возмещение большей части суммы и массовый вывод пользовательских активов отражают масштаб последствий атаки для сектора.",
+        "en": "The $6.3 billion incident stands as the largest crypto heist to date. The rapid compensation of 95 percent of the stolen funds alongside $3 billion in user outflows underscores the significant operational and financial impact on the exchange."
+      },
+      "next": {
+        "ru": "Правоохранительные органы продолжают отслеживать действия хакеров, которые готовятся к дальнейшему отмыванию переведенных в Ethereum средств.",
+        "en": "Investigators are monitoring the movement of the stolen funds as the actors prepare to launder the tokens converted into Ethereum."
+      },
+      "telegramText": {
+        "ru": "Binance возобновила вывод биткоинов, Ethereum и части стейблкоинов после крупнейшей кибератаки, произошедшей 29 октября. Тогда злоумышленники похитили 6,3 миллиарда долларов. \n\nВ компании сообщили, что 95% украденной суммы уже возмещено. После открытия операций пользователи биржи вывели с платформы более 3 миллиардов долларов.\n\nПо данным ФБР, за атакой стоит Северная Корея. Спецслужба обозначила схему как TraderTraitor и заявила, что похищенные токены конвертируются в Ethereum для дальнейшего отмывания.",
+        "en": "Binance has resumed withdrawals of Bitcoin, Ethereum, and some stablecoins following an October 29 cyberattack that saw $6.3 billion stolen from the platform. \n\nThe company announced that 95% of the stolen funds have already been recovered. Meanwhile, platform users have withdrawn more than $3 billion in the wake of the breach.\n\nAccording to the FBI, North Korea was behind the attack, which the agency labeled TraderTraitor. Investigators noted that the hackers were converting stolen tokens into Ethereum in preparation for money laundering."
+      },
+      "imageQuery": "Binance logo building",
+      "status": "published",
+      "demo": false,
+      "priority": 4,
+      "originalTitle": "Binance Resumes Withdrawals and Recovers Funds Following Massive Cyberattack",
+      "source": {
+        "name": "The Verge",
+        "url": "https://www.theverge.com/tech/1024176/north-korea-binance-crypto-heist",
+        "language": "en"
+      },
+      "sources": [
+        {
+          "publisher": "The Verge",
+          "url": "https://www.theverge.com/tech/1024176/north-korea-binance-crypto-heist",
+          "confirms": true
+        },
+        {
+          "publisher": "3DNews",
+          "url": "https://3dnews.ru/1150723",
+          "confirms": true
+        },
+        {
+          "publisher": "Лента.ру",
+          "url": "https://lenta.ru/news/2026/11/01/polzovateli-binance-vyveli-bolee-treh-milliardov-dollarov-posle-hakerskoy-ataki/",
+          "confirms": true
+        }
+      ],
+      "publishedAt": "2026-11-01T14:18:00.000Z",
+      "updatedAt": "2026-11-01T14:18:00.000Z",
+      "collectedAt": "2026-11-01T18:27:19.116Z",
+      "sitePublishedAt": "2026-11-01T18:27:19.116Z",
+      "publicationMode": "agents",
+      "translationStatus": "ai-bilingual",
+      "factsReviewed": false,
+      "verification": {
+        "verdict": "cross-source",
+        "independentSources": 3,
+        "disputedFacts": [],
+        "problems": [],
+        "notes": "Reported by several outlets in their own feeds",
+        "checkedAt": "2026-11-01T18:27:19.116Z"
+      },
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Binance_t-shirt_and_bag_-_2022-07-09.jpg/1920px-Binance_t-shirt_and_bag_-_2022-07-09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Binance t-shirt and bag - 2022-07-09",
+        "creator": "Bretwa",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Binance_t-shirt_and_bag_-_2022-07-09.jpg",
+        "provider": "Wikimedia Commons",
+        "query": "Binance"
+      },
+      "imageSearchedAt": "2026-11-01T18:35:34.628Z"
+    },
     {
       "id": "feed-c99e237d5d0c56f7b33d",
       "category": "technology",
@@ -25,7 +285,7 @@
       "originalTitle": "2026-10-29, Version 27.0.0-alpha.0.0.0 (Alpha), @RafaelGSS",
       "publishedAt": "2026-10-29T18:36:37Z",
       "updatedAt": "2026-10-29T18:36:37Z",
-      "collectedAt": "2026-11-01T13:17:05.220289+00:00",
+      "collectedAt": "2026-11-01T18:27:17.640488+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -38,18 +298,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-01T13:17:05.603586+00:00",
+      "sitePublishedAt": "2026-11-01T18:27:18.030337+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-01T13:17:05.603586+00:00"
+          "checkedAt": "2026-11-01T18:27:18.030337+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-01T13:17:05.603586+00:00",
-          "evidenceSha256": "912c088023dee42e25380c29cff7c297396272949969889a21b3eb5d81151368"
+          "checkedAt": "2026-11-01T18:27:18.030337+00:00",
+          "evidenceSha256": "9f43a653a8f33801df6761a21f6e782096eeff49f39fb5ddb03eff4593f6f625"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -213,7 +473,18 @@
         "checkedAt": "2026-10-29T12:41:04.181Z"
       },
       "archive": true,
-      "imageSearchedAt": "2026-10-29T13:19:49.917Z"
+      "imageSearchedAt": "2026-11-01T18:42:56.416Z",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Figure_1-_Debt_Held_by_the_Public_Is_Projected_to_Grow_Faster_Than_the_Economy_%2855330902121%29.jpg/1920px-Figure_1-_Debt_Held_by_the_Public_Is_Projected_to_Grow_Faster_Than_the_Economy_%2855330902121%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Figure 1- Debt Held by the Public Is Projected to Grow Faster Than the Economy (55330902121)",
+        "creator": "U.S. GAO",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Figure_1-_Debt_Held_by_the_Public_Is_Projected_to_Grow_Faster_Than_the_Economy_(55330902121).jpg",
+        "provider": "Wikimedia Commons",
+        "query": "US Economy Grows"
+      },
+      "imageAttempts": 1
     },
     {
       "id": "agent-e5675650b4bbcaa6b709",
@@ -293,7 +564,18 @@
         "checkedAt": "2026-10-29T12:41:04.181Z"
       },
       "archive": true,
-      "imageSearchedAt": "2026-10-29T13:20:10.514Z"
+      "imageSearchedAt": "2026-11-01T18:42:57.804Z",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Moscow_-_2026_-_State_Duma%2C_3rd_Entrance2.jpg/1920px-Moscow_-_2026_-_State_Duma%2C_3rd_Entrance2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Moscow - 2026 - State Duma, 3rd Entrance2",
+        "creator": "Юрий Д.К.",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Moscow_-_2026_-_State_Duma,_3rd_Entrance2.jpg",
+        "provider": "Wikimedia Commons",
+        "query": "Russian State Duma"
+      },
+      "imageAttempts": 1
     },
     {
       "id": "agent-d0cb8cc0a5b9d13e8c1c",

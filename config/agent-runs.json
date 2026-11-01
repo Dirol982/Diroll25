@@ -1,6 +1,273 @@
 [
   {
     "mode": "feeds",
+    "startedAt": "2026-11-01T18:27:19.116Z",
+    "published": [
+      {
+        "id": "agent-e521e8be4198719165ca",
+        "title": "Binance Resumes Withdrawals and Recovers Funds Following $6.3 Billion Heist",
+        "outlets": [
+          "theverge.com",
+          "3dnews.ru",
+          "lenta.ru"
+        ]
+      },
+      {
+        "id": "agent-08f695774f92d61675e0",
+        "title": "Spartak Dominates Lokomotiv in Moscow Premier League Derby",
+        "outlets": [
+          "championat.com",
+          "sport-express.ru"
+        ]
+      },
+      {
+        "id": "agent-307fcec3303372625c4b",
+        "title": "Director Michael Mann in Stable Condition After Accidental Shooting at LA Gun Range",
+        "outlets": [
+          "lenta.ru",
+          "nytimes.com"
+        ]
+      }
+    ],
+    "held": [],
+    "rejected": [],
+    "errors": [],
+    "usage": {
+      "input_tokens": 8909,
+      "output_tokens": 3951
+    },
+    "feeds": [
+      {
+        "feed": "BBC News / technology",
+        "ok": true,
+        "items": 21
+      },
+      {
+        "feed": "The Guardian / technology",
+        "ok": true,
+        "items": 36
+      },
+      {
+        "feed": "The New York Times / technology",
+        "ok": true,
+        "items": 32
+      },
+      {
+        "feed": "Ars Technica / technology",
+        "ok": true,
+        "items": 20
+      },
+      {
+        "feed": "The Verge / technology",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "NPR / technology",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "Хабр / technology",
+        "ok": true,
+        "items": 40
+      },
+      {
+        "feed": "3DNews / technology",
+        "ok": true,
+        "items": 51
+      },
+      {
+        "feed": "iXBT / technology",
+        "ok": true,
+        "items": 50
+      },
+      {
+        "feed": "BBC News / science",
+        "ok": true,
+        "items": 42
+      },
+      {
+        "feed": "The Guardian / science",
+        "ok": true,
+        "items": 28
+      },
+      {
+        "feed": "The New York Times / science",
+        "ok": true,
+        "items": 35
+      },
+      {
+        "feed": "NPR / science",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "ScienceDaily / science",
+        "ok": true,
+        "items": 60
+      },
+      {
+        "feed": "N + 1 / science",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "Naked Science / science",
+        "ok": true,
+        "items": 20
+      },
+      {
+        "feed": "BBC News / economy",
+        "ok": true,
+        "items": 53
+      },
+      {
+        "feed": "The Guardian / economy",
+        "ok": true,
+        "items": 20
+      },
+      {
+        "feed": "The New York Times / economy",
+        "ok": true,
+        "items": 50
+      },
+      {
+        "feed": "NPR / economy",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "CNBC / economy",
+        "ok": true,
+        "items": 30
+      },
+      {
+        "feed": "Коммерсантъ / economy",
+        "ok": true,
+        "items": 4
+      },
+      {
+        "feed": "РБК / economy",
+        "ok": true,
+        "items": 30
+      },
+      {
+        "feed": "Интерфакс / economy",
+        "ok": true,
+        "items": 25
+      },
+      {
+        "feed": "BBC News / culture",
+        "ok": true,
+        "items": 23
+      },
+      {
+        "feed": "The Guardian / culture",
+        "ok": true,
+        "items": 26
+      },
+      {
+        "feed": "The New York Times / culture",
+        "ok": true,
+        "items": 63
+      },
+      {
+        "feed": "NPR / culture",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "Коммерсантъ / culture",
+        "ok": true,
+        "items": 5
+      },
+      {
+        "feed": "BBC Sport / sport",
+        "ok": true,
+        "items": 60
+      },
+      {
+        "feed": "The Guardian / sport",
+        "ok": true,
+        "items": 24
+      },
+      {
+        "feed": "The New York Times / sport",
+        "ok": true,
+        "items": 0
+      },
+      {
+        "feed": "ESPN / sport",
+        "ok": true,
+        "items": 0
+      },
+      {
+        "feed": "Чемпионат / sport",
+        "ok": true,
+        "items": 31
+      },
+      {
+        "feed": "Sports.ru / sport",
+        "ok": true,
+        "items": 20
+      },
+      {
+        "feed": "Спорт-Экспресс / sport",
+        "ok": true,
+        "items": 537
+      },
+      {
+        "feed": "The Guardian / travel",
+        "ok": true,
+        "items": 35
+      },
+      {
+        "feed": "The New York Times / travel",
+        "ok": true,
+        "items": 20
+      },
+      {
+        "feed": "Skift / travel",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "Лента.ру / travel",
+        "ok": true,
+        "items": 200
+      },
+      {
+        "feed": "РИА Новости / travel",
+        "ok": false,
+        "error": "HTTP 404"
+      },
+      {
+        "feed": "Лента.ру / culture",
+        "ok": true,
+        "items": 200
+      },
+      {
+        "feed": "Лента.ру / economy",
+        "ok": true,
+        "items": 200
+      },
+      {
+        "feed": "Лента.ру / science",
+        "ok": true,
+        "items": 200
+      }
+    ],
+    "candidates": 196,
+    "finishedAt": "2026-11-01T18:42:53.940Z",
+    "imagesBackfilled": 2,
+    "status": "ok",
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "skippedModels": []
+  },
+  {
+    "mode": "feeds",
     "startedAt": "2026-10-29T13:06:24.551Z",
     "published": [
       {
