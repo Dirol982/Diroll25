@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-11-04T06:11:48.757401+00:00",
+  "builtAt": "2026-11-04T14:27:58.416097+00:00",
   "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
   "articles": [
     {
@@ -23,9 +23,9 @@
         "language": "en"
       },
       "originalTitle": "1.145.0",
-      "publishedAt": "2026-11-03T23:03:51Z",
-      "updatedAt": "2026-11-03T23:03:51Z",
-      "collectedAt": "2026-11-04T06:11:48.757252+00:00",
+      "publishedAt": "2026-11-04T08:36:49Z",
+      "updatedAt": "2026-11-04T08:36:49Z",
+      "collectedAt": "2026-11-04T14:27:58.415933+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -38,18 +38,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-04T06:11:48.757401+00:00",
+      "sitePublishedAt": "2026-11-04T14:27:58.416097+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-04T06:11:48.757401+00:00"
+          "checkedAt": "2026-11-04T14:27:58.416097+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-04T06:11:48.757401+00:00",
-          "evidenceSha256": "2ed8d5e1d42ab9d35e6f9dc4ada032d34ba035b241aa2ad62ccf4bd5099ef2d6"
+          "checkedAt": "2026-11-04T14:27:58.416097+00:00",
+          "evidenceSha256": "2b292133529dff15d4d02aac0fcd7f3d7e3aaa805583fcc865a186f0e8bfde9b"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -315,7 +315,7 @@
         "query": "Binance"
       },
       "imageSearchedAt": "2026-11-01T18:35:34.628Z",
-      "archive": false
+      "archive": true
     },
     {
       "id": "feed-c99e237d5d0c56f7b33d",
