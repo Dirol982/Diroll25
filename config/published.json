@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-11-04T14:27:58.416097+00:00",
+  "builtAt": "2026-11-04T21:17:55.681920+00:00",
   "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
   "articles": [
     {
@@ -25,7 +25,7 @@
       "originalTitle": "1.145.0",
       "publishedAt": "2026-11-04T08:36:49Z",
       "updatedAt": "2026-11-04T08:36:49Z",
-      "collectedAt": "2026-11-04T14:27:58.415933+00:00",
+      "collectedAt": "2026-11-04T21:17:55.681688+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -38,18 +38,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-04T14:27:58.416097+00:00",
+      "sitePublishedAt": "2026-11-04T21:17:55.681920+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-04T14:27:58.416097+00:00"
+          "checkedAt": "2026-11-04T21:17:55.681920+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-04T14:27:58.416097+00:00",
-          "evidenceSha256": "2b292133529dff15d4d02aac0fcd7f3d7e3aaa805583fcc865a186f0e8bfde9b"
+          "checkedAt": "2026-11-04T21:17:55.681920+00:00",
+          "evidenceSha256": "2d15b6801c28e911818dfea25dc8fe8fbe63c61e4b30ca94e1adf5cbec098464"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -138,7 +138,7 @@
         "query": "Esequiel Barco"
       },
       "imageSearchedAt": "2026-11-01T18:39:53.417Z",
-      "archive": false
+      "archive": true
     },
     {
       "id": "agent-307fcec3303372625c4b",
@@ -224,7 +224,7 @@
         "query": "director Michael Mann"
       },
       "imageSearchedAt": "2026-11-01T18:42:53.938Z",
-      "archive": false
+      "archive": true
     },
     {
       "id": "agent-e521e8be4198719165ca",
