@@ -1,8 +1,59 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-11-03T23:57:54.371398+00:00",
+  "builtAt": "2026-11-04T06:11:48.757401+00:00",
   "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
   "articles": [
+    {
+      "id": "feed-a2917a9266a8967f91f4",
+      "category": "technology",
+      "country": null,
+      "title": {
+        "ru": "Visual Studio Code: опубликован выпуск 1.145.0",
+        "en": "Visual Studio Code: release 1.145.0 published"
+      },
+      "body": {
+        "ru": "В официальном репозитории Visual Studio Code опубликовано объявление о выпуске 1.145.0. Подробности и список изменений доступны по ссылке на первоисточник.",
+        "en": "The official Visual Studio Code repository published a release announcement for 1.145.0. Details and changes are available at the original source."
+      },
+      "status": "published",
+      "demo": false,
+      "source": {
+        "name": "Visual Studio Code — official releases",
+        "url": "https://github.com/microsoft/vscode/releases/tag/1.145.0",
+        "language": "en"
+      },
+      "originalTitle": "1.145.0",
+      "publishedAt": "2026-11-03T23:03:51Z",
+      "updatedAt": "2026-11-03T23:03:51Z",
+      "collectedAt": "2026-11-04T06:11:48.757252+00:00",
+      "translationStatus": "bilingual-template",
+      "factsReviewed": false,
+      "importance": {
+        "ru": "Пользователи продукта могут проверить список изменений и совместимость. Мы не делаем выводов о безопасности или качестве выпуска.",
+        "en": "Users can review the changes and compatibility. We make no claims about release security or quality."
+      },
+      "next": {
+        "ru": "Изучите примечания к выпуску в первоисточнике перед обновлением.",
+        "en": "Read the original release notes before upgrading."
+      },
+      "publicationMode": "test",
+      "archive": false,
+      "sitePublishedAt": "2026-11-04T06:11:48.757401+00:00",
+      "autoChecks": [
+        {
+          "id": "feed",
+          "status": "passed",
+          "checkedAt": "2026-11-04T06:11:48.757401+00:00"
+        },
+        {
+          "id": "release-page",
+          "status": "passed",
+          "checkedAt": "2026-11-04T06:11:48.757401+00:00",
+          "evidenceSha256": "2ed8d5e1d42ab9d35e6f9dc4ada032d34ba035b241aa2ad62ccf4bd5099ef2d6"
+        }
+      ],
+      "verificationScope": "release-announcement-only"
+    },
     {
       "id": "agent-08f695774f92d61675e0",
       "category": "sport",
@@ -1745,11 +1796,6 @@
     {
       "id": "feed-b97eb735f6db9ffae486",
       "title": "1.141.0",
-      "error": "Old entry not eligible for fresh automatic publication"
-    },
-    {
-      "id": "feed-6237ddde2e4ee96dae44",
-      "title": "1.140.0",
       "error": "Old entry not eligible for fresh automatic publication"
     }
   ]
