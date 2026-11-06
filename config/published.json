@@ -1,8 +1,59 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-11-05T18:42:42.187425+00:00",
+  "builtAt": "2026-11-06T00:12:23.951388+00:00",
   "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
   "articles": [
+    {
+      "id": "feed-a7196f7530f2b901a53e",
+      "category": "technology",
+      "country": null,
+      "title": {
+        "ru": "Visual Studio Code: опубликован выпуск 1.145.1",
+        "en": "Visual Studio Code: release 1.145.1 published"
+      },
+      "body": {
+        "ru": "В официальном репозитории Visual Studio Code опубликовано объявление о выпуске 1.145.1. Подробности и список изменений доступны по ссылке на первоисточник.",
+        "en": "The official Visual Studio Code repository published a release announcement for 1.145.1. Details and changes are available at the original source."
+      },
+      "status": "published",
+      "demo": false,
+      "source": {
+        "name": "Visual Studio Code — official releases",
+        "url": "https://github.com/microsoft/vscode/releases/tag/1.145.1",
+        "language": "en"
+      },
+      "originalTitle": "1.145.1",
+      "publishedAt": "2026-11-06T00:11:36Z",
+      "updatedAt": "2026-11-06T00:11:36Z",
+      "collectedAt": "2026-11-06T00:12:23.951179+00:00",
+      "translationStatus": "bilingual-template",
+      "factsReviewed": false,
+      "importance": {
+        "ru": "Пользователи продукта могут проверить список изменений и совместимость. Мы не делаем выводов о безопасности или качестве выпуска.",
+        "en": "Users can review the changes and compatibility. We make no claims about release security or quality."
+      },
+      "next": {
+        "ru": "Изучите примечания к выпуску в первоисточнике перед обновлением.",
+        "en": "Read the original release notes before upgrading."
+      },
+      "publicationMode": "test",
+      "archive": false,
+      "sitePublishedAt": "2026-11-06T00:12:23.951388+00:00",
+      "autoChecks": [
+        {
+          "id": "feed",
+          "status": "passed",
+          "checkedAt": "2026-11-06T00:12:23.951388+00:00"
+        },
+        {
+          "id": "release-page",
+          "status": "passed",
+          "checkedAt": "2026-11-06T00:12:23.951388+00:00",
+          "evidenceSha256": "120e024baf4ef3fe9ecaf0797b495b4044abda0a9760cd1c38e70d0d01734fcc"
+        }
+      ],
+      "verificationScope": "release-announcement-only"
+    },
     {
       "id": "feed-a2917a9266a8967f91f4",
       "category": "technology",
@@ -25,7 +76,7 @@
       "originalTitle": "1.145.0",
       "publishedAt": "2026-11-04T08:36:49Z",
       "updatedAt": "2026-11-04T08:36:49Z",
-      "collectedAt": "2026-11-05T18:42:42.187233+00:00",
+      "collectedAt": "2026-11-06T00:12:23.951230+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -38,18 +89,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-05T18:42:42.187425+00:00",
+      "sitePublishedAt": "2026-11-06T00:12:23.951388+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-05T18:42:42.187425+00:00"
+          "checkedAt": "2026-11-06T00:12:23.951388+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-05T18:42:42.187425+00:00",
-          "evidenceSha256": "bdc48cf41b18b01ac3f9cad14d86d333c9d1ef864758168d6b989fc2c4f6233a"
+          "checkedAt": "2026-11-06T00:12:23.951388+00:00",
+          "evidenceSha256": "c6904e0f2550df88a4b74960df0c06b8b85e952b9ea8ce333d62f43c705cffd9"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -1791,11 +1842,6 @@
     {
       "id": "feed-e74b3156482b8b163448",
       "title": "1.141.1",
-      "error": "Old entry not eligible for fresh automatic publication"
-    },
-    {
-      "id": "feed-b97eb735f6db9ffae486",
-      "title": "1.141.0",
       "error": "Old entry not eligible for fresh automatic publication"
     }
   ]
