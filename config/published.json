@@ -1,8 +1,59 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-11-06T06:36:59.514615+00:00",
+  "builtAt": "2026-11-06T14:59:21.698589+00:00",
   "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
   "articles": [
+    {
+      "id": "feed-a76c24326316a39d11a4",
+      "category": "technology",
+      "country": null,
+      "title": {
+        "ru": "Visual Studio Code: опубликован выпуск 1.145.2",
+        "en": "Visual Studio Code: release 1.145.2 published"
+      },
+      "body": {
+        "ru": "В официальном репозитории Visual Studio Code опубликовано объявление о выпуске 1.145.2. Подробности и список изменений доступны по ссылке на первоисточник.",
+        "en": "The official Visual Studio Code repository published a release announcement for 1.145.2. Details and changes are available at the original source."
+      },
+      "status": "published",
+      "demo": false,
+      "source": {
+        "name": "Visual Studio Code — official releases",
+        "url": "https://github.com/microsoft/vscode/releases/tag/1.145.2",
+        "language": "en"
+      },
+      "originalTitle": "1.145.2",
+      "publishedAt": "2026-11-06T10:21:07Z",
+      "updatedAt": "2026-11-06T10:21:07Z",
+      "collectedAt": "2026-11-06T14:59:21.698337+00:00",
+      "translationStatus": "bilingual-template",
+      "factsReviewed": false,
+      "importance": {
+        "ru": "Пользователи продукта могут проверить список изменений и совместимость. Мы не делаем выводов о безопасности или качестве выпуска.",
+        "en": "Users can review the changes and compatibility. We make no claims about release security or quality."
+      },
+      "next": {
+        "ru": "Изучите примечания к выпуску в первоисточнике перед обновлением.",
+        "en": "Read the original release notes before upgrading."
+      },
+      "publicationMode": "test",
+      "archive": false,
+      "sitePublishedAt": "2026-11-06T14:59:21.698589+00:00",
+      "autoChecks": [
+        {
+          "id": "feed",
+          "status": "passed",
+          "checkedAt": "2026-11-06T14:59:21.698589+00:00"
+        },
+        {
+          "id": "release-page",
+          "status": "passed",
+          "checkedAt": "2026-11-06T14:59:21.698589+00:00",
+          "evidenceSha256": "a26d4438b3e93438c5eaf2686da2665a578b797ea8060dda05b8cbd78a0791ce"
+        }
+      ],
+      "verificationScope": "release-announcement-only"
+    },
     {
       "id": "feed-a7196f7530f2b901a53e",
       "category": "technology",
@@ -25,7 +76,7 @@
       "originalTitle": "1.145.1",
       "publishedAt": "2026-11-06T00:11:36Z",
       "updatedAt": "2026-11-06T00:11:36Z",
-      "collectedAt": "2026-11-06T06:36:59.514407+00:00",
+      "collectedAt": "2026-11-06T14:59:21.698385+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -38,18 +89,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-06T06:36:59.514615+00:00",
+      "sitePublishedAt": "2026-11-06T14:59:21.698589+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-06T06:36:59.514615+00:00"
+          "checkedAt": "2026-11-06T14:59:21.698589+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-06T06:36:59.514615+00:00",
-          "evidenceSha256": "dcbcd1bb735d7e300ecbe66da88727059f21a8d411c92a68c3e9576d3d08afff"
+          "checkedAt": "2026-11-06T14:59:21.698589+00:00",
+          "evidenceSha256": "70e5bb732735ac2f9c2ec913eb405aee454129295ea3ca7ac7b875d4d680b0de"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -76,7 +127,7 @@
       "originalTitle": "1.145.0",
       "publishedAt": "2026-11-04T08:36:49Z",
       "updatedAt": "2026-11-04T08:36:49Z",
-      "collectedAt": "2026-11-06T06:36:59.514453+00:00",
+      "collectedAt": "2026-11-06T14:59:21.698414+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -89,18 +140,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-06T06:36:59.514615+00:00",
+      "sitePublishedAt": "2026-11-06T14:59:21.698589+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-06T06:36:59.514615+00:00"
+          "checkedAt": "2026-11-06T14:59:21.698589+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-06T06:36:59.514615+00:00",
-          "evidenceSha256": "c3892123c1642f6f403db3bc5430ce0338f8cd44750616b4a48aebbd06648441"
+          "checkedAt": "2026-11-06T14:59:21.698589+00:00",
+          "evidenceSha256": "7e2f735f5e3f5152bdc506fc6af7d384cfe53b5e8a4a8812a50ba648600780c9"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -1837,11 +1888,6 @@
     {
       "id": "feed-4755cd0b5b43a7d5ae23",
       "title": "1.141.2",
-      "error": "Old entry not eligible for fresh automatic publication"
-    },
-    {
-      "id": "feed-e74b3156482b8b163448",
-      "title": "1.141.1",
       "error": "Old entry not eligible for fresh automatic publication"
     }
   ]
