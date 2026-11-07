@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-11-07T07:05:51.011654+00:00",
+  "builtAt": "2026-11-07T13:57:57.497515+00:00",
   "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
   "articles": [
     {
@@ -283,7 +283,7 @@
       "originalTitle": "1.145.2",
       "publishedAt": "2026-11-06T10:21:07Z",
       "updatedAt": "2026-11-06T10:21:07Z",
-      "collectedAt": "2026-11-07T07:05:51.011506+00:00",
+      "collectedAt": "2026-11-07T13:57:57.497375+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -296,18 +296,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-07T07:05:51.011654+00:00",
+      "sitePublishedAt": "2026-11-07T13:57:57.497515+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-07T07:05:51.011654+00:00"
+          "checkedAt": "2026-11-07T13:57:57.497515+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-07T07:05:51.011654+00:00",
-          "evidenceSha256": "e82cfbf510fcbf43d9821a045dddab21b24eb39b598308d19e9ac2c678572441"
+          "checkedAt": "2026-11-07T13:57:57.497515+00:00",
+          "evidenceSha256": "5bd46801fbb9bd7473a72f920987140ded23cfccad238d026ac5daa3230cb37e"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -334,7 +334,7 @@
       "originalTitle": "1.145.1",
       "publishedAt": "2026-11-06T00:11:36Z",
       "updatedAt": "2026-11-06T00:11:36Z",
-      "collectedAt": "2026-11-07T07:05:51.011544+00:00",
+      "collectedAt": "2026-11-07T13:57:57.497434+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -347,18 +347,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-07T07:05:51.011654+00:00",
+      "sitePublishedAt": "2026-11-07T13:57:57.497515+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-07T07:05:51.011654+00:00"
+          "checkedAt": "2026-11-07T13:57:57.497515+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-07T07:05:51.011654+00:00",
-          "evidenceSha256": "2b982e353b6721dd840b5ef387faa01368ece102ff82e33a82504c9d8159cf90"
+          "checkedAt": "2026-11-07T13:57:57.497515+00:00",
+          "evidenceSha256": "2ac26ae3753d412fb2b298ae7bb62c4f0ead79167f85990f25e5e29bb2e38daa"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -397,7 +397,7 @@
         "en": "Read the original release notes before upgrading."
       },
       "publicationMode": "test",
-      "archive": false,
+      "archive": true,
       "sitePublishedAt": "2026-11-07T07:05:51.011654+00:00",
       "autoChecks": [
         {
@@ -2121,6 +2121,11 @@
     {
       "id": "feed-c202181bf05ea4b7f6b6",
       "title": "2026-10-14, Version 24.22.0 'Krypton' (LTS), @richardlau prepared by @aduh95",
+      "error": "Old entry not eligible for fresh automatic publication"
+    },
+    {
+      "id": "feed-a2917a9266a8967f91f4",
+      "title": "1.145.0",
       "error": "Old entry not eligible for fresh automatic publication"
     },
     {
