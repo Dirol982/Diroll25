@@ -1,8 +1,263 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-11-06T20:52:17.150685+00:00",
-  "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
+  "builtAt": "2026-11-07T01:05:37.495Z",
+  "verification": "Agent pipeline: search, independent verification by a second agent with at least two independent sources, bilingual rewrite; plus deterministic first-party release checks",
   "articles": [
+    {
+      "id": "agent-24de6c8cfb12a0890388",
+      "category": "economy",
+      "country": "PY",
+      "title": {
+        "ru": "Президент Парагвая отстранен от власти и помещен под домашний арест из-за краха банка",
+        "en": "Paraguay's President Impeached and Placed Under House Arrest Over Bank Collapse"
+      },
+      "body": {
+        "ru": "Сенат Парагвая объявил импичмент президенту Сантьяго Пенье на фоне масштабного банковского скандала, после чего экс-главу государства отправили под домашний арест.",
+        "en": "Paraguay's President Santiago Peña has been removed from office through impeachment and placed under house arrest following a major banking crisis."
+      },
+      "content": {
+        "ru": [
+          "Парламент страны принял решение о смещении Сантьяго Пеньи с поста президента и его аресте после банкротства финансовой организации, имевшей тесные связи с его администрацией, передает The New York Times.",
+          "Как уточняет РБК, поводом для разбирательства и последующего импичмента стал крах Ueno Bank, среди инвесторов которого числился сам Пенья.",
+          "Центральный банк Парагвая арестовал активы организации из-за падения ее платежеспособности. В результате регуляторных мер оказались заблокированы государственные средства, а также сбережения трех миллионов клиентов банка."
+        ],
+        "en": [
+          "Paraguay's Senate voted to impeach and remove President Santiago Peña after a financial institution closely connected to his administration collapsed, The New York Times reported.",
+          "The political crisis was triggered by the downfall of Ueno Bank, where Peña was an investor, according to RBC.",
+          "The Central Bank moved to freeze the institution's assets amid deteriorating solvency. The regulatory intervention resulted in the freezing of state funds as well as the accounts of 3 million clients."
+        ]
+      },
+      "importance": {
+        "ru": "Кризис затронул значительную часть финансовой системы страны: блокировка счетов 3 млн клиентов и государственных средств привела к моментальной потере власти президентом и уголовно-процессуальным мерам против него.",
+        "en": "The sudden collapse of an institution holding public funds and the deposits of millions of citizens triggered immediate political repercussions, leading directly to the president's ouster and detention."
+      },
+      "next": {
+        "ru": "Бывший глава государства помещен под домашний арест, дальнейшая судьба замороженных государственных средств и активов клиентов Ueno Bank зависит от решений регулятора и следствия.",
+        "en": "Peña remains under house arrest following his impeachment, while authorities and depositors face the fallout from the frozen funds at Ueno Bank."
+      },
+      "telegramText": {
+        "ru": "Президент Парагвая Сантьяго Пенья отстранен от должности в результате импичмента и помещен под домашний арест.\n\nПоводом стал кризис вокруг Ueno Bank, инвестором которого выступал Пенья. Кредитная организация была тесно связана с администрацией главы государства. После падения платежеспособности Центробанк арестовал активы учреждения, в результате чего оказались заморожены государственные деньги и средства 3 млн клиентов.",
+        "en": "Paraguayan President Santiago Peña has been impeached, removed from office, and placed under house arrest following a banking scandal.\n\nThe political crisis erupted after the collapse of Ueno Bank, an institution closely tied to Peña's administration and in which he was an investor. The Central Bank intervened to freeze the bank's assets due to a solvency crisis, leaving public funds and the accounts of 3 million clients frozen."
+      },
+      "imageQuery": "Santiago Peña",
+      "status": "published",
+      "demo": false,
+      "priority": 4,
+      "originalTitle": "Paraguay's President Impeached and Arrested Over Financial Crisis",
+      "source": {
+        "name": "The New York Times",
+        "url": "https://www.nytimes.com/2026/11/06/world/americas/paraguay-president-removed-ueno.html",
+        "language": "en"
+      },
+      "sources": [
+        {
+          "publisher": "The New York Times",
+          "url": "https://www.nytimes.com/2026/11/06/world/americas/paraguay-president-removed-ueno.html",
+          "confirms": true
+        },
+        {
+          "publisher": "РБК",
+          "url": "https://www.rbc.ru/politics/07/11/2026/6aee52b92e98b80c36c01d1b",
+          "confirms": true
+        }
+      ],
+      "publishedAt": "2026-11-06T22:22:05.000Z",
+      "updatedAt": "2026-11-06T22:22:05.000Z",
+      "collectedAt": "2026-11-07T00:54:25.476Z",
+      "sitePublishedAt": "2026-11-07T00:54:25.476Z",
+      "publicationMode": "agents",
+      "translationStatus": "ai-bilingual",
+      "factsReviewed": false,
+      "verification": {
+        "verdict": "cross-source",
+        "independentSources": 2,
+        "disputedFacts": [],
+        "problems": [],
+        "notes": "Reported by several outlets in their own feeds",
+        "checkedAt": "2026-11-07T00:54:25.476Z"
+      },
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Santiago_Pe%C3%B1a_and_William_Lai.jpg/1920px-Santiago_Pe%C3%B1a_and_William_Lai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Santiago Peña and William Lai",
+        "creator": "總統府",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Santiago_Pe%C3%B1a_and_William_Lai.jpg",
+        "provider": "Wikimedia Commons",
+        "query": "Santiago Peña"
+      },
+      "imageSearchedAt": "2026-11-07T01:05:37.495Z"
+    },
+    {
+      "id": "agent-309e3d39cb4492367ed4",
+      "category": "economy",
+      "country": "US",
+      "title": {
+        "ru": "Дональд Трамп назначил Стивена Миллера главой аппарата Белого дома",
+        "en": "Trump names Stephen Miller as White House chief of staff"
+      },
+      "body": {
+        "ru": "Президент США Дональд Трамп объявил о назначении Стивена Миллера руководителем аппарата Белого дома. На этой должности он сменит Сьюзи Уайлс.",
+        "en": "U.S. President Donald Trump has named Stephen Miller as the new White House chief of staff, replacing Susie Wiles."
+      },
+      "content": {
+        "ru": [
+          "О кадровых перестановках американский лидер сообщил в пятницу в социальной сети Truth Social. По словам Трампа, Миллер приступит к исполнению обязанностей с понедельника, 9 ноября 2026 года.",
+          "Трамп назвал Миллера, занимавшего пост заместителя руководителя администрации президента, одним из своих самых верных советников.",
+          "На посту руководителя аппарата Миллер заменит Сьюзи Уайлс, возглавлявшую структуру ранее."
+        ],
+        "en": [
+          "Trump announced the appointment on Friday on his Truth Social platform. Miller will officially assume leadership of the office on Monday, Nov. 9, 2026.",
+          "In the post, Trump described Miller, who currently serves as deputy chief of staff, as one of his most loyal advisers.",
+          "Miller takes over the position from Susie Wiles, who previously served as the White House chief of staff."
+        ]
+      },
+      "importance": {
+        "ru": "Руководитель аппарата Белого дома является одной из ключевых фигур в структуре исполнительной власти США, отвечая за организацию работы всей президентской администрации.",
+        "en": "The White House chief of staff is a central figure in the administration, directing staff operations and managing key executive branch affairs."
+      },
+      "next": {
+        "ru": "Стивен Миллер официально приступит к исполнению обязанностей главы аппарата Белого дома 9 ноября 2026 года.",
+        "en": "Miller is scheduled to officially assume the role of White House chief of staff on Monday, Nov. 9, 2026."
+      },
+      "telegramText": {
+        "ru": "Президент США Дональд Трамп объявил о назначении Стивена Миллера главой аппарата Белого дома. На этом посту он сменит Сьюзи Уайлс.\n\nТрамп сообщил в соцсети Truth Social, что действующий заместитель руководителя администрации и один из его самых верных советников возглавит структуру с понедельника, 9 ноября 2026 года.",
+        "en": "U.S. President Donald Trump has appointed Stephen Miller as the new White House chief of staff, replacing Susie Wiles.\n\nTrump announced on Truth Social that Miller, currently serving as deputy chief of staff and described by the president as one of his most loyal advisers, will take charge of the office on Monday, Nov. 9, 2026."
+      },
+      "imageQuery": "Stephen Miller",
+      "status": "published",
+      "demo": false,
+      "priority": 4,
+      "originalTitle": "Trump Appoints Stephen Miller as White House Chief of Staff",
+      "source": {
+        "name": "РБК",
+        "url": "https://www.rbc.ru/rbcfreenews/6aee3baa5b36bc7c245dc3b7",
+        "language": "en"
+      },
+      "sources": [
+        {
+          "publisher": "РБК",
+          "url": "https://www.rbc.ru/rbcfreenews/6aee3baa5b36bc7c245dc3b7",
+          "confirms": true
+        },
+        {
+          "publisher": "Интерфакс",
+          "url": "https://www.interfax.ru/world/1127509",
+          "confirms": true
+        }
+      ],
+      "publishedAt": "2026-11-06T20:35:00.000Z",
+      "updatedAt": "2026-11-06T20:35:00.000Z",
+      "collectedAt": "2026-11-07T00:54:25.476Z",
+      "sitePublishedAt": "2026-11-07T00:54:25.476Z",
+      "publicationMode": "agents",
+      "translationStatus": "ai-bilingual",
+      "factsReviewed": false,
+      "verification": {
+        "verdict": "cross-source",
+        "independentSources": 2,
+        "disputedFacts": [],
+        "problems": [],
+        "notes": "Reported by several outlets in their own feeds",
+        "checkedAt": "2026-11-07T00:54:25.476Z"
+      },
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Stephen_Miller_%2827148847234%29.jpg/1920px-Stephen_Miller_%2827148847234%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Stephen Miller (27148847234)",
+        "creator": "Gage Skidmore from Peoria, AZ, United States of America",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stephen_Miller_(27148847234).jpg",
+        "provider": "Wikimedia Commons",
+        "query": "Stephen Miller"
+      },
+      "imageSearchedAt": "2026-11-07T01:02:32.406Z"
+    },
+    {
+      "id": "agent-7e28c0d8055c0e98ce16",
+      "category": "technology",
+      "country": "US",
+      "title": {
+        "ru": "FAA откажется от дискет в диспетчерских системах США к концу 2028 года",
+        "en": "FAA to Phase Out Floppy Disks in Air Traffic Control by End of 2028"
+      },
+      "body": {
+        "ru": "Федеральное управление гражданской авиации США намерено прекратить использование дискет в системах управления воздушным движением к концу 2028 года.",
+        "en": "The Federal Aviation Administration plans to eliminate the use of floppy disks across its air traffic control systems by the end of 2028."
+      },
+      "content": {
+        "ru": [
+          "Как сообщает издание Ars Technica, регулятор охарактеризовал предстоящую модернизацию как «историческое» технологическое обновление. В рамках этой программы информационные дисплейные системы на 435 объектах должны быть полностью переведены на работу без дискет.",
+          "По информации The New York Times, федеральные власти планируют убрать устаревшие носители из диспетчерских вышек и центров управления полетами страны спустя десятилетия после того, как компьютерная индустрия отказалась от этой технологии.",
+          "Реализация инициативы рассчитана на ближайшие годы и призвана окончательно завершить эксплуатацию гибких магнитных дисков в американской авиадиспетчерской инфраструктуре."
+        ],
+        "en": [
+          "According to Ars Technica, the FAA has described the upcoming modernization as a \"historic\" technology upgrade. The agency plans for its information display systems to become entirely floppy-free at 435 sites by the end of 2028.",
+          "The New York Times reported that federal officials intend to remove the legacy storage medium from air traffic control towers and centers across the country, decades after the wider computer industry moved past the technology.",
+          "The transition will address critical flight infrastructure where floppy disks have continued to see operational use, aligning federal air traffic operations with more modern data standards."
+        ]
+      },
+      "importance": {
+        "ru": "Отказ от флоппи-дисков ознаменует долгожданное технологическое обновление критически важной авиационной инфраструктуры, которая продолжала полагаться на устаревшие накопители даже спустя десятилетия после их выхода из широкого употребления.",
+        "en": "The transition represents a major modernization effort for critical public infrastructure, retiring a decades-old data storage format long abandoned by consumer and commercial technology."
+      },
+      "next": {
+        "ru": "Агентству предстоит завершить обновление систем отображения информации на всех 435 запланированных объектах до истечения установленного срока в конце 2028 года.",
+        "en": "The agency will work through the planned upgrades across all 435 designated sites to meet its target deadline of late 2028."
+      },
+      "telegramText": {
+        "ru": "Федеральное управление гражданской авиации США (FAA) планирует окончательно отказаться от использования дискет в системах управления воздушным движением к концу 2028 года.\n\nКак сообщают Ars Technica и The New York Times, ведомство назвало модернизацию «исторической». Программа затронет диспетчерские вышки и центры управления полетами: информационные дисплейные системы избавят от флоппи-дисков на 435 объектах по всей стране спустя десятилетия после того, как от них отказалась остальная IT-индустрия.",
+        "en": "The Federal Aviation Administration plans to phase out floppy disks across its air traffic control network by the end of 2028.\n\nAccording to Ars Technica and The New York Times, federal officials have labeled the transition a \"historic\" tech upgrade. The plan will eliminate floppy disks from information display systems at 435 air traffic control towers and centers nationwide, retiring the legacy storage format decades after the broader computer industry moved on."
+      },
+      "imageQuery": "air traffic control tower",
+      "status": "published",
+      "demo": false,
+      "priority": 3,
+      "originalTitle": "FAA to Replace Floppy Disks in Air Traffic Control Upgrade",
+      "source": {
+        "name": "Ars Technica",
+        "url": "https://arstechnica.com/tech-policy/2026/11/faa-to-finally-ditch-floppy-disks-in-what-it-calls-historic-tech-upgrade/",
+        "language": "en"
+      },
+      "sources": [
+        {
+          "publisher": "Ars Technica",
+          "url": "https://arstechnica.com/tech-policy/2026/11/faa-to-finally-ditch-floppy-disks-in-what-it-calls-historic-tech-upgrade/",
+          "confirms": true
+        },
+        {
+          "publisher": "The New York Times",
+          "url": "https://www.nytimes.com/2026/11/06/us/faa-floppy-disks-atc-2028.html",
+          "confirms": true
+        }
+      ],
+      "publishedAt": "2026-11-06T19:12:28.000Z",
+      "updatedAt": "2026-11-06T19:12:28.000Z",
+      "collectedAt": "2026-11-07T00:54:25.476Z",
+      "sitePublishedAt": "2026-11-07T00:54:25.476Z",
+      "publicationMode": "agents",
+      "translationStatus": "ai-bilingual",
+      "factsReviewed": false,
+      "verification": {
+        "verdict": "cross-source",
+        "independentSources": 2,
+        "disputedFacts": [],
+        "problems": [],
+        "notes": "Reported by several outlets in their own feeds",
+        "checkedAt": "2026-11-07T00:54:25.476Z"
+      },
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Jandakot_Airport_Air_Traffic_Control_Tower%2C_August_2023_02.jpg/1920px-Jandakot_Airport_Air_Traffic_Control_Tower%2C_August_2023_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Jandakot Airport Air Traffic Control Tower, August 2023 02",
+        "creator": "Calistemon",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jandakot_Airport_Air_Traffic_Control_Tower,_August_2023_02.jpg",
+        "provider": "Wikimedia Commons",
+        "query": "air traffic control tower"
+      },
+      "imageSearchedAt": "2026-11-07T00:58:39.988Z"
+    },
     {
       "id": "feed-a76c24326316a39d11a4",
       "category": "technology",
@@ -25,7 +280,7 @@
       "originalTitle": "1.145.2",
       "publishedAt": "2026-11-06T10:21:07Z",
       "updatedAt": "2026-11-06T10:21:07Z",
-      "collectedAt": "2026-11-06T20:52:17.150448+00:00",
+      "collectedAt": "2026-11-07T00:54:24.764267+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -38,18 +293,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-06T20:52:17.150685+00:00",
+      "sitePublishedAt": "2026-11-07T00:54:24.764486+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-06T20:52:17.150685+00:00"
+          "checkedAt": "2026-11-07T00:54:24.764486+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-06T20:52:17.150685+00:00",
-          "evidenceSha256": "38cda7ea4bf4b2243b72d3012e8dc3619114a3348281fb2ce37f7af5b1edece0"
+          "checkedAt": "2026-11-07T00:54:24.764486+00:00",
+          "evidenceSha256": "0245359f7914890f96afeb07c61999b10ea40457d4e4b8c31c28410696082d90"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -76,7 +331,7 @@
       "originalTitle": "1.145.1",
       "publishedAt": "2026-11-06T00:11:36Z",
       "updatedAt": "2026-11-06T00:11:36Z",
-      "collectedAt": "2026-11-06T20:52:17.150497+00:00",
+      "collectedAt": "2026-11-07T00:54:24.764320+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -89,18 +344,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-06T20:52:17.150685+00:00",
+      "sitePublishedAt": "2026-11-07T00:54:24.764486+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-06T20:52:17.150685+00:00"
+          "checkedAt": "2026-11-07T00:54:24.764486+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-06T20:52:17.150685+00:00",
-          "evidenceSha256": "b3365f5d716eac4d2b2b69070f052031a8bc032947b28afdf9623b39912c563b"
+          "checkedAt": "2026-11-07T00:54:24.764486+00:00",
+          "evidenceSha256": "38e25ab4eb87af53164e790493c66b2fabcd438f269ae07aca139bf6fdcfc667"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -127,7 +382,7 @@
       "originalTitle": "1.145.0",
       "publishedAt": "2026-11-04T08:36:49Z",
       "updatedAt": "2026-11-04T08:36:49Z",
-      "collectedAt": "2026-11-06T20:52:17.150526+00:00",
+      "collectedAt": "2026-11-07T00:54:24.764347+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -140,18 +395,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-06T20:52:17.150685+00:00",
+      "sitePublishedAt": "2026-11-07T00:54:24.764486+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-06T20:52:17.150685+00:00"
+          "checkedAt": "2026-11-07T00:54:24.764486+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-06T20:52:17.150685+00:00",
-          "evidenceSha256": "2739368daeef8a0715d8dd03b305bbb72a0016ace70166d04f88286c6b209552"
+          "checkedAt": "2026-11-07T00:54:24.764486+00:00",
+          "evidenceSha256": "8e21dbd0abb3e2e09848023e6147d36d4d155869ca20545888c59bf668334c3a"
         }
       ],
       "verificationScope": "release-announcement-only"
