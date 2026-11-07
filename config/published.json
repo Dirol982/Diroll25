@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-11-07T01:05:37.495Z",
-  "verification": "Agent pipeline: search, independent verification by a second agent with at least two independent sources, bilingual rewrite; plus deterministic first-party release checks",
+  "builtAt": "2026-11-07T07:05:51.011654+00:00",
+  "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
   "articles": [
     {
       "id": "agent-24de6c8cfb12a0890388",
@@ -86,7 +86,8 @@
         "provider": "Wikimedia Commons",
         "query": "Santiago Peña"
       },
-      "imageSearchedAt": "2026-11-07T01:05:37.495Z"
+      "imageSearchedAt": "2026-11-07T01:05:37.495Z",
+      "archive": false
     },
     {
       "id": "agent-309e3d39cb4492367ed4",
@@ -171,7 +172,8 @@
         "provider": "Wikimedia Commons",
         "query": "Stephen Miller"
       },
-      "imageSearchedAt": "2026-11-07T01:02:32.406Z"
+      "imageSearchedAt": "2026-11-07T01:02:32.406Z",
+      "archive": false
     },
     {
       "id": "agent-7e28c0d8055c0e98ce16",
@@ -256,7 +258,8 @@
         "provider": "Wikimedia Commons",
         "query": "air traffic control tower"
       },
-      "imageSearchedAt": "2026-11-07T00:58:39.988Z"
+      "imageSearchedAt": "2026-11-07T00:58:39.988Z",
+      "archive": false
     },
     {
       "id": "feed-a76c24326316a39d11a4",
@@ -280,7 +283,7 @@
       "originalTitle": "1.145.2",
       "publishedAt": "2026-11-06T10:21:07Z",
       "updatedAt": "2026-11-06T10:21:07Z",
-      "collectedAt": "2026-11-07T00:54:24.764267+00:00",
+      "collectedAt": "2026-11-07T07:05:51.011506+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -293,18 +296,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-07T00:54:24.764486+00:00",
+      "sitePublishedAt": "2026-11-07T07:05:51.011654+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-07T00:54:24.764486+00:00"
+          "checkedAt": "2026-11-07T07:05:51.011654+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-07T00:54:24.764486+00:00",
-          "evidenceSha256": "0245359f7914890f96afeb07c61999b10ea40457d4e4b8c31c28410696082d90"
+          "checkedAt": "2026-11-07T07:05:51.011654+00:00",
+          "evidenceSha256": "e82cfbf510fcbf43d9821a045dddab21b24eb39b598308d19e9ac2c678572441"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -331,7 +334,7 @@
       "originalTitle": "1.145.1",
       "publishedAt": "2026-11-06T00:11:36Z",
       "updatedAt": "2026-11-06T00:11:36Z",
-      "collectedAt": "2026-11-07T00:54:24.764320+00:00",
+      "collectedAt": "2026-11-07T07:05:51.011544+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -344,18 +347,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-07T00:54:24.764486+00:00",
+      "sitePublishedAt": "2026-11-07T07:05:51.011654+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-07T00:54:24.764486+00:00"
+          "checkedAt": "2026-11-07T07:05:51.011654+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-07T00:54:24.764486+00:00",
-          "evidenceSha256": "38e25ab4eb87af53164e790493c66b2fabcd438f269ae07aca139bf6fdcfc667"
+          "checkedAt": "2026-11-07T07:05:51.011654+00:00",
+          "evidenceSha256": "2b982e353b6721dd840b5ef387faa01368ece102ff82e33a82504c9d8159cf90"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -382,7 +385,7 @@
       "originalTitle": "1.145.0",
       "publishedAt": "2026-11-04T08:36:49Z",
       "updatedAt": "2026-11-04T08:36:49Z",
-      "collectedAt": "2026-11-07T00:54:24.764347+00:00",
+      "collectedAt": "2026-11-07T07:05:51.011561+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -395,18 +398,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-07T00:54:24.764486+00:00",
+      "sitePublishedAt": "2026-11-07T07:05:51.011654+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-07T00:54:24.764486+00:00"
+          "checkedAt": "2026-11-07T07:05:51.011654+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-07T00:54:24.764486+00:00",
-          "evidenceSha256": "8e21dbd0abb3e2e09848023e6147d36d4d155869ca20545888c59bf668334c3a"
+          "checkedAt": "2026-11-07T07:05:51.011654+00:00",
+          "evidenceSha256": "c81e10bccfd251b07710f30f395cc53e195b6f346052dac93bd419c97403d013"
         }
       ],
       "verificationScope": "release-announcement-only"
