@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-11-08T16:41:23.816885+00:00",
+  "builtAt": "2026-11-08T21:07:54.398093+00:00",
   "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
   "articles": [
     {
@@ -283,7 +283,7 @@
       "originalTitle": "1.145.2",
       "publishedAt": "2026-11-06T10:21:07Z",
       "updatedAt": "2026-11-06T10:21:07Z",
-      "collectedAt": "2026-11-08T16:41:23.816739+00:00",
+      "collectedAt": "2026-11-08T21:07:54.397953+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -296,18 +296,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-08T16:41:23.816885+00:00",
+      "sitePublishedAt": "2026-11-08T21:07:54.398093+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-08T16:41:23.816885+00:00"
+          "checkedAt": "2026-11-08T21:07:54.398093+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-08T16:41:23.816885+00:00",
-          "evidenceSha256": "cd4f425da081f46f07c2fdc110a54f0bcd83cbf945634132708267c680a84c9f"
+          "checkedAt": "2026-11-08T21:07:54.398093+00:00",
+          "evidenceSha256": "e174620ff53439dd0c78000e1324112ea17db9f1dfccd0851147ba3edb227c4c"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -334,7 +334,7 @@
       "originalTitle": "1.145.1",
       "publishedAt": "2026-11-06T00:11:36Z",
       "updatedAt": "2026-11-06T00:11:36Z",
-      "collectedAt": "2026-11-08T16:41:23.816778+00:00",
+      "collectedAt": "2026-11-08T21:07:54.397989+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -347,18 +347,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-08T16:41:23.816885+00:00",
+      "sitePublishedAt": "2026-11-08T21:07:54.398093+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-08T16:41:23.816885+00:00"
+          "checkedAt": "2026-11-08T21:07:54.398093+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-08T16:41:23.816885+00:00",
-          "evidenceSha256": "ccffff483da5fea4543d274a95dc9e1f6d6439832cc637dc336c65dce7123eb3"
+          "checkedAt": "2026-11-08T21:07:54.398093+00:00",
+          "evidenceSha256": "fa962553d247e6af895c85ffe06afaef4145b3ab2d087330569795c3667d8797"
         }
       ],
       "verificationScope": "release-announcement-only"
