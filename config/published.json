@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-11-09T07:55:20.994245+00:00",
+  "builtAt": "2026-11-09T18:44:40.535101+00:00",
   "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
   "articles": [
     {
@@ -295,7 +295,7 @@
         "en": "Read the original release notes before upgrading."
       },
       "publicationMode": "test",
-      "archive": false,
+      "archive": true,
       "sitePublishedAt": "2026-11-09T07:55:20.994245+00:00",
       "autoChecks": [
         {
@@ -2121,6 +2121,11 @@
     {
       "id": "feed-c202181bf05ea4b7f6b6",
       "title": "2026-10-14, Version 24.22.0 'Krypton' (LTS), @richardlau prepared by @aduh95",
+      "error": "Old entry not eligible for fresh automatic publication"
+    },
+    {
+      "id": "feed-a76c24326316a39d11a4",
+      "title": "1.145.2",
       "error": "Old entry not eligible for fresh automatic publication"
     },
     {
