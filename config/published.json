@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-11-08T21:07:54.398093+00:00",
+  "builtAt": "2026-11-09T00:51:04.915221+00:00",
   "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
   "articles": [
     {
@@ -283,7 +283,7 @@
       "originalTitle": "1.145.2",
       "publishedAt": "2026-11-06T10:21:07Z",
       "updatedAt": "2026-11-06T10:21:07Z",
-      "collectedAt": "2026-11-08T21:07:54.397953+00:00",
+      "collectedAt": "2026-11-09T00:51:04.915014+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -296,18 +296,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-08T21:07:54.398093+00:00",
+      "sitePublishedAt": "2026-11-09T00:51:04.915221+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-08T21:07:54.398093+00:00"
+          "checkedAt": "2026-11-09T00:51:04.915221+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-08T21:07:54.398093+00:00",
-          "evidenceSha256": "e174620ff53439dd0c78000e1324112ea17db9f1dfccd0851147ba3edb227c4c"
+          "checkedAt": "2026-11-09T00:51:04.915221+00:00",
+          "evidenceSha256": "fe88d2481a8ea3363bdd64b722c1d3154eb3439d30f07ace993633d5ffa3ea2f"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -346,7 +346,7 @@
         "en": "Read the original release notes before upgrading."
       },
       "publicationMode": "test",
-      "archive": false,
+      "archive": true,
       "sitePublishedAt": "2026-11-08T21:07:54.398093+00:00",
       "autoChecks": [
         {
@@ -2121,6 +2121,11 @@
     {
       "id": "feed-c202181bf05ea4b7f6b6",
       "title": "2026-10-14, Version 24.22.0 'Krypton' (LTS), @richardlau prepared by @aduh95",
+      "error": "Old entry not eligible for fresh automatic publication"
+    },
+    {
+      "id": "feed-a7196f7530f2b901a53e",
+      "title": "1.145.1",
       "error": "Old entry not eligible for fresh automatic publication"
     },
     {
