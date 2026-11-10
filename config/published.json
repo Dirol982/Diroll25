@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-11-09T18:44:40.535101+00:00",
+  "builtAt": "2026-11-10T02:03:58.119928+00:00",
   "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
   "articles": [
     {
@@ -87,7 +87,7 @@
         "query": "Santiago Peña"
       },
       "imageSearchedAt": "2026-11-07T01:05:37.495Z",
-      "archive": false
+      "archive": true
     },
     {
       "id": "agent-309e3d39cb4492367ed4",
@@ -173,7 +173,7 @@
         "query": "Stephen Miller"
       },
       "imageSearchedAt": "2026-11-07T01:02:32.406Z",
-      "archive": false
+      "archive": true
     },
     {
       "id": "agent-7e28c0d8055c0e98ce16",
@@ -259,7 +259,7 @@
         "query": "air traffic control tower"
       },
       "imageSearchedAt": "2026-11-07T00:58:39.988Z",
-      "archive": false
+      "archive": true
     },
     {
       "id": "feed-a76c24326316a39d11a4",
