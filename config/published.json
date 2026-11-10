@@ -1,8 +1,59 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-11-10T17:46:47.505610+00:00",
+  "builtAt": "2026-11-10T23:16:09.443688+00:00",
   "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
   "articles": [
+    {
+      "id": "feed-79e3d50eb075ae8a9e55",
+      "category": "technology",
+      "country": null,
+      "title": {
+        "ru": "Visual Studio Code: опубликован выпуск 1.145.3",
+        "en": "Visual Studio Code: release 1.145.3 published"
+      },
+      "body": {
+        "ru": "В официальном репозитории Visual Studio Code опубликовано объявление о выпуске 1.145.3. Подробности и список изменений доступны по ссылке на первоисточник.",
+        "en": "The official Visual Studio Code repository published a release announcement for 1.145.3. Details and changes are available at the original source."
+      },
+      "status": "published",
+      "demo": false,
+      "source": {
+        "name": "Visual Studio Code — official releases",
+        "url": "https://github.com/microsoft/vscode/releases/tag/1.145.3",
+        "language": "en"
+      },
+      "originalTitle": "1.145.3",
+      "publishedAt": "2026-11-10T18:53:52Z",
+      "updatedAt": "2026-11-10T18:53:52Z",
+      "collectedAt": "2026-11-10T23:16:09.443485+00:00",
+      "translationStatus": "bilingual-template",
+      "factsReviewed": false,
+      "importance": {
+        "ru": "Пользователи продукта могут проверить список изменений и совместимость. Мы не делаем выводов о безопасности или качестве выпуска.",
+        "en": "Users can review the changes and compatibility. We make no claims about release security or quality."
+      },
+      "next": {
+        "ru": "Изучите примечания к выпуску в первоисточнике перед обновлением.",
+        "en": "Read the original release notes before upgrading."
+      },
+      "publicationMode": "test",
+      "archive": false,
+      "sitePublishedAt": "2026-11-10T23:16:09.443688+00:00",
+      "autoChecks": [
+        {
+          "id": "feed",
+          "status": "passed",
+          "checkedAt": "2026-11-10T23:16:09.443688+00:00"
+        },
+        {
+          "id": "release-page",
+          "status": "passed",
+          "checkedAt": "2026-11-10T23:16:09.443688+00:00",
+          "evidenceSha256": "5e54609c587e7dc3ab362b637747925137ca2544b41fa96f6a944b0126fb4749"
+        }
+      ],
+      "verificationScope": "release-announcement-only"
+    },
     {
       "id": "agent-24de6c8cfb12a0890388",
       "category": "economy",
@@ -2156,11 +2207,6 @@
     {
       "id": "feed-bad2b79533f224af79a4",
       "title": "1.142.0",
-      "error": "Old entry not eligible for fresh automatic publication"
-    },
-    {
-      "id": "feed-4755cd0b5b43a7d5ae23",
-      "title": "1.141.2",
       "error": "Old entry not eligible for fresh automatic publication"
     }
   ]
