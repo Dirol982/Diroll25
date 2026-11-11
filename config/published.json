@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-11-10T23:16:09.443688+00:00",
+  "builtAt": "2026-11-11T02:49:31.934508+00:00",
   "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
   "articles": [
     {
@@ -25,7 +25,7 @@
       "originalTitle": "1.145.3",
       "publishedAt": "2026-11-10T18:53:52Z",
       "updatedAt": "2026-11-10T18:53:52Z",
-      "collectedAt": "2026-11-10T23:16:09.443485+00:00",
+      "collectedAt": "2026-11-11T02:49:31.934303+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -38,18 +38,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-10T23:16:09.443688+00:00",
+      "sitePublishedAt": "2026-11-11T02:49:31.934508+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-10T23:16:09.443688+00:00"
+          "checkedAt": "2026-11-11T02:49:31.934508+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-10T23:16:09.443688+00:00",
-          "evidenceSha256": "5e54609c587e7dc3ab362b637747925137ca2544b41fa96f6a944b0126fb4749"
+          "checkedAt": "2026-11-11T02:49:31.934508+00:00",
+          "evidenceSha256": "060b67d9f6103de3e43971b7b757681276cfd34000e9e200af7d1ea19d470a0d"
         }
       ],
       "verificationScope": "release-announcement-only"
