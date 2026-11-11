@@ -1,8 +1,161 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-11-11T10:51:12.043214+00:00",
+  "builtAt": "2026-11-11T18:40:32.793404+00:00",
   "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
   "articles": [
+    {
+      "id": "feed-1f206af9c6a7e514d708",
+      "category": "technology",
+      "country": null,
+      "title": {
+        "ru": "Node.js: опубликован выпуск v26.13.1",
+        "en": "Node.js: release v26.13.1 published"
+      },
+      "body": {
+        "ru": "В официальном репозитории Node.js опубликовано объявление о выпуске v26.13.1. Подробности и список изменений доступны по ссылке на первоисточник.",
+        "en": "The official Node.js repository published a release announcement for v26.13.1. Details and changes are available at the original source."
+      },
+      "status": "published",
+      "demo": false,
+      "source": {
+        "name": "Node.js — official releases",
+        "url": "https://github.com/nodejs/node/releases/tag/v26.13.1",
+        "language": "en"
+      },
+      "originalTitle": "2026-11-11, Version 26.13.1 'Lithium' (LTS), @aduh95",
+      "publishedAt": "2026-11-11T16:44:25Z",
+      "updatedAt": "2026-11-11T16:44:25Z",
+      "collectedAt": "2026-11-11T18:40:32.406233+00:00",
+      "translationStatus": "bilingual-template",
+      "factsReviewed": false,
+      "importance": {
+        "ru": "Пользователи продукта могут проверить список изменений и совместимость. Мы не делаем выводов о безопасности или качестве выпуска.",
+        "en": "Users can review the changes and compatibility. We make no claims about release security or quality."
+      },
+      "next": {
+        "ru": "Изучите примечания к выпуску в первоисточнике перед обновлением.",
+        "en": "Read the original release notes before upgrading."
+      },
+      "publicationMode": "test",
+      "archive": false,
+      "sitePublishedAt": "2026-11-11T18:40:32.793404+00:00",
+      "autoChecks": [
+        {
+          "id": "feed",
+          "status": "passed",
+          "checkedAt": "2026-11-11T18:40:32.793404+00:00"
+        },
+        {
+          "id": "release-page",
+          "status": "passed",
+          "checkedAt": "2026-11-11T18:40:32.793404+00:00",
+          "evidenceSha256": "f61a51572771a2e3dee867efee4acaebd07269599a98b954025ec957e6c12223"
+        }
+      ],
+      "verificationScope": "release-announcement-only"
+    },
+    {
+      "id": "feed-2a265db325b4c6828981",
+      "category": "technology",
+      "country": null,
+      "title": {
+        "ru": "Node.js: опубликован выпуск v24.22.3",
+        "en": "Node.js: release v24.22.3 published"
+      },
+      "body": {
+        "ru": "В официальном репозитории Node.js опубликовано объявление о выпуске v24.22.3. Подробности и список изменений доступны по ссылке на первоисточник.",
+        "en": "The official Node.js repository published a release announcement for v24.22.3. Details and changes are available at the original source."
+      },
+      "status": "published",
+      "demo": false,
+      "source": {
+        "name": "Node.js — official releases",
+        "url": "https://github.com/nodejs/node/releases/tag/v24.22.3",
+        "language": "en"
+      },
+      "originalTitle": "2026-11-11, Version 24.22.3 'Krypton' (LTS), @aduh95",
+      "publishedAt": "2026-11-11T16:44:08Z",
+      "updatedAt": "2026-11-11T16:44:08Z",
+      "collectedAt": "2026-11-11T18:40:32.406306+00:00",
+      "translationStatus": "bilingual-template",
+      "factsReviewed": false,
+      "importance": {
+        "ru": "Пользователи продукта могут проверить список изменений и совместимость. Мы не делаем выводов о безопасности или качестве выпуска.",
+        "en": "Users can review the changes and compatibility. We make no claims about release security or quality."
+      },
+      "next": {
+        "ru": "Изучите примечания к выпуску в первоисточнике перед обновлением.",
+        "en": "Read the original release notes before upgrading."
+      },
+      "publicationMode": "test",
+      "archive": false,
+      "sitePublishedAt": "2026-11-11T18:40:32.793404+00:00",
+      "autoChecks": [
+        {
+          "id": "feed",
+          "status": "passed",
+          "checkedAt": "2026-11-11T18:40:32.793404+00:00"
+        },
+        {
+          "id": "release-page",
+          "status": "passed",
+          "checkedAt": "2026-11-11T18:40:32.793404+00:00",
+          "evidenceSha256": "fec373983376b08b176a638099fdf1c07c25e1dc70f5fb61bc429aa586328d58"
+        }
+      ],
+      "verificationScope": "release-announcement-only"
+    },
+    {
+      "id": "feed-acaa1c5bcac971a0c6cc",
+      "category": "technology",
+      "country": null,
+      "title": {
+        "ru": "Node.js: опубликован выпуск v22.23.5",
+        "en": "Node.js: release v22.23.5 published"
+      },
+      "body": {
+        "ru": "В официальном репозитории Node.js опубликовано объявление о выпуске v22.23.5. Подробности и список изменений доступны по ссылке на первоисточник.",
+        "en": "The official Node.js repository published a release announcement for v22.23.5. Details and changes are available at the original source."
+      },
+      "status": "published",
+      "demo": false,
+      "source": {
+        "name": "Node.js — official releases",
+        "url": "https://github.com/nodejs/node/releases/tag/v22.23.5",
+        "language": "en"
+      },
+      "originalTitle": "2026-11-11, Version 22.23.5 'Jod' (LTS), @aduh95",
+      "publishedAt": "2026-11-11T16:44:03Z",
+      "updatedAt": "2026-11-11T16:44:03Z",
+      "collectedAt": "2026-11-11T18:40:32.406343+00:00",
+      "translationStatus": "bilingual-template",
+      "factsReviewed": false,
+      "importance": {
+        "ru": "Пользователи продукта могут проверить список изменений и совместимость. Мы не делаем выводов о безопасности или качестве выпуска.",
+        "en": "Users can review the changes and compatibility. We make no claims about release security or quality."
+      },
+      "next": {
+        "ru": "Изучите примечания к выпуску в первоисточнике перед обновлением.",
+        "en": "Read the original release notes before upgrading."
+      },
+      "publicationMode": "test",
+      "archive": false,
+      "sitePublishedAt": "2026-11-11T18:40:32.793404+00:00",
+      "autoChecks": [
+        {
+          "id": "feed",
+          "status": "passed",
+          "checkedAt": "2026-11-11T18:40:32.793404+00:00"
+        },
+        {
+          "id": "release-page",
+          "status": "passed",
+          "checkedAt": "2026-11-11T18:40:32.793404+00:00",
+          "evidenceSha256": "bfc586f6a0c007ff79c5f66ed1dd47302d5c7b0e94c30eb7b58ad37ebd43f94b"
+        }
+      ],
+      "verificationScope": "release-announcement-only"
+    },
     {
       "id": "feed-3b85c0b37d61001115f0",
       "category": "technology",
@@ -25,7 +178,7 @@
       "originalTitle": "1.146.0",
       "publishedAt": "2026-11-11T10:07:14Z",
       "updatedAt": "2026-11-11T10:07:14Z",
-      "collectedAt": "2026-11-11T10:51:12.042953+00:00",
+      "collectedAt": "2026-11-11T18:40:32.793206+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -38,18 +191,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-11T10:51:12.043214+00:00",
+      "sitePublishedAt": "2026-11-11T18:40:32.793404+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-11T10:51:12.043214+00:00"
+          "checkedAt": "2026-11-11T18:40:32.793404+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-11T10:51:12.043214+00:00",
-          "evidenceSha256": "d9f5c0df359867d79ff305c759662fc38b489134f5571e834385ecbed320a23c"
+          "checkedAt": "2026-11-11T18:40:32.793404+00:00",
+          "evidenceSha256": "55cc11100d76ae5262bea73e9544c72471b4b34e02fddd4dc44a0be3024e7fda"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -76,7 +229,7 @@
       "originalTitle": "1.145.3",
       "publishedAt": "2026-11-10T18:53:52Z",
       "updatedAt": "2026-11-10T18:53:52Z",
-      "collectedAt": "2026-11-11T10:51:12.042999+00:00",
+      "collectedAt": "2026-11-11T18:40:32.793250+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -89,18 +242,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-11T10:51:12.043214+00:00",
+      "sitePublishedAt": "2026-11-11T18:40:32.793404+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-11T10:51:12.043214+00:00"
+          "checkedAt": "2026-11-11T18:40:32.793404+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-11T10:51:12.043214+00:00",
-          "evidenceSha256": "07212ef8423e6c8e7ad39252443d597b29997ae156f705905ed440da9f366254"
+          "checkedAt": "2026-11-11T18:40:32.793404+00:00",
+          "evidenceSha256": "4fb97b955c58ac7ad94a4292c9704dc164dffb562a49f726e7f68c9f41619e6e"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -2208,21 +2361,6 @@
     {
       "id": "feed-e550efcaa5dd81d8b8a4",
       "title": "2026-10-21, Version 24.22.1 'Krypton' (LTS), @aduh95",
-      "error": "Old entry not eligible for fresh automatic publication"
-    },
-    {
-      "id": "feed-ce039770d9d9e48b4598",
-      "title": "2026-10-21, Version 22.23.4 'Jod' (LTS), @aduh95",
-      "error": "Old entry not eligible for fresh automatic publication"
-    },
-    {
-      "id": "feed-57351f86b8d6c2de9fcd",
-      "title": "2026-10-14, Version 26.12.0 (Current), @richardlau",
-      "error": "Old entry not eligible for fresh automatic publication"
-    },
-    {
-      "id": "feed-c202181bf05ea4b7f6b6",
-      "title": "2026-10-14, Version 24.22.0 'Krypton' (LTS), @richardlau prepared by @aduh95",
       "error": "Old entry not eligible for fresh automatic publication"
     },
     {
