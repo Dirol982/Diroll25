@@ -1,8 +1,251 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-11-12T09:46:40.979153+00:00",
-  "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
+  "builtAt": "2026-11-12T18:31:28.081Z",
+  "verification": "Agent pipeline: search, independent verification by a second agent with at least two independent sources, bilingual rewrite; plus deterministic first-party release checks",
   "articles": [
+    {
+      "id": "agent-d7ae3277a4fdced4ebcb",
+      "category": "culture",
+      "country": null,
+      "title": {
+        "ru": "Критики смешанно оценили новый фильм «Скрудж» с Джонни Деппом",
+        "en": "Critics Give Mixed Reviews to Johnny Depp's New Film 'Ebenezer'"
+      },
+      "body": {
+        "ru": "Кинокритики высказали неоднозначные мнения о новой экранизации повести Чарльза Диккенса «Рождественская песнь» с Джонни Деппом в главной роли.",
+        "en": "Film critics have offered mixed reactions to \"Ebenezer,\" the latest screen adaptation of Charles Dickens's classic \"A Christmas Carol\" starring Johnny Depp."
+      },
+      "content": {
+        "ru": [
+          "Накануне мировой премьеры картины, намеченной на 13 ноября, профильные издания опубликовали первые рецензии. По данным портала «Чемпионат», обозреватели сошлись во мнении, что игра актера выглядит убедительно, несмотря на банальность самого фильма.",
+          "В рецензии The Guardian ленту охарактеризовали как неожиданно интересную и вполне приличную для просмотра. Издание отмечают, что Депп смотрелся лучше в образе легендарного скряги до его искупления, а сама история показывает возможность изменить свою жизнь и загладить вину.",
+          "Напротив, критик The New York Times оценил картину отрицательно. По данным издания, Депп в большей степени пытается совершить возвращение на экран с помощью знакомого зрителям образа и эффекта дежавю, чем по-настоящему вживается в роль Скруджа."
+        ],
+        "en": [
+          "Ahead of the film's world premiere on November 13, early reviews have emerged across major publications. According to Championat, reviewers largely noted a solid performance by Depp set against a fairly banal movie.",
+          "The Guardian described the film as decent enough and unexpectedly watchable. The outlet observed that Depp performs better as the legendary miser prior to his redemption, with the plot examining whether a person can change their ways and seek forgiveness.",
+          "By contrast, a review in The New York Times delivered a harsher critique, describing the release as holiday humbug. According to the paper, Depp appears to be using familiar tropes to attempt a comeback rather than delivering a fresh portrayal of Scrooge."
+        ]
+      },
+      "importance": {
+        "ru": "Выход фильма привлекает внимание к очередному прочтению классического произведения Диккенса с участием крупной кинозвезды.",
+        "en": "The release represents a high-profile adaptation of Dickens' holiday classic featuring a major Hollywood actor."
+      },
+      "next": {
+        "ru": "Мировая премьера «Скруджа» состоится 13 ноября, после чего появятся оценки широкой аудитории.",
+        "en": "The film's world premiere is scheduled for November 13, when broader audience reactions will begin to take shape."
+      },
+      "telegramText": {
+        "ru": "Первые рецензии на фильм «Скрудж» с Джонни Деппом в главной роли оказались неоднозначными. Обозреватели The Guardian назвали новую экранизацию классической повести Диккенса вполне достойной просмотра, похвалив игру актера в образе скряги. В то же время The New York Times критически отнеслась к ленте, посчитав ее попыткой камбэка на основе старых приемов. Мировая премьера картины назначена на 13 ноября.",
+        "en": "Early reviews for Johnny Depp's new film \"Ebenezer\" have brought mixed reactions ahead of its world premiere on November 13. According to The Guardian, the adaptation of the Dickens classic is unexpectedly watchable, praising Depp's portrayal of the miser. However, The New York Times called the movie holiday humbug, seeing it as an effort by the actor to mount a comeback using familiar screen tropes."
+      },
+      "imageQuery": "Johnny Depp",
+      "status": "published",
+      "demo": false,
+      "priority": 2,
+      "originalTitle": "Critics Give Mixed Reviews to Johnny Depp's New Film 'Ebenezer'",
+      "source": {
+        "name": "The Guardian",
+        "url": "https://www.theguardian.com/film/2026/nov/12/ebenezer-review-johnny-depp-scrooge-dickens",
+        "language": "en"
+      },
+      "sources": [
+        {
+          "publisher": "The Guardian",
+          "url": "https://www.theguardian.com/film/2026/nov/12/ebenezer-review-johnny-depp-scrooge-dickens",
+          "confirms": true
+        },
+        {
+          "publisher": "The New York Times",
+          "url": "https://www.nytimes.com/2026/11/12/movies/ebenezer-review-holiday-humbug.html",
+          "confirms": true
+        },
+        {
+          "publisher": "Чемпионат",
+          "url": "https://www.championat.com/cybersport/news-6696862-otlichnyj-dzhonni-depp-v-banalnom-filme-kritiki-smeshanno-ocenili-skrudzha.html",
+          "confirms": true
+        }
+      ],
+      "publishedAt": "2026-11-12T17:00:05.000Z",
+      "updatedAt": "2026-11-12T17:00:05.000Z",
+      "collectedAt": "2026-11-12T18:16:26.785Z",
+      "sitePublishedAt": "2026-11-12T18:16:26.785Z",
+      "publicationMode": "agents",
+      "translationStatus": "ai-bilingual",
+      "factsReviewed": false,
+      "verification": {
+        "verdict": "cross-source",
+        "independentSources": 3,
+        "disputedFacts": [],
+        "problems": [],
+        "notes": "Reported by several outlets in their own feeds",
+        "checkedAt": "2026-11-12T18:16:26.785Z"
+      },
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Johnny_Depp-2821.jpg/1920px-Johnny_Depp-2821.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Johnny Depp-2821",
+        "creator": "Harald Krichel",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Johnny_Depp-2821.jpg",
+        "provider": "Wikimedia Commons",
+        "query": "Johnny Depp"
+      },
+      "imageSearchedAt": "2026-11-12T18:31:28.081Z"
+    },
+    {
+      "id": "agent-d533790e4d2bd7ed50cf",
+      "category": "technology",
+      "country": "US",
+      "title": {
+        "ru": "Дженсен Хуанг ушел в отставку с поста гендиректора Nvidia на фоне скандала",
+        "en": "Jensen Huang Resigns as Nvidia CEO Amid Affair Scandal; CFO Colette Kress Steps In"
+      },
+      "body": {
+        "ru": "Основатель Nvidia Дженсен Хуанг покинул пост генерального директора компании после сообщений о внебрачных связях, а временным руководителем назначена финансовый директор Колетт Кресс.",
+        "en": "Nvidia co-founder Jensen Huang has resigned as chief executive following reports of extramarital relationships, with Chief Financial Officer Colette Kress taking over on an interim basis."
+      },
+      "content": {
+        "ru": [
+          "Дженсен Хуанг, возглавлявший Nvidia со дня основания, подал в отставку с должности генерального директора. Поводом для ухода стали сообщения о его внебрачных отношениях с женщиной, которую подозревают в шпионаже в пользу Китая, а также с сотрудницей компании, находившейся в его подчинении. До этого момента Хуанг оставался единственным руководителем за всю историю чипмейкера.",
+          "Временным генеральным директором Nvidia назначена исполнительный вице-президент и финансовый директор Колетт Кресс. Она будет совмещать обе должности до тех пор, пока совет директоров компании не выберет постоянного преемника.",
+          "На фоне разразившегося скандала и сообщений об отставке акции чипмейкера резко упали. Согласно данным The Guardian, за неделю рыночная стоимость Nvidia сократилась на 888 миллиардов долларов. При этом доля самого Хуанга в акционерном капитале компании составляет 3,6%.",
+          "Кроме того, The New York Times отмечает, что уход топ-менеджера ставит под вопрос дальнейшую благотворительную деятельность: Хуанг вместе с супругой управляет фондом, активы которого оцениваются примерно в 9 миллиардов долларов."
+        ],
+        "en": [
+          "Jensen Huang has stepped down as CEO of Nvidia after revelations regarding extramarital relationships with a suspected Chinese spy and a company executive who reported directly to him. Huang had served as the sole chief executive in Nvidia's history since co-founding the chipmaker.",
+          "The company's board has appointed executive vice president and Chief Financial Officer Colette Kress as interim CEO. She will manage the leadership responsibilities alongside her existing financial duties until a permanent successor is selected.",
+          "The revelations and sudden leadership exit triggered a sharp decline in the company's shares. According to The Guardian, Nvidia lost $888 billion in market value over the week. Huang holds a 3.6% stake in the corporation.",
+          "The fallout also extends beyond the company's corporate governance. The New York Times reported that Huang's resignation could complicate philanthropic operations, as he and his wife oversee a charitable foundation holding approximately $9 billion in assets."
+        ]
+      },
+      "importance": {
+        "ru": "Хуанг являлся бессменным лидером Nvidia и центральной фигурой мировой индустрии искусственного интеллекта. Его внезапный уход привел к падению капитализации компании почти на триллион долларов и поставил под удар структуру корпоративного управления гиганта микроэлектроники.",
+        "en": "Huang was regarded as the central architect of Nvidia's dominance in the AI hardware boom. His abrupt departure destabilized the multi-trillion-dollar firm's valuation and left the industry without one of its most prominent leaders at a critical juncture."
+      },
+      "next": {
+        "ru": "Совет директоров займется подбором постоянного генерального директора, пока Колетт Кресс временно руководит операционной деятельностью. По информации The Guardian, Дженсен Хуанг также должен дать показания в Конгрессе США.",
+        "en": "Nvidia's board of directors is tasked with identifying a permanent CEO while Kress oversees operations. Additionally, reports indicate Huang is set to testify before the US Congress regarding the matter."
+      },
+      "telegramText": {
+        "ru": "Дженсен Хуанг подал в отставку с поста генерального директора Nvidia после сообщений о внебрачных отношениях с предполагаемой китайской шпионкой и сотрудницей компании. Он оставался единственным руководителем чипмейкера с момента основания.\n\nВременным главой Nvidia назначена финансовый директор Колетт Кресс, которая продолжит совмещать свои текущие обязанности до утверждения постоянного преемника.\n\nНа фоне скандала капитализация Nvidia упала на 888 миллиардов долларов за неделю. По данным СМИ, бывшему главе компании также предстоит дать показания в Конгрессе США.",
+        "en": "Jensen Huang has resigned as CEO of Nvidia following reports of extramarital affairs involving a suspected Chinese spy and a subordinate employee. Huang had led the company since its founding.\n\nChief Financial Officer Colette Kress will serve as interim CEO alongside her regular role until a permanent successor is chosen.\n\nNvidia shed $888 billion in market value over the week amid the fallout. According to media reports, Huang is also slated to testify before the US Congress."
+      },
+      "imageQuery": "Jensen Huang",
+      "status": "published",
+      "demo": false,
+      "priority": 5,
+      "originalTitle": "Jensen Huang Resigns as Nvidia CEO Amid Affair Allegations, Succeeded by CFO Colette Kress",
+      "source": {
+        "name": "The Verge",
+        "url": "https://www.theverge.com/podcast/1031260/nvidia-jensen-huang-resign-china-spy-scandal-ai-chips-trump",
+        "language": "en"
+      },
+      "sources": [
+        {
+          "publisher": "The Verge",
+          "url": "https://www.theverge.com/podcast/1031260/nvidia-jensen-huang-resign-china-spy-scandal-ai-chips-trump",
+          "confirms": true
+        },
+        {
+          "publisher": "The Guardian",
+          "url": "https://www.theguardian.com/technology/live/2026/nov/12/nvidia-ceo-jensen-huang-affairs-share-price-plunges-live-latest",
+          "confirms": true
+        },
+        {
+          "publisher": "3DNews",
+          "url": "https://3dnews.ru/1151223",
+          "confirms": true
+        },
+        {
+          "publisher": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cq5y13819gpjo?at_medium=RSS&at_campaign=rss",
+          "confirms": true
+        },
+        {
+          "publisher": "The New York Times",
+          "url": "https://www.nytimes.com/2026/11/12/technology/jensen-huang-philanthropy-nvidia.html",
+          "confirms": true
+        }
+      ],
+      "publishedAt": "2026-11-12T16:30:00.000Z",
+      "updatedAt": "2026-11-12T16:30:00.000Z",
+      "collectedAt": "2026-11-12T18:16:26.785Z",
+      "sitePublishedAt": "2026-11-12T18:16:26.785Z",
+      "publicationMode": "agents",
+      "translationStatus": "ai-bilingual",
+      "factsReviewed": false,
+      "verification": {
+        "verdict": "cross-source",
+        "independentSources": 5,
+        "disputedFacts": [],
+        "problems": [],
+        "notes": "Reported by several outlets in their own feeds",
+        "checkedAt": "2026-11-12T18:16:26.785Z"
+      },
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Jensen_huang_stanford_2026-04-30_029.jpg/1920px-Jensen_huang_stanford_2026-04-30_029.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Jensen huang stanford 2026-04-30 029",
+        "creator": "Anderseidesvik",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jensen_huang_stanford_2026-04-30_029.jpg",
+        "provider": "Wikimedia Commons",
+        "query": "Jensen Huang"
+      },
+      "imageSearchedAt": "2026-11-12T18:22:13.974Z"
+    },
+    {
+      "id": "feed-972434084cc473c4c122",
+      "category": "technology",
+      "country": null,
+      "title": {
+        "ru": "Node.js: опубликован выпуск v27.0.0-alpha.0.1.0",
+        "en": "Node.js: release v27.0.0-alpha.0.1.0 published"
+      },
+      "body": {
+        "ru": "В официальном репозитории Node.js опубликовано объявление о выпуске v27.0.0-alpha.0.1.0. Подробности и список изменений доступны по ссылке на первоисточник.",
+        "en": "The official Node.js repository published a release announcement for v27.0.0-alpha.0.1.0. Details and changes are available at the original source."
+      },
+      "status": "published",
+      "demo": false,
+      "source": {
+        "name": "Node.js — official releases",
+        "url": "https://github.com/nodejs/node/releases/tag/v27.0.0-alpha.0.1.0",
+        "language": "en"
+      },
+      "originalTitle": "2026-11-12, Version 27.0.0-alpha.0.1.0 (Alpha), @aduh95",
+      "publishedAt": "2026-11-12T13:35:13Z",
+      "updatedAt": "2026-11-12T13:35:13Z",
+      "collectedAt": "2026-11-12T18:16:25.041455+00:00",
+      "translationStatus": "bilingual-template",
+      "factsReviewed": false,
+      "importance": {
+        "ru": "Пользователи продукта могут проверить список изменений и совместимость. Мы не делаем выводов о безопасности или качестве выпуска.",
+        "en": "Users can review the changes and compatibility. We make no claims about release security or quality."
+      },
+      "next": {
+        "ru": "Изучите примечания к выпуску в первоисточнике перед обновлением.",
+        "en": "Read the original release notes before upgrading."
+      },
+      "publicationMode": "test",
+      "archive": false,
+      "sitePublishedAt": "2026-11-12T18:16:25.355897+00:00",
+      "autoChecks": [
+        {
+          "id": "feed",
+          "status": "passed",
+          "checkedAt": "2026-11-12T18:16:25.355897+00:00"
+        },
+        {
+          "id": "release-page",
+          "status": "passed",
+          "checkedAt": "2026-11-12T18:16:25.355897+00:00",
+          "evidenceSha256": "4d4bfd6ef65dbb15a91363a66e2e62711e10137d1cf442c72fd58345e72aa6d5"
+        }
+      ],
+      "verificationScope": "release-announcement-only"
+    },
     {
       "id": "feed-1f206af9c6a7e514d708",
       "category": "technology",
@@ -25,7 +268,7 @@
       "originalTitle": "2026-11-11, Version 26.13.1 'Lithium' (LTS), @aduh95",
       "publishedAt": "2026-11-11T16:44:25Z",
       "updatedAt": "2026-11-11T16:44:25Z",
-      "collectedAt": "2026-11-12T09:46:40.636543+00:00",
+      "collectedAt": "2026-11-12T18:16:25.041515+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -38,18 +281,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-12T09:46:40.979153+00:00",
+      "sitePublishedAt": "2026-11-12T18:16:25.355897+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-12T09:46:40.979153+00:00"
+          "checkedAt": "2026-11-12T18:16:25.355897+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-12T09:46:40.979153+00:00",
-          "evidenceSha256": "4f8a7d0a2bec0379b0b8f1e83d40d839b56f8a9530d103db0cef38e9fb492957"
+          "checkedAt": "2026-11-12T18:16:25.355897+00:00",
+          "evidenceSha256": "92e6ab2e573e6d7a391928ac5fc54ff9921b4135c31c93b11b51908337aa7376"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -76,7 +319,7 @@
       "originalTitle": "2026-11-11, Version 24.22.3 'Krypton' (LTS), @aduh95",
       "publishedAt": "2026-11-11T16:44:08Z",
       "updatedAt": "2026-11-11T16:44:08Z",
-      "collectedAt": "2026-11-12T09:46:40.636595+00:00",
+      "collectedAt": "2026-11-12T18:16:25.041541+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -89,18 +332,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-12T09:46:40.979153+00:00",
+      "sitePublishedAt": "2026-11-12T18:16:25.355897+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-12T09:46:40.979153+00:00"
+          "checkedAt": "2026-11-12T18:16:25.355897+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-12T09:46:40.979153+00:00",
-          "evidenceSha256": "a8bb1e8018ecf62b591af4ddf025f8b746174c908656551b7e0a413a92a25760"
+          "checkedAt": "2026-11-12T18:16:25.355897+00:00",
+          "evidenceSha256": "d48647346c0ddd5ac354f9d461d85667eab6caca20c21aba4d827524ea6710db"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -127,7 +370,7 @@
       "originalTitle": "2026-11-11, Version 22.23.5 'Jod' (LTS), @aduh95",
       "publishedAt": "2026-11-11T16:44:03Z",
       "updatedAt": "2026-11-11T16:44:03Z",
-      "collectedAt": "2026-11-12T09:46:40.636621+00:00",
+      "collectedAt": "2026-11-12T18:16:25.041564+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -140,18 +383,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-12T09:46:40.979153+00:00",
+      "sitePublishedAt": "2026-11-12T18:16:25.355897+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-12T09:46:40.979153+00:00"
+          "checkedAt": "2026-11-12T18:16:25.355897+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-12T09:46:40.979153+00:00",
-          "evidenceSha256": "8aef4a4d4b5c0b5abe84d581329411d6abd40e7780df0a42864b49c3d30f7395"
+          "checkedAt": "2026-11-12T18:16:25.355897+00:00",
+          "evidenceSha256": "4de6320ed2c042f98f430957807c777121d92df15a4ec75ac6bc780894bc3afe"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -178,7 +421,7 @@
       "originalTitle": "1.146.0",
       "publishedAt": "2026-11-11T10:07:14Z",
       "updatedAt": "2026-11-11T10:07:14Z",
-      "collectedAt": "2026-11-12T09:46:40.979004+00:00",
+      "collectedAt": "2026-11-12T18:16:25.355754+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -191,18 +434,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-12T09:46:40.979153+00:00",
+      "sitePublishedAt": "2026-11-12T18:16:25.355897+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-12T09:46:40.979153+00:00"
+          "checkedAt": "2026-11-12T18:16:25.355897+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-12T09:46:40.979153+00:00",
-          "evidenceSha256": "6702415d1d190341abddcaa70c7e1abb7c9a3a37f2b52d9df70c2af79aab824f"
+          "checkedAt": "2026-11-12T18:16:25.355897+00:00",
+          "evidenceSha256": "7b9bb3b48d3976f312ad9a6369b278cf716b4b3f3f6d67154168d3e537f57077"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -229,7 +472,7 @@
       "originalTitle": "1.145.3",
       "publishedAt": "2026-11-10T18:53:52Z",
       "updatedAt": "2026-11-10T18:53:52Z",
-      "collectedAt": "2026-11-12T09:46:40.979039+00:00",
+      "collectedAt": "2026-11-12T18:16:25.355793+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -242,18 +485,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-12T09:46:40.979153+00:00",
+      "sitePublishedAt": "2026-11-12T18:16:25.355897+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-12T09:46:40.979153+00:00"
+          "checkedAt": "2026-11-12T18:16:25.355897+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-12T09:46:40.979153+00:00",
-          "evidenceSha256": "76a5bde0df088db2a10253dce2b374a2325b43f341dff729c08c23be22782604"
+          "checkedAt": "2026-11-12T18:16:25.355897+00:00",
+          "evidenceSha256": "2552d33619a4c8ad71433af7a4a44f18553cdcf7a00f6f114cdb0d4e7bbb20fc"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -2356,11 +2599,6 @@
     {
       "id": "feed-b63d8bfa28343d307561",
       "title": "2026-10-21, Version 26.12.1 (Current), @aduh95 prepared by @RafaelGSS",
-      "error": "Old entry not eligible for fresh automatic publication"
-    },
-    {
-      "id": "feed-e550efcaa5dd81d8b8a4",
-      "title": "2026-10-21, Version 24.22.1 'Krypton' (LTS), @aduh95",
       "error": "Old entry not eligible for fresh automatic publication"
     },
     {

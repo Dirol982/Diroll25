@@ -1,82 +1,5 @@
 [
   {
-    "url": "https://www.theverge.com/tech/1024176/north-korea-binance-crypto-heist",
-    "title": "Binance Resumes Withdrawals and Recovers Funds Following Massive Cyberattack",
-    "category": "technology",
-    "decision": "published",
-    "at": "2026-11-01T18:27:19.116Z"
-  },
-  {
-    "url": "https://3dnews.ru/1150723",
-    "title": "Binance Resumes Withdrawals and Recovers Funds Following Massive Cyberattack",
-    "category": "technology",
-    "decision": "published",
-    "at": "2026-11-01T18:27:19.116Z"
-  },
-  {
-    "url": "https://lenta.ru/news/2026/11/01/polzovateli-binance-vyveli-bolee-treh-milliardov-dollarov-posle-hakerskoy-ataki",
-    "title": "Binance Resumes Withdrawals and Recovers Funds Following Massive Cyberattack",
-    "category": "technology",
-    "decision": "published",
-    "at": "2026-11-01T18:27:19.116Z"
-  },
-  {
-    "url": "https://www.championat.com/football/news-6681712-lokomotiv-spartak-barko-zabil-chetvyortyj-gol-krasno-belyh-s-penalti-na-76-j-minute-1-noyabrya-2026.html",
-    "title": "Spartak Moscow Defeats Lokomotiv Moscow in Russian Premier League Derby",
-    "category": "sport",
-    "decision": "published",
-    "at": "2026-11-01T18:27:19.116Z"
-  },
-  {
-    "url": "https://www.sport-express.ru/football/rfpl/news/lokomotiv-spartak-barko-realizoval-penalti-i-zabil-chetvertyy-gol-krasno-belyh-2469806",
-    "title": "Spartak Moscow Defeats Lokomotiv Moscow in Russian Premier League Derby",
-    "category": "sport",
-    "decision": "published",
-    "at": "2026-11-01T18:27:19.116Z"
-  },
-  {
-    "url": "https://www.sport-express.ru/football/rfpl/news/fanaty-lokomotiva-krichali-pozor-i-brosali-sharfy-posle-pervogo-tayme-matcha-so-spartakom-2469797",
-    "title": "Spartak Moscow Defeats Lokomotiv Moscow in Russian Premier League Derby",
-    "category": "sport",
-    "decision": "published",
-    "at": "2026-11-01T18:27:19.116Z"
-  },
-  {
-    "url": "https://www.sport-express.ru/football/rfpl/news/vratar-lokomotiva-mitryushkin-v-pereryve-matcha-so-spartakom-konechno-tak-nelzya-igrat-2469794",
-    "title": "Spartak Moscow Defeats Lokomotiv Moscow in Russian Premier League Derby",
-    "category": "sport",
-    "decision": "published",
-    "at": "2026-11-01T18:27:19.116Z"
-  },
-  {
-    "url": "https://www.sport-express.ru/football/rfpl/news/lokomotiv-posle-treh-propuschennyh-golov-ot-spartaka-taym-kotoryy-hochetsya-zabyt-2469793",
-    "title": "Spartak Moscow Defeats Lokomotiv Moscow in Russian Premier League Derby",
-    "category": "sport",
-    "decision": "published",
-    "at": "2026-11-01T18:27:19.116Z"
-  },
-  {
-    "url": "https://www.championat.com/football/news-6681716-genich-otreagiroval-na-schyot-3-0-posle-pervogo-tajma-v-derbi-lokomotiv-spartak.html",
-    "title": "Spartak Moscow Defeats Lokomotiv Moscow in Russian Premier League Derby",
-    "category": "sport",
-    "decision": "published",
-    "at": "2026-11-01T18:27:19.116Z"
-  },
-  {
-    "url": "https://lenta.ru/news/2026/11/01/amerikanskiy-rezhisser-sluchayno-vystrelil-v-sebya",
-    "title": "Director Michael Mann Accidentally Shoots Himself at Los Angeles Gun Range",
-    "category": "culture",
-    "decision": "published",
-    "at": "2026-11-01T18:27:19.116Z"
-  },
-  {
-    "url": "https://www.nytimes.com/2026/11/01/movies/michael-mann-shooting.html",
-    "title": "Director Michael Mann Accidentally Shoots Himself at Los Angeles Gun Range",
-    "category": "culture",
-    "decision": "published",
-    "at": "2026-11-01T18:27:19.116Z"
-  },
-  {
     "url": "https://arstechnica.com/tech-policy/2026/11/faa-to-finally-ditch-floppy-disks-in-what-it-calls-historic-tech-upgrade",
     "title": "FAA to Replace Floppy Disks in Air Traffic Control Upgrade",
     "category": "technology",
@@ -117,5 +40,96 @@
     "category": "economy",
     "decision": "published",
     "at": "2026-11-07T00:54:25.476Z"
+  },
+  {
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1032069/jensen-huang-resignation-affair-chips-smuggling",
+    "title": "Jensen Huang Resigns as Nvidia CEO Amid Affair Allegations, Succeeded by CFO Colette Kress",
+    "category": "technology",
+    "decision": "published",
+    "at": "2026-11-12T18:16:26.785Z"
+  },
+  {
+    "url": "https://www.theguardian.com/technology/2026/nov/12/nvidia-ceo-jensen-huang-resigns",
+    "title": "Jensen Huang Resigns as Nvidia CEO Amid Affair Allegations, Succeeded by CFO Colette Kress",
+    "category": "technology",
+    "decision": "published",
+    "at": "2026-11-12T18:16:26.785Z"
+  },
+  {
+    "url": "https://3dnews.ru/1151223",
+    "title": "Jensen Huang Resigns as Nvidia CEO Amid Affair Allegations, Succeeded by CFO Colette Kress",
+    "category": "technology",
+    "decision": "published",
+    "at": "2026-11-12T18:16:26.785Z"
+  },
+  {
+    "url": "https://www.bbc.co.uk/news/articles/cq5y13819gpjo?at_medium=RSS&at_campaign=rss",
+    "title": "Jensen Huang Resigns as Nvidia CEO Amid Affair Allegations, Succeeded by CFO Colette Kress",
+    "category": "technology",
+    "decision": "published",
+    "at": "2026-11-12T18:16:26.785Z"
+  },
+  {
+    "url": "https://www.theverge.com/podcast/1031260/nvidia-jensen-huang-resign-china-spy-scandal-ai-chips-trump",
+    "title": "Jensen Huang Resigns as Nvidia CEO Amid Affair Allegations, Succeeded by CFO Colette Kress",
+    "category": "technology",
+    "decision": "published",
+    "at": "2026-11-12T18:16:26.785Z"
+  },
+  {
+    "url": "https://www.nytimes.com/2026/11/12/business/nvidia-stock-price-jensen-huang-ceo-affair.html",
+    "title": "Jensen Huang Resigns as Nvidia CEO Amid Affair Allegations, Succeeded by CFO Colette Kress",
+    "category": "technology",
+    "decision": "published",
+    "at": "2026-11-12T18:16:26.785Z"
+  },
+  {
+    "url": "https://www.nytimes.com/2026/11/12/business/nvidia-jensen-huang-affairs-timeline.html",
+    "title": "Jensen Huang Resigns as Nvidia CEO Amid Affair Allegations, Succeeded by CFO Colette Kress",
+    "category": "technology",
+    "decision": "published",
+    "at": "2026-11-12T18:16:26.785Z"
+  },
+  {
+    "url": "https://www.theguardian.com/technology/live/2026/nov/12/nvidia-ceo-jensen-huang-affairs-share-price-plunges-live-latest",
+    "title": "Jensen Huang Resigns as Nvidia CEO Amid Affair Allegations, Succeeded by CFO Colette Kress",
+    "category": "technology",
+    "decision": "published",
+    "at": "2026-11-12T18:16:26.785Z"
+  },
+  {
+    "url": "https://www.nytimes.com/2026/11/12/business/nvidia-jensen-huang-ceo-affairs.html",
+    "title": "Jensen Huang Resigns as Nvidia CEO Amid Affair Allegations, Succeeded by CFO Colette Kress",
+    "category": "technology",
+    "decision": "published",
+    "at": "2026-11-12T18:16:26.785Z"
+  },
+  {
+    "url": "https://www.nytimes.com/2026/11/12/technology/jensen-huang-philanthropy-nvidia.html",
+    "title": "Jensen Huang Resigns as Nvidia CEO Amid Affair Allegations, Succeeded by CFO Colette Kress",
+    "category": "technology",
+    "decision": "published",
+    "at": "2026-11-12T18:16:26.785Z"
+  },
+  {
+    "url": "https://www.theguardian.com/film/2026/nov/12/ebenezer-review-johnny-depp-scrooge-dickens",
+    "title": "Critics Give Mixed Reviews to Johnny Depp's New Film 'Ebenezer'",
+    "category": "culture",
+    "decision": "published",
+    "at": "2026-11-12T18:16:26.785Z"
+  },
+  {
+    "url": "https://www.nytimes.com/2026/11/12/movies/ebenezer-review-holiday-humbug.html",
+    "title": "Critics Give Mixed Reviews to Johnny Depp's New Film 'Ebenezer'",
+    "category": "culture",
+    "decision": "published",
+    "at": "2026-11-12T18:16:26.785Z"
+  },
+  {
+    "url": "https://www.championat.com/cybersport/news-6696862-otlichnyj-dzhonni-depp-v-banalnom-filme-kritiki-smeshanno-ocenili-skrudzha.html",
+    "title": "Critics Give Mixed Reviews to Johnny Depp's New Film 'Ebenezer'",
+    "category": "culture",
+    "decision": "published",
+    "at": "2026-11-12T18:16:26.785Z"
   }
 ]

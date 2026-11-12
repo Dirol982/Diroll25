@@ -1,6 +1,296 @@
 [
   {
     "mode": "feeds",
+    "startedAt": "2026-11-12T18:16:26.785Z",
+    "published": [
+      {
+        "id": "agent-d533790e4d2bd7ed50cf",
+        "title": "Jensen Huang Resigns as Nvidia CEO Amid Affair Scandal; CFO Colette Kress Steps In",
+        "outlets": [
+          "theverge.com",
+          "theguardian.com",
+          "3dnews.ru",
+          "bbc.co.uk",
+          "nytimes.com"
+        ]
+      },
+      {
+        "id": "agent-d7ae3277a4fdced4ebcb",
+        "title": "Critics Give Mixed Reviews to Johnny Depp's New Film 'Ebenezer'",
+        "outlets": [
+          "theguardian.com",
+          "nytimes.com",
+          "championat.com"
+        ]
+      }
+    ],
+    "held": [],
+    "rejected": [],
+    "errors": [
+      {
+        "topic": "science",
+        "headline": "Euclid Space Telescope Survey Maps 900 Million Galaxies Across the Universe",
+        "stage": "write",
+        "error": "Gemini 503 (gemini-3.8-flash): This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+      },
+      {
+        "topic": "economy",
+        "headline": "Singapore Bars Entry to Alleged Mistress of Former Nvidia CEO Over Intelligence Concerns",
+        "stage": "write",
+        "error": "Gemini 503 (gemini-3.8-flash): This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+      },
+      {
+        "topic": "culture",
+        "headline": "Meta Removes Russell Brand's Accounts From Facebook and Instagram",
+        "stage": "write",
+        "error": "Gemini 503 (gemini-3.8-flash): This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+      },
+      {
+        "topic": "sport",
+        "headline": "International Luge Federation Keeps Neutral Status for Russian Athletes for 2026/27 Season",
+        "stage": "write",
+        "error": "Gemini 503 (gemini-3.8-flash): This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+      }
+    ],
+    "usage": {
+      "input_tokens": 9667,
+      "output_tokens": 4360
+    },
+    "feeds": [
+      {
+        "feed": "BBC News / technology",
+        "ok": true,
+        "items": 21
+      },
+      {
+        "feed": "The Guardian / technology",
+        "ok": true,
+        "items": 36
+      },
+      {
+        "feed": "The New York Times / technology",
+        "ok": true,
+        "items": 36
+      },
+      {
+        "feed": "Ars Technica / technology",
+        "ok": true,
+        "items": 20
+      },
+      {
+        "feed": "The Verge / technology",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "NPR / technology",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "Хабр / technology",
+        "ok": true,
+        "items": 40
+      },
+      {
+        "feed": "3DNews / technology",
+        "ok": true,
+        "items": 60
+      },
+      {
+        "feed": "iXBT / technology",
+        "ok": true,
+        "items": 50
+      },
+      {
+        "feed": "BBC News / science",
+        "ok": true,
+        "items": 41
+      },
+      {
+        "feed": "The Guardian / science",
+        "ok": true,
+        "items": 28
+      },
+      {
+        "feed": "The New York Times / science",
+        "ok": true,
+        "items": 31
+      },
+      {
+        "feed": "NPR / science",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "ScienceDaily / science",
+        "ok": true,
+        "items": 60
+      },
+      {
+        "feed": "N + 1 / science",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "Naked Science / science",
+        "ok": true,
+        "items": 20
+      },
+      {
+        "feed": "BBC News / economy",
+        "ok": true,
+        "items": 57
+      },
+      {
+        "feed": "The Guardian / economy",
+        "ok": true,
+        "items": 20
+      },
+      {
+        "feed": "The New York Times / economy",
+        "ok": true,
+        "items": 50
+      },
+      {
+        "feed": "NPR / economy",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "CNBC / economy",
+        "ok": true,
+        "items": 30
+      },
+      {
+        "feed": "Коммерсантъ / economy",
+        "ok": true,
+        "items": 17
+      },
+      {
+        "feed": "РБК / economy",
+        "ok": true,
+        "items": 30
+      },
+      {
+        "feed": "Интерфакс / economy",
+        "ok": true,
+        "items": 25
+      },
+      {
+        "feed": "BBC News / culture",
+        "ok": true,
+        "items": 16
+      },
+      {
+        "feed": "The Guardian / culture",
+        "ok": true,
+        "items": 26
+      },
+      {
+        "feed": "The New York Times / culture",
+        "ok": true,
+        "items": 64
+      },
+      {
+        "feed": "NPR / culture",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "Коммерсантъ / culture",
+        "ok": true,
+        "items": 14
+      },
+      {
+        "feed": "BBC Sport / sport",
+        "ok": true,
+        "items": 69
+      },
+      {
+        "feed": "The Guardian / sport",
+        "ok": true,
+        "items": 24
+      },
+      {
+        "feed": "The New York Times / sport",
+        "ok": true,
+        "items": 0
+      },
+      {
+        "feed": "ESPN / sport",
+        "ok": true,
+        "items": 0
+      },
+      {
+        "feed": "Чемпионат / sport",
+        "ok": true,
+        "items": 31
+      },
+      {
+        "feed": "Sports.ru / sport",
+        "ok": false,
+        "error": "HTTP 404"
+      },
+      {
+        "feed": "Спорт-Экспресс / sport",
+        "ok": true,
+        "items": 613
+      },
+      {
+        "feed": "The Guardian / travel",
+        "ok": true,
+        "items": 35
+      },
+      {
+        "feed": "The New York Times / travel",
+        "ok": true,
+        "items": 20
+      },
+      {
+        "feed": "Skift / travel",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "Лента.ру / travel",
+        "ok": true,
+        "items": 200
+      },
+      {
+        "feed": "РИА Новости / travel",
+        "ok": false,
+        "error": "HTTP 404"
+      },
+      {
+        "feed": "Лента.ру / culture",
+        "ok": true,
+        "items": 200
+      },
+      {
+        "feed": "Лента.ру / economy",
+        "ok": true,
+        "items": 200
+      },
+      {
+        "feed": "Лента.ру / science",
+        "ok": true,
+        "items": 200
+      }
+    ],
+    "candidates": 233,
+    "finishedAt": "2026-11-12T18:31:28.084Z",
+    "imagesBackfilled": 0,
+    "status": "partial",
+    "provider": "gemini",
+    "model": "gemini-3.6-flash",
+    "skippedModels": [
+      "gemini-3.8-flash",
+      "gemini-3.7-flash"
+    ]
+  },
+  {
+    "mode": "feeds",
     "startedAt": "2026-11-11T18:40:34.101Z",
     "published": [],
     "held": [],
