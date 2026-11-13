@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-11-13T15:21:38.488759+00:00",
+  "builtAt": "2026-11-13T21:57:58.527400+00:00",
   "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
   "articles": [
     {
@@ -219,7 +219,7 @@
       "originalTitle": "2026-11-12, Version 27.0.0-alpha.0.1.0 (Alpha), @aduh95",
       "publishedAt": "2026-11-12T13:35:13Z",
       "updatedAt": "2026-11-12T13:35:13Z",
-      "collectedAt": "2026-11-13T15:21:38.154550+00:00",
+      "collectedAt": "2026-11-13T21:57:58.189343+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -232,18 +232,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-13T15:21:38.488759+00:00",
+      "sitePublishedAt": "2026-11-13T21:57:58.527400+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-13T15:21:38.488759+00:00"
+          "checkedAt": "2026-11-13T21:57:58.527400+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-13T15:21:38.488759+00:00",
-          "evidenceSha256": "afcd6f54c281a3a308909a802ccddd16e7b8023d7eb424b6bbcdfd5dee3d31ca"
+          "checkedAt": "2026-11-13T21:57:58.527400+00:00",
+          "evidenceSha256": "def20a27ec8b451c7709529159e053e1a7674da3c8d8c0de6971fcbd08d5ace1"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -270,7 +270,7 @@
       "originalTitle": "2026-11-11, Version 26.13.1 'Lithium' (LTS), @aduh95",
       "publishedAt": "2026-11-11T16:44:25Z",
       "updatedAt": "2026-11-11T16:44:25Z",
-      "collectedAt": "2026-11-13T15:21:38.154622+00:00",
+      "collectedAt": "2026-11-13T21:57:58.189439+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -283,18 +283,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-13T15:21:38.488759+00:00",
+      "sitePublishedAt": "2026-11-13T21:57:58.527400+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-13T15:21:38.488759+00:00"
+          "checkedAt": "2026-11-13T21:57:58.527400+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-13T15:21:38.488759+00:00",
-          "evidenceSha256": "62c091a812bfe2d0a9e574784fe6fc36c20d9034421d21c00fee19072a7d11a4"
+          "checkedAt": "2026-11-13T21:57:58.527400+00:00",
+          "evidenceSha256": "6465760d781b649b59c0235121c1bcc38b2ab0917e162ce2ce8249afb25fdb8e"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -321,7 +321,7 @@
       "originalTitle": "2026-11-11, Version 24.22.3 'Krypton' (LTS), @aduh95",
       "publishedAt": "2026-11-11T16:44:08Z",
       "updatedAt": "2026-11-11T16:44:08Z",
-      "collectedAt": "2026-11-13T15:21:38.154658+00:00",
+      "collectedAt": "2026-11-13T21:57:58.189478+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -334,18 +334,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-13T15:21:38.488759+00:00",
+      "sitePublishedAt": "2026-11-13T21:57:58.527400+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-13T15:21:38.488759+00:00"
+          "checkedAt": "2026-11-13T21:57:58.527400+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-13T15:21:38.488759+00:00",
-          "evidenceSha256": "88bfa7d1814727ada93a0e38e965d1e387774747768e597acf055afc0f92a24e"
+          "checkedAt": "2026-11-13T21:57:58.527400+00:00",
+          "evidenceSha256": "c7f2ed7f975956146d198eeb0829984fc297d1c30a0dac7a6f9ceab4bd21c28c"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -372,7 +372,7 @@
       "originalTitle": "2026-11-11, Version 22.23.5 'Jod' (LTS), @aduh95",
       "publishedAt": "2026-11-11T16:44:03Z",
       "updatedAt": "2026-11-11T16:44:03Z",
-      "collectedAt": "2026-11-13T15:21:38.154691+00:00",
+      "collectedAt": "2026-11-13T21:57:58.189504+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -385,18 +385,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-13T15:21:38.488759+00:00",
+      "sitePublishedAt": "2026-11-13T21:57:58.527400+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-13T15:21:38.488759+00:00"
+          "checkedAt": "2026-11-13T21:57:58.527400+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-13T15:21:38.488759+00:00",
-          "evidenceSha256": "156113440a75ca1e7468dc5d7ab8acc57e49189e5341da8474962a33cda27820"
+          "checkedAt": "2026-11-13T21:57:58.527400+00:00",
+          "evidenceSha256": "c40135b86620073bf75b810a802ea62cc36cf56f4ca55eeee32cccb12dfe31a3"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -423,7 +423,7 @@
       "originalTitle": "1.146.0",
       "publishedAt": "2026-11-11T10:07:14Z",
       "updatedAt": "2026-11-11T10:07:14Z",
-      "collectedAt": "2026-11-13T15:21:38.488525+00:00",
+      "collectedAt": "2026-11-13T21:57:58.527225+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -436,18 +436,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-13T15:21:38.488759+00:00",
+      "sitePublishedAt": "2026-11-13T21:57:58.527400+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-13T15:21:38.488759+00:00"
+          "checkedAt": "2026-11-13T21:57:58.527400+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-13T15:21:38.488759+00:00",
-          "evidenceSha256": "a6c7b465e40514edf9d7792e13632c6619a22b82e9591284dc53f1f00faa4cd6"
+          "checkedAt": "2026-11-13T21:57:58.527400+00:00",
+          "evidenceSha256": "539c45a9718ca5ca0792517c9722ea47d9f366e7d7ce2561b11f7e97d43301bd"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -486,7 +486,7 @@
         "en": "Read the original release notes before upgrading."
       },
       "publicationMode": "test",
-      "archive": false,
+      "archive": true,
       "sitePublishedAt": "2026-11-13T15:21:38.488759+00:00",
       "autoChecks": [
         {
@@ -2601,6 +2601,11 @@
     {
       "id": "feed-b63d8bfa28343d307561",
       "title": "2026-10-21, Version 26.12.1 (Current), @aduh95 prepared by @RafaelGSS",
+      "error": "Old entry not eligible for fresh automatic publication"
+    },
+    {
+      "id": "feed-79e3d50eb075ae8a9e55",
+      "title": "1.145.3",
       "error": "Old entry not eligible for fresh automatic publication"
     },
     {
