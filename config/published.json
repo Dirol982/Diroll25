@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-11-15T09:18:33.041981+00:00",
+  "builtAt": "2026-11-15T17:05:18.220822+00:00",
   "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
   "articles": [
     {
@@ -92,7 +92,7 @@
         "query": "Johnny Depp"
       },
       "imageSearchedAt": "2026-11-12T18:31:28.081Z",
-      "archive": false
+      "archive": true
     },
     {
       "id": "agent-d533790e4d2bd7ed50cf",
@@ -195,7 +195,7 @@
         "query": "Jensen Huang"
       },
       "imageSearchedAt": "2026-11-12T18:22:13.974Z",
-      "archive": false
+      "archive": true
     },
     {
       "id": "feed-972434084cc473c4c122",
@@ -231,7 +231,7 @@
         "en": "Read the original release notes before upgrading."
       },
       "publicationMode": "test",
-      "archive": false,
+      "archive": true,
       "sitePublishedAt": "2026-11-15T09:18:33.041981+00:00",
       "autoChecks": [
         {
@@ -2583,6 +2583,11 @@
     }
   ],
   "held": [
+    {
+      "id": "feed-972434084cc473c4c122",
+      "title": "2026-11-12, Version 27.0.0-alpha.0.1.0 (Alpha), @aduh95",
+      "error": "Old entry not eligible for fresh automatic publication"
+    },
     {
       "id": "feed-1f206af9c6a7e514d708",
       "title": "2026-11-11, Version 26.13.1 'Lithium' (LTS), @aduh95",
