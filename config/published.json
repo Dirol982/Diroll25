@@ -1,8 +1,59 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-11-16T20:26:10.921498+00:00",
+  "builtAt": "2026-11-17T03:49:04.856674+00:00",
   "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
   "articles": [
+    {
+      "id": "feed-0d79bc3054a6a580fcdc",
+      "category": "technology",
+      "country": null,
+      "title": {
+        "ru": "Node.js: опубликован выпуск v27.0.0-alpha.0.1.1",
+        "en": "Node.js: release v27.0.0-alpha.0.1.1 published"
+      },
+      "body": {
+        "ru": "В официальном репозитории Node.js опубликовано объявление о выпуске v27.0.0-alpha.0.1.1. Подробности и список изменений доступны по ссылке на первоисточник.",
+        "en": "The official Node.js repository published a release announcement for v27.0.0-alpha.0.1.1. Details and changes are available at the original source."
+      },
+      "status": "published",
+      "demo": false,
+      "source": {
+        "name": "Node.js — official releases",
+        "url": "https://github.com/nodejs/node/releases/tag/v27.0.0-alpha.0.1.1",
+        "language": "en"
+      },
+      "originalTitle": "2026-11-16, Version 27.0.0-alpha.0.1.1 (Alpha), @aduh95",
+      "publishedAt": "2026-11-17T03:48:38Z",
+      "updatedAt": "2026-11-17T03:48:38Z",
+      "collectedAt": "2026-11-17T03:49:04.521819+00:00",
+      "translationStatus": "bilingual-template",
+      "factsReviewed": false,
+      "importance": {
+        "ru": "Пользователи продукта могут проверить список изменений и совместимость. Мы не делаем выводов о безопасности или качестве выпуска.",
+        "en": "Users can review the changes and compatibility. We make no claims about release security or quality."
+      },
+      "next": {
+        "ru": "Изучите примечания к выпуску в первоисточнике перед обновлением.",
+        "en": "Read the original release notes before upgrading."
+      },
+      "publicationMode": "test",
+      "archive": false,
+      "sitePublishedAt": "2026-11-17T03:49:04.856674+00:00",
+      "autoChecks": [
+        {
+          "id": "feed",
+          "status": "passed",
+          "checkedAt": "2026-11-17T03:49:04.856674+00:00"
+        },
+        {
+          "id": "release-page",
+          "status": "passed",
+          "checkedAt": "2026-11-17T03:49:04.856674+00:00",
+          "evidenceSha256": "be60eb6a877650ba1c589b732bbc32a6ce4052b42b5cf785607f0fa213c17d0e"
+        }
+      ],
+      "verificationScope": "release-announcement-only"
+    },
     {
       "id": "agent-d7ae3277a4fdced4ebcb",
       "category": "culture",
@@ -2616,11 +2667,6 @@
     {
       "id": "feed-243f98e467424aaf3e47",
       "title": "2026-10-28, Version 24.22.2 'Krypton' (LTS), @aduh95",
-      "error": "Old entry not eligible for fresh automatic publication"
-    },
-    {
-      "id": "feed-b63d8bfa28343d307561",
-      "title": "2026-10-21, Version 26.12.1 (Current), @aduh95 prepared by @RafaelGSS",
       "error": "Old entry not eligible for fresh automatic publication"
     },
     {
