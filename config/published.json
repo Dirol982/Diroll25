@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-11-17T03:49:04.856674+00:00",
+  "builtAt": "2026-11-17T13:18:36.681522+00:00",
   "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
   "articles": [
     {
@@ -2635,9 +2635,14 @@
   ],
   "held": [
     {
+      "id": "feed-0d79bc3054a6a580fcdc",
+      "title": "2026-11-16, Version 27.0.0-alpha.0.1.1 (Alpha), @aduh95",
+      "error": "Release page does not corroborate feed date"
+    },
+    {
       "id": "feed-972434084cc473c4c122",
       "title": "2026-11-12, Version 27.0.0-alpha.0.1.0 (Alpha), @aduh95",
-      "error": "Old entry not eligible for fresh automatic publication"
+      "error": "Release page does not corroborate feed date"
     },
     {
       "id": "feed-1f206af9c6a7e514d708",
