@@ -1,8 +1,59 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-11-18T04:15:58.243087+00:00",
+  "builtAt": "2026-11-18T13:05:21.696582+00:00",
   "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
   "articles": [
+    {
+      "id": "feed-682bac824c5a7c057973",
+      "category": "technology",
+      "country": null,
+      "title": {
+        "ru": "Visual Studio Code: опубликован выпуск 1.147.0",
+        "en": "Visual Studio Code: release 1.147.0 published"
+      },
+      "body": {
+        "ru": "В официальном репозитории Visual Studio Code опубликовано объявление о выпуске 1.147.0. Подробности и список изменений доступны по ссылке на первоисточник.",
+        "en": "The official Visual Studio Code repository published a release announcement for 1.147.0. Details and changes are available at the original source."
+      },
+      "status": "published",
+      "demo": false,
+      "source": {
+        "name": "Visual Studio Code — official releases",
+        "url": "https://github.com/microsoft/vscode/releases/tag/1.147.0",
+        "language": "en"
+      },
+      "originalTitle": "1.147.0",
+      "publishedAt": "2026-11-18T09:45:23Z",
+      "updatedAt": "2026-11-18T09:45:23Z",
+      "collectedAt": "2026-11-18T13:05:21.696434+00:00",
+      "translationStatus": "bilingual-template",
+      "factsReviewed": false,
+      "importance": {
+        "ru": "Пользователи продукта могут проверить список изменений и совместимость. Мы не делаем выводов о безопасности или качестве выпуска.",
+        "en": "Users can review the changes and compatibility. We make no claims about release security or quality."
+      },
+      "next": {
+        "ru": "Изучите примечания к выпуску в первоисточнике перед обновлением.",
+        "en": "Read the original release notes before upgrading."
+      },
+      "publicationMode": "test",
+      "archive": false,
+      "sitePublishedAt": "2026-11-18T13:05:21.696582+00:00",
+      "autoChecks": [
+        {
+          "id": "feed",
+          "status": "passed",
+          "checkedAt": "2026-11-18T13:05:21.696582+00:00"
+        },
+        {
+          "id": "release-page",
+          "status": "passed",
+          "checkedAt": "2026-11-18T13:05:21.696582+00:00",
+          "evidenceSha256": "413a75d72107e1e3e68276abc3e177945ebefc20218d782fd6461707ee234341"
+        }
+      ],
+      "verificationScope": "release-announcement-only"
+    },
     {
       "id": "feed-0d79bc3054a6a580fcdc",
       "category": "technology",
@@ -2707,11 +2758,6 @@
     {
       "id": "feed-95ad7c372ca77a5d1aa8",
       "title": "1.143.1",
-      "error": "Old entry not eligible for fresh automatic publication"
-    },
-    {
-      "id": "feed-89b96fd10289f94e9d48",
-      "title": "1.143.0",
       "error": "Old entry not eligible for fresh automatic publication"
     }
   ]
