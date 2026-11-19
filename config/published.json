@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-11-19T13:18:29.842Z",
-  "verification": "Agent pipeline: search, independent verification by a second agent with at least two independent sources, bilingual rewrite; plus deterministic first-party release checks",
+  "builtAt": "2026-11-19T21:28:45.628106+00:00",
+  "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
   "articles": [
     {
       "id": "agent-4781bf448f534b6c9a0f",
@@ -86,7 +86,8 @@
         "provider": "Wikimedia Commons",
         "query": "Aurelien Tchouameni"
       },
-      "imageSearchedAt": "2026-11-19T13:18:29.842Z"
+      "imageSearchedAt": "2026-11-19T13:18:29.842Z",
+      "archive": false
     },
     {
       "id": "feed-682bac824c5a7c057973",
@@ -110,7 +111,7 @@
       "originalTitle": "1.147.0",
       "publishedAt": "2026-11-18T09:45:23Z",
       "updatedAt": "2026-11-18T09:45:23Z",
-      "collectedAt": "2026-11-19T12:58:31.465445+00:00",
+      "collectedAt": "2026-11-19T21:28:45.627967+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -123,18 +124,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-19T12:58:31.465592+00:00",
+      "sitePublishedAt": "2026-11-19T21:28:45.628106+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-19T12:58:31.465592+00:00"
+          "checkedAt": "2026-11-19T21:28:45.628106+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-19T12:58:31.465592+00:00",
-          "evidenceSha256": "192fd8c78131efbbfdb8f24db7379031cfb0d3a07fbd4cfd7713388c65856764"
+          "checkedAt": "2026-11-19T21:28:45.628106+00:00",
+          "evidenceSha256": "24fd96b7f68c990a0ab761b3a087bbede9fd888ef58958a725b58a8c9ddde086"
         }
       ],
       "verificationScope": "release-announcement-only"
