@@ -1,8 +1,93 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-11-19T03:21:53.977353+00:00",
-  "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
+  "builtAt": "2026-11-19T13:18:29.842Z",
+  "verification": "Agent pipeline: search, independent verification by a second agent with at least two independent sources, bilingual rewrite; plus deterministic first-party release checks",
   "articles": [
+    {
+      "id": "agent-4781bf448f534b6c9a0f",
+      "category": "sport",
+      "country": "ES",
+      "title": {
+        "ru": "«Реал» объявил о продлении контракта с Орельеном Тчуамени",
+        "en": "Real Madrid Announces Contract Extension With Midfielder Aurélien Tchouaméni"
+      },
+      "body": {
+        "ru": "Мадридский «Реал» заключил новое соглашение с полузащитником Орельеном Тчуамени.",
+        "en": "Real Madrid has officially agreed on a new contract with midfielder Aurélien Tchouaméni."
+      },
+      "content": {
+        "ru": [
+          "Испанский футбольный клуб «Реал» официально сообщил о пролонгации контракта с полузащитником Орельеном Тчуамени. Соответствующая информация была опубликована на официальном сайте мадридской команды.",
+          "О подписании нового трудового договора с игроком передают российские спортивные СМИ со ссылкой на заявление мадридцев.",
+          "Подробности и точные параметры обновленного соглашения стороны не раскрыли в первом публичном сообщении."
+        ],
+        "en": [
+          "The Spanish club announced the extension of the contract with midfielder Aurélien Tchouaméni in a statement published on its official website.",
+          "The confirmation from the Madrid club solidifies the player's ongoing relationship with the team.",
+          "Specific details and conditions of the new agreement were not disclosed in the club's initial announcement."
+        ]
+      },
+      "importance": {
+        "ru": "Новое соглашение закрепляет статус Тчуамени в испанском клубе и гарантирует продолжение его выступлений за команду.",
+        "en": "The extension secures Tchouaméni's place in Real Madrid's squad, ensuring stability for the club's midfield."
+      },
+      "next": {
+        "ru": "Ожидаются дополнительные подробности относительно срока действия и условий продленного контракта футболиста.",
+        "en": "Further details regarding the duration and terms of the new deal remain to be confirmed."
+      },
+      "telegramText": {
+        "ru": "Мадридский «Реал» официально объявил о продлении трудового контракта с полузащитником Орельеном Тчуамени. Соответствующее заявление было опубликовано на официальном сайте испанского футбольного клуба. Стороны подписали новое соглашение, закрепив дальнейшее пребывание футболиста в составе мадридцев.",
+        "en": "Real Madrid has officially announced a contract extension with midfielder Aurélien Tchouaméni. The Spanish football club confirmed the agreement on its official website. The new deal secures the player's ongoing stay with the Madrid team, though full details regarding the duration of the contract were not specified."
+      },
+      "imageQuery": "Aurelien Tchouameni",
+      "status": "published",
+      "demo": false,
+      "priority": 3,
+      "originalTitle": "Real Madrid Extends Contract With Midfielder Aurélien Tchouaméni",
+      "source": {
+        "name": "Интерфакс",
+        "url": "https://www.sport-interfax.ru/1130171",
+        "language": "en"
+      },
+      "sources": [
+        {
+          "publisher": "Интерфакс",
+          "url": "https://www.sport-interfax.ru/1130171",
+          "confirms": true
+        },
+        {
+          "publisher": "Чемпионат",
+          "url": "https://www.championat.com/football/news-6705662-real-obyavil-o-prodlenii-kontrakta-s-orelenom-tchuameni.html",
+          "confirms": true
+        }
+      ],
+      "publishedAt": "2026-11-19T12:13:18.000Z",
+      "updatedAt": "2026-11-19T12:13:18.000Z",
+      "collectedAt": "2026-11-19T12:58:32.472Z",
+      "sitePublishedAt": "2026-11-19T12:58:32.472Z",
+      "publicationMode": "agents",
+      "translationStatus": "ai-bilingual",
+      "factsReviewed": false,
+      "verification": {
+        "verdict": "cross-source",
+        "independentSources": 2,
+        "disputedFacts": [],
+        "problems": [],
+        "notes": "Reported by several outlets in their own feeds",
+        "checkedAt": "2026-11-19T12:58:32.472Z"
+      },
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Aurelien_Tchouameni_France_v_Morocco_9_July_2026-053.jpg/1920px-Aurelien_Tchouameni_France_v_Morocco_9_July_2026-053.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Aurelien Tchouameni France v Morocco 9 July 2026-053",
+        "creator": "Bryan Berlin",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aurelien_Tchouameni_France_v_Morocco_9_July_2026-053.jpg",
+        "provider": "Wikimedia Commons",
+        "query": "Aurelien Tchouameni"
+      },
+      "imageSearchedAt": "2026-11-19T13:18:29.842Z"
+    },
     {
       "id": "feed-682bac824c5a7c057973",
       "category": "technology",
@@ -25,7 +110,7 @@
       "originalTitle": "1.147.0",
       "publishedAt": "2026-11-18T09:45:23Z",
       "updatedAt": "2026-11-18T09:45:23Z",
-      "collectedAt": "2026-11-19T03:21:53.977147+00:00",
+      "collectedAt": "2026-11-19T12:58:31.465445+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -38,18 +123,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-19T03:21:53.977353+00:00",
+      "sitePublishedAt": "2026-11-19T12:58:31.465592+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-19T03:21:53.977353+00:00"
+          "checkedAt": "2026-11-19T12:58:31.465592+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-19T03:21:53.977353+00:00",
-          "evidenceSha256": "6f17e469013898e0b620a781d3bb7a07ca8a80a1b04971ee50de72e66213d35f"
+          "checkedAt": "2026-11-19T12:58:31.465592+00:00",
+          "evidenceSha256": "192fd8c78131efbbfdb8f24db7379031cfb0d3a07fbd4cfd7713388c65856764"
         }
       ],
       "verificationScope": "release-announcement-only"

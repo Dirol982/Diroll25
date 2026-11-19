@@ -1,47 +1,5 @@
 [
   {
-    "url": "https://arstechnica.com/tech-policy/2026/11/faa-to-finally-ditch-floppy-disks-in-what-it-calls-historic-tech-upgrade",
-    "title": "FAA to Replace Floppy Disks in Air Traffic Control Upgrade",
-    "category": "technology",
-    "decision": "published",
-    "at": "2026-11-07T00:54:25.476Z"
-  },
-  {
-    "url": "https://www.nytimes.com/2026/11/06/us/faa-floppy-disks-atc-2028.html",
-    "title": "FAA to Replace Floppy Disks in Air Traffic Control Upgrade",
-    "category": "technology",
-    "decision": "published",
-    "at": "2026-11-07T00:54:25.476Z"
-  },
-  {
-    "url": "https://www.rbc.ru/rbcfreenews/6aee3baa5b36bc7c245dc3b7",
-    "title": "Trump Appoints Stephen Miller as White House Chief of Staff",
-    "category": "economy",
-    "decision": "published",
-    "at": "2026-11-07T00:54:25.476Z"
-  },
-  {
-    "url": "https://www.interfax.ru/world/1127509",
-    "title": "Trump Appoints Stephen Miller as White House Chief of Staff",
-    "category": "economy",
-    "decision": "published",
-    "at": "2026-11-07T00:54:25.476Z"
-  },
-  {
-    "url": "https://www.nytimes.com/2026/11/06/world/americas/paraguay-president-removed-ueno.html",
-    "title": "Paraguay's President Impeached and Arrested Over Financial Crisis",
-    "category": "economy",
-    "decision": "published",
-    "at": "2026-11-07T00:54:25.476Z"
-  },
-  {
-    "url": "https://www.rbc.ru/politics/07/11/2026/6aee52b92e98b80c36c01d1b",
-    "title": "Paraguay's President Impeached and Arrested Over Financial Crisis",
-    "category": "economy",
-    "decision": "published",
-    "at": "2026-11-07T00:54:25.476Z"
-  },
-  {
     "url": "https://www.theverge.com/ai-artificial-intelligence/1032069/jensen-huang-resignation-affair-chips-smuggling",
     "title": "Jensen Huang Resigns as Nvidia CEO Amid Affair Allegations, Succeeded by CFO Colette Kress",
     "category": "technology",
@@ -131,5 +89,19 @@
     "category": "culture",
     "decision": "published",
     "at": "2026-11-12T18:16:26.785Z"
+  },
+  {
+    "url": "https://www.sport-interfax.ru/1130171",
+    "title": "Real Madrid Extends Contract With Midfielder Aurélien Tchouaméni",
+    "category": "sport",
+    "decision": "published",
+    "at": "2026-11-19T12:58:32.472Z"
+  },
+  {
+    "url": "https://www.championat.com/football/news-6705662-real-obyavil-o-prodlenii-kontrakta-s-orelenom-tchuameni.html",
+    "title": "Real Madrid Extends Contract With Midfielder Aurélien Tchouaméni",
+    "category": "sport",
+    "decision": "published",
+    "at": "2026-11-19T12:58:32.472Z"
   }
 ]

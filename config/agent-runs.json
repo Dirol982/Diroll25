@@ -1,6 +1,287 @@
 [
   {
     "mode": "feeds",
+    "startedAt": "2026-11-19T12:58:32.472Z",
+    "published": [
+      {
+        "id": "agent-4781bf448f534b6c9a0f",
+        "title": "Real Madrid Announces Contract Extension With Midfielder Aurélien Tchouaméni",
+        "outlets": [
+          "sport-interfax.ru",
+          "championat.com"
+        ]
+      }
+    ],
+    "held": [],
+    "rejected": [],
+    "errors": [
+      {
+        "topic": "culture",
+        "headline": "Van Gogh Painting Sells for Record $190.4 Million at Sotheby's After Settlement",
+        "stage": "write",
+        "error": "The operation was aborted due to timeout"
+      },
+      {
+        "topic": "culture",
+        "headline": "Nonfiction Author Denied US Visa Wins National Book Award",
+        "stage": "write",
+        "error": "Gemini 503 (gemini-3.8-flash): This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+      },
+      {
+        "topic": "culture",
+        "headline": "Ella Langley Sweeps Country Music Awards as Taylor Swift Makes Surprise Appearance",
+        "stage": "write",
+        "error": "The operation was aborted due to timeout"
+      },
+      {
+        "topic": "economy",
+        "headline": "Russian Inflation Expectations Rise to 13.5% in November",
+        "stage": "write",
+        "error": "The operation was aborted due to timeout"
+      },
+      {
+        "topic": "science",
+        "headline": "Voyager 1 Reaches One Light-Day Distance From Earth",
+        "stage": "write",
+        "error": "Gemini 503 (gemini-3.8-flash): This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+      }
+    ],
+    "usage": {
+      "input_tokens": 7623,
+      "output_tokens": 2239
+    },
+    "feeds": [
+      {
+        "feed": "BBC News / technology",
+        "ok": true,
+        "items": 21
+      },
+      {
+        "feed": "The Guardian / technology",
+        "ok": true,
+        "items": 36
+      },
+      {
+        "feed": "The New York Times / technology",
+        "ok": true,
+        "items": 42
+      },
+      {
+        "feed": "Ars Technica / technology",
+        "ok": true,
+        "items": 20
+      },
+      {
+        "feed": "The Verge / technology",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "NPR / technology",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "Хабр / technology",
+        "ok": true,
+        "items": 40
+      },
+      {
+        "feed": "3DNews / technology",
+        "ok": true,
+        "items": 57
+      },
+      {
+        "feed": "iXBT / technology",
+        "ok": true,
+        "items": 50
+      },
+      {
+        "feed": "BBC News / science",
+        "ok": true,
+        "items": 42
+      },
+      {
+        "feed": "The Guardian / science",
+        "ok": true,
+        "items": 28
+      },
+      {
+        "feed": "The New York Times / science",
+        "ok": true,
+        "items": 41
+      },
+      {
+        "feed": "NPR / science",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "ScienceDaily / science",
+        "ok": true,
+        "items": 60
+      },
+      {
+        "feed": "N + 1 / science",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "Naked Science / science",
+        "ok": true,
+        "items": 20
+      },
+      {
+        "feed": "BBC News / economy",
+        "ok": true,
+        "items": 51
+      },
+      {
+        "feed": "The Guardian / economy",
+        "ok": true,
+        "items": 20
+      },
+      {
+        "feed": "The New York Times / economy",
+        "ok": true,
+        "items": 35
+      },
+      {
+        "feed": "NPR / economy",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "CNBC / economy",
+        "ok": true,
+        "items": 30
+      },
+      {
+        "feed": "Коммерсантъ / economy",
+        "ok": true,
+        "items": 19
+      },
+      {
+        "feed": "РБК / economy",
+        "ok": true,
+        "items": 30
+      },
+      {
+        "feed": "Интерфакс / economy",
+        "ok": true,
+        "items": 25
+      },
+      {
+        "feed": "BBC News / culture",
+        "ok": true,
+        "items": 19
+      },
+      {
+        "feed": "The Guardian / culture",
+        "ok": true,
+        "items": 26
+      },
+      {
+        "feed": "The New York Times / culture",
+        "ok": true,
+        "items": 61
+      },
+      {
+        "feed": "NPR / culture",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "Коммерсантъ / culture",
+        "ok": true,
+        "items": 15
+      },
+      {
+        "feed": "BBC Sport / sport",
+        "ok": true,
+        "items": 68
+      },
+      {
+        "feed": "The Guardian / sport",
+        "ok": true,
+        "items": 26
+      },
+      {
+        "feed": "The New York Times / sport",
+        "ok": true,
+        "items": 0
+      },
+      {
+        "feed": "ESPN / sport",
+        "ok": true,
+        "items": 0
+      },
+      {
+        "feed": "Чемпионат / sport",
+        "ok": true,
+        "items": 31
+      },
+      {
+        "feed": "Sports.ru / sport",
+        "ok": false,
+        "error": "HTTP 404"
+      },
+      {
+        "feed": "Спорт-Экспресс / sport",
+        "ok": false,
+        "error": "The operation was aborted due to timeout"
+      },
+      {
+        "feed": "The Guardian / travel",
+        "ok": true,
+        "items": 35
+      },
+      {
+        "feed": "The New York Times / travel",
+        "ok": true,
+        "items": 20
+      },
+      {
+        "feed": "Skift / travel",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "Лента.ру / travel",
+        "ok": true,
+        "items": 200
+      },
+      {
+        "feed": "РИА Новости / travel",
+        "ok": false,
+        "error": "HTTP 404"
+      },
+      {
+        "feed": "Лента.ру / culture",
+        "ok": true,
+        "items": 200
+      },
+      {
+        "feed": "Лента.ру / economy",
+        "ok": true,
+        "items": 200
+      },
+      {
+        "feed": "Лента.ру / science",
+        "ok": true,
+        "items": 200
+      }
+    ],
+    "candidates": 240,
+    "finishedAt": "2026-11-19T13:26:45.016Z",
+    "imagesBackfilled": 0,
+    "status": "partial",
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "skippedModels": []
+  },
+  {
+    "mode": "feeds",
     "startedAt": "2026-11-13T06:38:01.578Z",
     "published": [],
     "held": [],
