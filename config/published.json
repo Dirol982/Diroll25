@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-11-20T03:08:51.183232+00:00",
+  "builtAt": "2026-11-20T11:30:10.084452+00:00",
   "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
   "articles": [
     {
@@ -111,7 +111,7 @@
       "originalTitle": "1.147.0",
       "publishedAt": "2026-11-18T09:45:23Z",
       "updatedAt": "2026-11-18T09:45:23Z",
-      "collectedAt": "2026-11-20T03:08:51.183115+00:00",
+      "collectedAt": "2026-11-20T11:30:10.084319+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -124,18 +124,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-20T03:08:51.183232+00:00",
+      "sitePublishedAt": "2026-11-20T11:30:10.084452+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-20T03:08:51.183232+00:00"
+          "checkedAt": "2026-11-20T11:30:10.084452+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-20T03:08:51.183232+00:00",
-          "evidenceSha256": "e614d5a62333e38c917b2f81ba4fafed5b2bf449219821e6334dec2c466b6005"
+          "checkedAt": "2026-11-20T11:30:10.084452+00:00",
+          "evidenceSha256": "9d41d7ce6ec35ea3f5ef51ca22c52d0c6bd5b9c8c50831bff8b90dfe27b4dda7"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -174,7 +174,7 @@
         "en": "Read the original release notes before upgrading."
       },
       "publicationMode": "test",
-      "archive": false,
+      "archive": true,
       "sitePublishedAt": "2026-11-17T03:49:04.856674+00:00",
       "autoChecks": [
         {
@@ -2774,12 +2774,12 @@
     {
       "id": "feed-0d79bc3054a6a580fcdc",
       "title": "2026-11-16, Version 27.0.0-alpha.0.1.1 (Alpha), @aduh95",
-      "error": "Release page does not corroborate feed date"
+      "error": "Old entry not eligible for fresh automatic publication"
     },
     {
       "id": "feed-972434084cc473c4c122",
       "title": "2026-11-12, Version 27.0.0-alpha.0.1.0 (Alpha), @aduh95",
-      "error": "Release page does not corroborate feed date"
+      "error": "Old entry not eligible for fresh automatic publication"
     },
     {
       "id": "feed-1f206af9c6a7e514d708",
