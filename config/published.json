@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-11-26T12:41:05.576Z",
-  "verification": "Agent pipeline: search, independent verification by a second agent with at least two independent sources, bilingual rewrite; plus deterministic first-party release checks",
+  "builtAt": "2026-11-26T22:19:03.662845+00:00",
+  "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
   "articles": [
     {
       "id": "agent-b2a965ad160b9d4bd70b",
@@ -91,7 +91,8 @@
         "provider": "Wikimedia Commons",
         "query": "Fetisov Arena ice hockey"
       },
-      "imageSearchedAt": "2026-11-26T12:41:05.576Z"
+      "imageSearchedAt": "2026-11-26T12:41:05.576Z",
+      "archive": false
     },
     {
       "id": "agent-8d8c09e2a00232b93c50",
@@ -176,7 +177,8 @@
         "provider": "Wikimedia Commons",
         "query": "seabird over ocean"
       },
-      "imageSearchedAt": "2026-11-26T12:38:56.356Z"
+      "imageSearchedAt": "2026-11-26T12:38:56.356Z",
+      "archive": false
     },
     {
       "id": "feed-f67b71a286f653e9ff2d",
@@ -200,7 +202,7 @@
       "originalTitle": "1.148.0",
       "publishedAt": "2026-11-25T09:44:02Z",
       "updatedAt": "2026-11-25T09:44:02Z",
-      "collectedAt": "2026-11-26T12:23:52.586080+00:00",
+      "collectedAt": "2026-11-26T22:19:03.662701+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -213,18 +215,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-26T12:23:52.586220+00:00",
+      "sitePublishedAt": "2026-11-26T22:19:03.662845+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-26T12:23:52.586220+00:00"
+          "checkedAt": "2026-11-26T22:19:03.662845+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-26T12:23:52.586220+00:00",
-          "evidenceSha256": "074213f08de9b244f35cea6ecd31139846a1522c20cb504c3048e5d69f8a1a19"
+          "checkedAt": "2026-11-26T22:19:03.662845+00:00",
+          "evidenceSha256": "4ffbe966f5c1efb9191edf8fcf92e258f02c5dea9f06f5508d6109e0010a18cc"
         }
       ],
       "verificationScope": "release-announcement-only"
