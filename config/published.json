@@ -1,8 +1,183 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-11-26T02:49:59.243426+00:00",
-  "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
+  "builtAt": "2026-11-26T12:41:05.576Z",
+  "verification": "Agent pipeline: search, independent verification by a second agent with at least two independent sources, bilingual rewrite; plus deterministic first-party release checks",
   "articles": [
+    {
+      "id": "agent-b2a965ad160b9d4bd70b",
+      "category": "sport",
+      "country": "RU",
+      "title": {
+        "ru": "«Авангард» одержал шестую победу подряд в КХЛ, обыграв «Адмирал» по буллитам",
+        "en": "Avangard Omsk Beats Admiral Vladivostok in Shootout for Sixth Straight KHL Win"
+      },
+      "body": {
+        "ru": "Омский «Авангард» на выезде обыграл владивостокский «Адмирал» в матче регулярного чемпионата КХЛ, продлив победную серию до шести встреч.",
+        "en": "Avangard Omsk secured a 5-4 shootout victory over Admiral Vladivostok on Wednesday, extending their KHL winning streak to six games."
+      },
+      "content": {
+        "ru": [
+          "Матч регулярного чемпионата Континентальной хоккейной лиги сезона-2026/2027 состоялся 26 ноября во Владивостоке на льду стадиона «Фетисов-Арена».",
+          "Хозяева площадки вели по ходу встречи со счетом 2:0, однако омскому клубу удалось отыграться и довести противостояние до серии послематчевых бросков.",
+          "Встреча завершилась победой «Авангарда» в серии буллитов с итоговым счетом 5:4. Для омичей этот успех стал шестым подряд в текущем регулярном первенстве КХЛ."
+        ],
+        "en": [
+          "The 2026/2027 KHL regular-season matchup took place on November 26 at the Fetisov Arena in Vladivostok.",
+          "The home side initially built a 2-0 lead, but Avangard fought back to level the contest and push the game past regulation time.",
+          "The visitors ultimately sealed the 5-4 win in the shootout, marking their sixth consecutive victory in the Kontinental Hockey League."
+        ]
+      },
+      "importance": {
+        "ru": "Волевая победа над «Адмиралом» позволила омскому клубу продолжить победную серию в чемпионате КХЛ и набрать очередные очки в регулярном сезоне.",
+        "en": "The comeback victory keeps Avangard Omsk on their positive run, securing valuable regular-season points on the road."
+      },
+      "next": {
+        "ru": "Обе команды продолжат выступление в регулярном чемпионате КХЛ сезона-2026/2027 в соответствии с календарным расписанием лиги.",
+        "en": "Both clubs will continue their 2026/2027 KHL regular-season campaigns according to the league's upcoming schedule."
+      },
+      "telegramText": {
+        "ru": "Омский «Авангард» одержал шестую победу подряд в регулярном чемпионате КХЛ. 26 ноября на льду «Фетисов-Арены» во Владивостоке омичи обыграли «Адмирал» в серии буллитов со счетом 5:4. По ходу встречи «Авангард» уступал со счетом 0:2, но сумел сравнять счет и вырвать победу в послематчевых бросках.",
+        "en": "Avangard Omsk claimed their sixth consecutive KHL victory on November 26, defeating Admiral Vladivostok 5-4 in a shootout at Fetisov Arena. The visitors overcame a 2-0 deficit during the match before clinching the two points in the post-game shootout."
+      },
+      "imageQuery": "Fetisov Arena ice hockey",
+      "status": "published",
+      "demo": false,
+      "priority": 2,
+      "originalTitle": "Avangard Omsk Beats Admiral Vladivostok in Shootout for Sixth Straight KHL Win",
+      "source": {
+        "name": "Интерфакс",
+        "url": "https://www.sport-interfax.ru/1131602",
+        "language": "en"
+      },
+      "sources": [
+        {
+          "publisher": "Интерфакс",
+          "url": "https://www.sport-interfax.ru/1131602",
+          "confirms": true
+        },
+        {
+          "publisher": "Чемпионат",
+          "url": "https://www.championat.com/hockey/news-6714896-admiral-avangard-rezultat-matcha-26-noyabrya-2026-goda-schet-4-5-b-regulyarnyj-chempionat-khl-2026-2027.html",
+          "confirms": true
+        },
+        {
+          "publisher": "Спорт-Экспресс",
+          "url": "https://www.sport-express.ru/hockey/khl/news/admiral-avangard-schet-i-rezultat-matcha-khl-26-noyabrya-2026-2479252/",
+          "confirms": true
+        }
+      ],
+      "publishedAt": "2026-11-26T12:02:00.000Z",
+      "updatedAt": "2026-11-26T12:02:00.000Z",
+      "collectedAt": "2026-11-26T12:23:53.711Z",
+      "sitePublishedAt": "2026-11-26T12:23:53.711Z",
+      "publicationMode": "agents",
+      "translationStatus": "ai-bilingual",
+      "factsReviewed": false,
+      "verification": {
+        "verdict": "cross-source",
+        "independentSources": 3,
+        "disputedFacts": [],
+        "problems": [],
+        "notes": "Reported by several outlets in their own feeds",
+        "checkedAt": "2026-11-26T12:23:53.711Z"
+      },
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Fetisov_Arena_20171224.jpg/1920px-Fetisov_Arena_20171224.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Fetisov Arena 20171224",
+        "creator": "Kaiser matias",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fetisov_Arena_20171224.jpg",
+        "provider": "Wikimedia Commons",
+        "query": "Fetisov Arena ice hockey"
+      },
+      "imageSearchedAt": "2026-11-26T12:41:05.576Z"
+    },
+    {
+      "id": "agent-8d8c09e2a00232b93c50",
+      "category": "science",
+      "country": null,
+      "title": {
+        "ru": "Морские птицы с GPS-датчиками помогли обнаружить суда без сигналов слежения",
+        "en": "Scientists Use GPS-Equipped Seabirds to Detect Hidden Vessels"
+      },
+      "body": {
+        "ru": "Ученые использовали морских птиц с портативными аудиорегистраторами и трекерами для выявления судов, скрывающих свое местоположение.",
+        "en": "Researchers have deployed seabirds fitted with GPS trackers and audio gear to find maritime vessels operating without tracking signals."
+      },
+      "content": {
+        "ru": [
+          "Как сообщает Naked Science, исследователи закрепили компактные GPS-трекеры и аудиорегистраторы на особях трех видов морских птиц. Пернатые помогли зафиксировать корабли, которые не передавали информацию о координатах через автоматическую идентификационную систему.",
+          "По данным The New York Times, новая методика нацелена на обнаружение судов, работающих без обязательных сигналов позиционирования, а также на выявление экологических угроз, которые несет их деятельность.",
+          "Авторы проекта отмечают, что использование птиц позволит эффективнее следить за перемещением скрытного флота. Кроме того, собранные данные помогут ученым лучше определять воздействие подобного судоходства на морских животных."
+        ],
+        "en": [
+          "According to Naked Science, researchers fitted individuals from three seabird species with miniature audio loggers and GPS tracking devices. The birds helped detect ships that were not transmitting location data through the automatic identification system.",
+          "The New York Times reported that the method was designed to reveal vessels operating without tracking signals and to assess the specific environmental hazards they pose.",
+          "The authors of the research stated that the new technique will allow for more effective tracking of such ships. They also expect it to provide a clearer assessment of how these vessels affect marine animals."
+        ]
+      },
+      "importance": {
+        "ru": "Суда, намеренно отключающие транспондеры, выпадают из традиционных систем наблюдения. Использование морских птиц в качестве мобильных сенсоров дает исследователям инструмент для контроля слепых зон и оценки антропогенного давления на экосистемы.",
+        "en": "Vessels operating with deactivated transponders avoid conventional maritime monitoring. Leveraging seabirds as sensor platforms provides a novel way to identify untracked traffic and study its ecological footprint in open waters."
+      },
+      "next": {
+        "ru": "Ученые рассчитывают применить разработанный метод для расширения мониторинга морских акваторий и более детального анализа рисков для фауны.",
+        "en": "Scientists plan to determine how this tracking approach can be scaled to support broader ocean monitoring and measure hazards facing marine wildlife."
+      },
+      "telegramText": {
+        "ru": "Ученые задействовали морских птиц для поиска кораблей, скрывающих свое присутствие в океане.\n\nКак сообщает Naked Science, исследователи оснастили представителей трех видов птиц миниатюрными аудиорегистраторами и GPS-трекерами. Птицы помогли выявить суда, которые не транслировали координаты через автоматическую идентификационную систему.\n\nПо информации The New York Times, подход помогает не только отслеживать незарегистрированное перемещение флота, но и оценивать сопутствующие экологические опасности и воздействие на морских животных.",
+        "en": "Scientists are using seabirds to locate ships that hide their presence at sea.\n\nAccording to Naked Science, researchers attached miniature audio recorders and GPS devices to three seabird species. The birds detected vessels that failed to transmit coordinates via the automatic identification system.\n\nThe New York Times reported that the initiative aims to spot untracked maritime traffic and measure environmental hazards. Researchers believe the system will improve vessel surveillance and help evaluate the impact on marine animals."
+      },
+      "imageQuery": "seabird over ocean",
+      "status": "published",
+      "demo": false,
+      "priority": 3,
+      "originalTitle": "Scientists Use GPS-Equipped Seabirds to Detect Hidden Illegal Fishing Vessels",
+      "source": {
+        "name": "The New York Times",
+        "url": "https://www.nytimes.com/2026/11/26/climate/seabirds-tracking-hidden-fishing-boats.html",
+        "language": "en"
+      },
+      "sources": [
+        {
+          "publisher": "The New York Times",
+          "url": "https://www.nytimes.com/2026/11/26/climate/seabirds-tracking-hidden-fishing-boats.html",
+          "confirms": true
+        },
+        {
+          "publisher": "Naked Science",
+          "url": "https://naked-science.ru/article/biology/morskie-ptitsy-mestopolozhenie",
+          "confirms": true
+        }
+      ],
+      "publishedAt": "2026-11-26T09:13:13.000Z",
+      "updatedAt": "2026-11-26T09:13:13.000Z",
+      "collectedAt": "2026-11-26T12:23:53.711Z",
+      "sitePublishedAt": "2026-11-26T12:23:53.711Z",
+      "publicationMode": "agents",
+      "translationStatus": "ai-bilingual",
+      "factsReviewed": false,
+      "verification": {
+        "verdict": "cross-source",
+        "independentSources": 2,
+        "disputedFacts": [],
+        "problems": [],
+        "notes": "Reported by several outlets in their own feeds",
+        "checkedAt": "2026-11-26T12:23:53.711Z"
+      },
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Rainbow_over_the_ocean_%2852976946413%29.jpg/1920px-Rainbow_over_the_ocean_%2852976946413%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Rainbow over the ocean (52976946413)",
+        "creator": "USFWS Pacific",
+        "license": "Public domain",
+        "licenseUrl": null,
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rainbow_over_the_ocean_(52976946413).jpg",
+        "provider": "Wikimedia Commons",
+        "query": "seabird over ocean"
+      },
+      "imageSearchedAt": "2026-11-26T12:38:56.356Z"
+    },
     {
       "id": "feed-f67b71a286f653e9ff2d",
       "category": "technology",
@@ -25,7 +200,7 @@
       "originalTitle": "1.148.0",
       "publishedAt": "2026-11-25T09:44:02Z",
       "updatedAt": "2026-11-25T09:44:02Z",
-      "collectedAt": "2026-11-26T02:49:59.243283+00:00",
+      "collectedAt": "2026-11-26T12:23:52.586080+00:00",
       "translationStatus": "bilingual-template",
       "factsReviewed": false,
       "importance": {
@@ -38,18 +213,18 @@
       },
       "publicationMode": "test",
       "archive": false,
-      "sitePublishedAt": "2026-11-26T02:49:59.243426+00:00",
+      "sitePublishedAt": "2026-11-26T12:23:52.586220+00:00",
       "autoChecks": [
         {
           "id": "feed",
           "status": "passed",
-          "checkedAt": "2026-11-26T02:49:59.243426+00:00"
+          "checkedAt": "2026-11-26T12:23:52.586220+00:00"
         },
         {
           "id": "release-page",
           "status": "passed",
-          "checkedAt": "2026-11-26T02:49:59.243426+00:00",
-          "evidenceSha256": "c57e63d6d5a0f398e803d32ac23f3cb58619a3cf39613bf0e75655d712a66bc2"
+          "checkedAt": "2026-11-26T12:23:52.586220+00:00",
+          "evidenceSha256": "074213f08de9b244f35cea6ecd31139846a1522c20cb504c3048e5d69f8a1a19"
         }
       ],
       "verificationScope": "release-announcement-only"
@@ -2823,6 +2998,11 @@
   ],
   "held": [
     {
+      "id": "feed-23365a63a13825669125",
+      "title": "2026-11-26, Version 27.0.0-alpha.0.2.0 (Alpha), @aduh95",
+      "error": "Release page does not corroborate feed date"
+    },
+    {
       "id": "feed-0d79bc3054a6a580fcdc",
       "title": "2026-11-16, Version 27.0.0-alpha.0.1.1 (Alpha), @aduh95",
       "error": "Old entry not eligible for fresh automatic publication"
@@ -2855,11 +3035,6 @@
     {
       "id": "feed-9d1b76e3ad8e736802b9",
       "title": "2026-10-28, Version 26.13.0 'Lithium' (LTS), @richardlau",
-      "error": "Old entry not eligible for fresh automatic publication"
-    },
-    {
-      "id": "feed-243f98e467424aaf3e47",
-      "title": "2026-10-28, Version 24.22.2 'Krypton' (LTS), @aduh95",
       "error": "Old entry not eligible for fresh automatic publication"
     },
     {

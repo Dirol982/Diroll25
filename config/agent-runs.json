@@ -1,6 +1,290 @@
 [
   {
     "mode": "feeds",
+    "startedAt": "2026-11-26T12:23:53.711Z",
+    "published": [
+      {
+        "id": "agent-8d8c09e2a00232b93c50",
+        "title": "Scientists Use GPS-Equipped Seabirds to Detect Hidden Vessels",
+        "outlets": [
+          "nytimes.com",
+          "naked-science.ru"
+        ]
+      },
+      {
+        "id": "agent-b2a965ad160b9d4bd70b",
+        "title": "Avangard Omsk Beats Admiral Vladivostok in Shootout for Sixth Straight KHL Win",
+        "outlets": [
+          "sport-interfax.ru",
+          "championat.com",
+          "sport-express.ru"
+        ]
+      }
+    ],
+    "held": [],
+    "rejected": [],
+    "errors": [
+      {
+        "topic": "culture",
+        "headline": "Andy Taylor, Guitarist for Duran Duran, Dies at 65",
+        "stage": "write",
+        "error": "Gemini 503 (gemini-3.8-flash): This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+      },
+      {
+        "topic": "culture",
+        "headline": "Brad Pitt and Angelina Jolie Settle Legal Battle Over French Winery",
+        "stage": "write",
+        "error": "Gemini 503 (gemini-3.8-flash): This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+      },
+      {
+        "topic": "culture",
+        "headline": "Putin Decrees March 26 as All-Russian Children's Book Day",
+        "stage": "write",
+        "error": "Gemini 503 (gemini-3.8-flash): This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+      },
+      {
+        "topic": "technology",
+        "headline": "Nvidia GeForce Driver Update Causes Black Screen Issues for PC Users",
+        "stage": "write",
+        "error": "Gemini 503 (gemini-3.8-flash): This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+      }
+    ],
+    "usage": {
+      "input_tokens": 8885,
+      "output_tokens": 3380
+    },
+    "feeds": [
+      {
+        "feed": "BBC News / technology",
+        "ok": true,
+        "items": 21
+      },
+      {
+        "feed": "The Guardian / technology",
+        "ok": true,
+        "items": 36
+      },
+      {
+        "feed": "The New York Times / technology",
+        "ok": true,
+        "items": 35
+      },
+      {
+        "feed": "Ars Technica / technology",
+        "ok": true,
+        "items": 20
+      },
+      {
+        "feed": "The Verge / technology",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "NPR / technology",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "Хабр / technology",
+        "ok": true,
+        "items": 40
+      },
+      {
+        "feed": "3DNews / technology",
+        "ok": true,
+        "items": 64
+      },
+      {
+        "feed": "iXBT / technology",
+        "ok": true,
+        "items": 50
+      },
+      {
+        "feed": "BBC News / science",
+        "ok": true,
+        "items": 42
+      },
+      {
+        "feed": "The Guardian / science",
+        "ok": true,
+        "items": 28
+      },
+      {
+        "feed": "The New York Times / science",
+        "ok": true,
+        "items": 27
+      },
+      {
+        "feed": "NPR / science",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "ScienceDaily / science",
+        "ok": true,
+        "items": 60
+      },
+      {
+        "feed": "N + 1 / science",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "Naked Science / science",
+        "ok": true,
+        "items": 20
+      },
+      {
+        "feed": "BBC News / economy",
+        "ok": true,
+        "items": 54
+      },
+      {
+        "feed": "The Guardian / economy",
+        "ok": true,
+        "items": 19
+      },
+      {
+        "feed": "The New York Times / economy",
+        "ok": true,
+        "items": 50
+      },
+      {
+        "feed": "NPR / economy",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "CNBC / economy",
+        "ok": true,
+        "items": 30
+      },
+      {
+        "feed": "Коммерсантъ / economy",
+        "ok": true,
+        "items": 24
+      },
+      {
+        "feed": "РБК / economy",
+        "ok": false,
+        "error": "The operation was aborted due to timeout"
+      },
+      {
+        "feed": "Интерфакс / economy",
+        "ok": true,
+        "items": 25
+      },
+      {
+        "feed": "BBC News / culture",
+        "ok": true,
+        "items": 24
+      },
+      {
+        "feed": "The Guardian / culture",
+        "ok": true,
+        "items": 26
+      },
+      {
+        "feed": "The New York Times / culture",
+        "ok": true,
+        "items": 60
+      },
+      {
+        "feed": "NPR / culture",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "Коммерсантъ / culture",
+        "ok": true,
+        "items": 15
+      },
+      {
+        "feed": "BBC Sport / sport",
+        "ok": true,
+        "items": 65
+      },
+      {
+        "feed": "The Guardian / sport",
+        "ok": true,
+        "items": 26
+      },
+      {
+        "feed": "The New York Times / sport",
+        "ok": true,
+        "items": 0
+      },
+      {
+        "feed": "ESPN / sport",
+        "ok": true,
+        "items": 42
+      },
+      {
+        "feed": "Чемпионат / sport",
+        "ok": true,
+        "items": 31
+      },
+      {
+        "feed": "Sports.ru / sport",
+        "ok": false,
+        "error": "HTTP 404"
+      },
+      {
+        "feed": "Спорт-Экспресс / sport",
+        "ok": true,
+        "items": 707
+      },
+      {
+        "feed": "The Guardian / travel",
+        "ok": true,
+        "items": 35
+      },
+      {
+        "feed": "The New York Times / travel",
+        "ok": true,
+        "items": 20
+      },
+      {
+        "feed": "Skift / travel",
+        "ok": true,
+        "items": 10
+      },
+      {
+        "feed": "Лента.ру / travel",
+        "ok": true,
+        "items": 200
+      },
+      {
+        "feed": "РИА Новости / travel",
+        "ok": false,
+        "error": "HTTP 404"
+      },
+      {
+        "feed": "Лента.ру / culture",
+        "ok": true,
+        "items": 193
+      },
+      {
+        "feed": "Лента.ру / economy",
+        "ok": true,
+        "items": 200
+      },
+      {
+        "feed": "Лента.ру / science",
+        "ok": true,
+        "items": 200
+      }
+    ],
+    "candidates": 240,
+    "finishedAt": "2026-11-26T12:41:05.579Z",
+    "imagesBackfilled": 0,
+    "status": "partial",
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "skippedModels": []
+  },
+  {
+    "mode": "feeds",
     "startedAt": "2026-11-25T00:40:28.500Z",
     "published": [],
     "held": [],
