@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-11-28T07:41:47.884051+00:00",
+  "builtAt": "2026-11-28T16:51:32.762438+00:00",
   "verification": "Two deterministic checks, not AI or independent journalistic fact-checking",
   "articles": [
     {
@@ -214,7 +214,7 @@
         "en": "Read the original release notes before upgrading."
       },
       "publicationMode": "test",
-      "archive": false,
+      "archive": true,
       "sitePublishedAt": "2026-11-28T07:41:47.884051+00:00",
       "autoChecks": [
         {
@@ -3037,6 +3037,11 @@
     {
       "id": "feed-9d1b76e3ad8e736802b9",
       "title": "2026-10-28, Version 26.13.0 'Lithium' (LTS), @richardlau",
+      "error": "Old entry not eligible for fresh automatic publication"
+    },
+    {
+      "id": "feed-f67b71a286f653e9ff2d",
+      "title": "1.148.0",
       "error": "Old entry not eligible for fresh automatic publication"
     },
     {
